@@ -1,0 +1,23 @@
+{
+  "cosine_joint_thermo": {
+    "mean": 0.37864811056060715,
+    "median": 0.25575727224349976,
+    "std": 0.3567168714447322,
+    "negative_fraction": 0.11,
+    "n": 100
+  },
+  "cosine_joint_dynamic": {
+    "mean": 0.5133699429983971,
+    "median": 0.6590985655784607,
+    "std": 0.41250171276537745,
+    "negative_fraction": 0.12,
+    "n": 100
+  },
+  "cosine_thermo_dynamic": {
+    "mean": 0.05683059715724084,
+    "median": 0.03918691538274288,
+    "std": 0.17026599715115806,
+    "negative_fraction": 0.3,
+    "n": 100
+  }
+}

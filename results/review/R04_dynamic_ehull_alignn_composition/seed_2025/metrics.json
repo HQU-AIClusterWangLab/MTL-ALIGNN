@@ -1,0 +1,41 @@
+{
+  "seed": 2025,
+  "best_epoch": 36,
+  "monitor_task": "dynamic",
+  "best_val_monitor_pr_auc": 0.8981007642738674,
+  "batch_size": 16,
+  "runtime_seconds": 3073.6635155677795,
+  "device": "cuda:0",
+  "pretrained_backbone": null,
+  "conditioning_features": [
+    "ehull"
+  ],
+  "conditioning_stats": {
+    "ehull": {
+      "mean": 0.14848559484186072,
+      "std": 0.20923338819924342
+    }
+  },
+  "val_dynamic": {
+    "threshold": 0.7175062894821167,
+    "pr_auc": 0.8981007642738674,
+    "f1": 0.8166189111747851,
+    "mcc": 0.5707906638094937,
+    "balanced_accuracy": 0.7878229554876262,
+    "nll": 1.0156610258972647,
+    "brier": 0.18649035910887266,
+    "ece": 0.17486570125501877,
+    "roc_auc": 0.8664419412922406
+  },
+  "test_dynamic": {
+    "threshold": 0.7175062894821167,
+    "pr_auc": 0.875038756710675,
+    "f1": 0.8088761632068718,
+    "mcc": 0.5497368904825397,
+    "balanced_accuracy": 0.7773813554539812,
+    "nll": 1.1055879675777234,
+    "brier": 0.19373594824067333,
+    "ece": 0.18333065295142315,
+    "roc_auc": 0.8495076462953558
+  }
+}

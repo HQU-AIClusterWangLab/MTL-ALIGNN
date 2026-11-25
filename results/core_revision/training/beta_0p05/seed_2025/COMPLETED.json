@@ -1,0 +1,11 @@
+{
+  "name": "beta_0p05",
+  "category": "core_revision/training",
+  "seed": 2025,
+  "status": "completed",
+  "best_epoch": 31,
+  "batch_size": 16,
+  "monitor_task": "joint",
+  "test_joint_pr_auc": 0.8491675620881727,
+  "test_joint_mcc": 0.6426917159832268
+}

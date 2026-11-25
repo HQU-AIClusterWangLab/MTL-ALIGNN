@@ -1,0 +1,11 @@
+{
+  "name": "R29_single_joint_alignn_chemical",
+  "category": "review",
+  "seed": 2025,
+  "status": "completed",
+  "best_epoch": 52,
+  "batch_size": 16,
+  "monitor_task": "joint",
+  "test_joint_pr_auc": 0.854610211937478,
+  "test_joint_mcc": 0.652818249438613
+}

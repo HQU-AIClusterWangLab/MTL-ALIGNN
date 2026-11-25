@@ -1,0 +1,74 @@
+{
+  "unknown_count": 8803,
+  "ranking_pool_count": 8803,
+  "ranking_scope": "all_unknown",
+  "thermo_eligible_count": 420,
+  "thermo_ineligible_count": 8383,
+  "lambda": 0.0,
+  "lambda_is_zero": true,
+  "uncertainty_method": "deep_ensemble",
+  "uncertainty_score": "predictive_std",
+  "uncertainty_column": "p_joint_std",
+  "pJ_alias": "p_joint_mean",
+  "pJ_calibrated_alias": "p_joint_calibrated",
+  "logical_consistency_calibrated": {
+    "evaluated_count": 8803,
+    "pJ_gt_pT_count": 1209,
+    "pJ_gt_pD_count": 1368,
+    "pJ_below_frechet_count": 262,
+    "any_violation_count": 2839,
+    "any_violation_fraction": 0.322503691923208,
+    "pJ_gt_pT_magnitude": {
+      "mean": 0.003681774540986062,
+      "max": 0.18746449669931836
+    },
+    "pJ_gt_pD_magnitude": {
+      "mean": 0.0019261113290173243,
+      "max": 0.09129284739249371
+    },
+    "pJ_below_frechet_magnitude": {
+      "mean": 0.00037995778989665323,
+      "max": 0.05520083669587955
+    }
+  },
+  "spearman_probability_rank_vs_risk_rank": 1.0,
+  "spearman_pvalue": 0.0,
+  "kendall_tau_probability_rank_vs_risk_rank": 0.9999999999999999,
+  "kendall_pvalue": 0.0,
+  "top_k_overlap": [
+    {
+      "K": 10,
+      "effective_K": 10,
+      "overlap_count": 10,
+      "overlap_fraction": 1.0,
+      "jaccard": 1.0
+    },
+    {
+      "K": 20,
+      "effective_K": 20,
+      "overlap_count": 20,
+      "overlap_fraction": 1.0,
+      "jaccard": 1.0
+    },
+    {
+      "K": 50,
+      "effective_K": 50,
+      "overlap_count": 50,
+      "overlap_fraction": 1.0,
+      "jaccard": 1.0
+    },
+    {
+      "K": 100,
+      "effective_K": 100,
+      "overlap_count": 100,
+      "overlap_fraction": 1.0,
+      "jaccard": 1.0
+    }
+  ],
+  "confidence_tier_counts_probability_topk": {
+    "A_low_uncertainty": 100
+  },
+  "screening_tier_counts_probability_topk": {
+    "A_priority": 100
+  }
+}

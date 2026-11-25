@@ -1,0 +1,57 @@
+[
+  {
+    "name": "R26_equal_mtl_alignn_composition",
+    "category": "review",
+    "seed": 2025,
+    "status": "completed",
+    "best_epoch": 48,
+    "batch_size": 16,
+    "monitor_task": "joint",
+    "test_joint_pr_auc": 0.8828118022308122,
+    "test_joint_mcc": 0.6365790618293758
+  },
+  {
+    "name": "R26_equal_mtl_alignn_composition",
+    "category": "review",
+    "seed": 2026,
+    "status": "completed",
+    "best_epoch": 44,
+    "batch_size": 16,
+    "monitor_task": "joint",
+    "test_joint_pr_auc": 0.884445057545575,
+    "test_joint_mcc": 0.6217160018387187
+  },
+  {
+    "name": "R26_equal_mtl_alignn_composition",
+    "category": "review",
+    "seed": 2027,
+    "status": "completed",
+    "best_epoch": 37,
+    "batch_size": 16,
+    "monitor_task": "joint",
+    "test_joint_pr_auc": 0.8745105307814979,
+    "test_joint_mcc": 0.6193997949669896
+  },
+  {
+    "name": "R26_equal_mtl_alignn_composition",
+    "category": "review",
+    "seed": 2028,
+    "status": "completed",
+    "best_epoch": 21,
+    "batch_size": 16,
+    "monitor_task": "joint",
+    "test_joint_pr_auc": 0.8612068827000632,
+    "test_joint_mcc": 0.591187166265561
+  },
+  {
+    "name": "R26_equal_mtl_alignn_composition",
+    "category": "review",
+    "seed": 2029,
+    "status": "completed",
+    "best_epoch": 35,
+    "batch_size": 16,
+    "monitor_task": "joint",
+    "test_joint_pr_auc": 0.88129766154849,
+    "test_joint_mcc": 0.6255021262180683
+  }
+]

@@ -1,0 +1,10 @@
+ Job Name                         :  go
+ type of calculation              :  single point energy
+ plane wave basis set cut-off     :  850.0000   eV
+ using functional                 :  Perdew Burke Ernzerhof
+
+ Number of iterations             :  37
+ Energy                           :  -5.18243847E+003  eV
+ Convergence                      :  7.99625063E-008  eV/atom
+ 2*Integrated Spin Density        :       1.08824     hbar/2
+ 2*Integrated |Spin Density|      :       1.26972     hbar/2

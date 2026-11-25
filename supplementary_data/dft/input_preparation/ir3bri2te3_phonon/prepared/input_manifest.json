@@ -1,0 +1,148 @@
+{
+  "claims": {
+    "dft_energy_complete": false,
+    "force_calculations_complete": false,
+    "frozen_mode_calculation_complete": false,
+    "phonon_calculation_complete": false
+  },
+  "environment_probe": {
+    "ase_version": "3.28.0",
+    "executables": {
+      "ph.x": null,
+      "phonopy": null,
+      "pw.x": null,
+      "vasp_gam": null,
+      "vasp_std": null
+    },
+    "phonopy_python_module_available": false,
+    "python_version": "3.10.20",
+    "qe_pseudopotentials_provided": false,
+    "vasp_potcar": {
+      "note": "No licensed VASP POTCAR was provided or copied.",
+      "path": null,
+      "provided": false,
+      "sha256": null
+    }
+  },
+  "material": {
+    "atom_count": 9,
+    "composition": {
+      "Br": 1,
+      "I": 2,
+      "Ir": 3,
+      "Te": 3
+    },
+    "formula": "BrI2Ir3Te3",
+    "material_id": "1BrI2Ir3Te3-1",
+    "source_cif": "D:\\ck\\two\\results\\main\\M10_unknown_screening\\probability_top100_cif\\014_1BrI2Ir3Te3-1.cif",
+    "source_cif_sha256": "3ffafa583bd4b44d06630660e552066834741aa7d1e716b62258a89552f9d946"
+  },
+  "prepared_outputs": {
+    "poscar": {
+      "path": "D:\\ck\\two\\dft\\ir3bri2te3_phonon\\prepared\\POSCAR",
+      "sha256": "bf14feb83b4736c22cf52803d0d45af656a9291d8b13118389d6eb7adcb304f2"
+    },
+    "reference_cif": {
+      "path": "D:\\ck\\two\\dft\\ir3bri2te3_phonon\\prepared\\Ir3BrI2Te3_reference.cif",
+      "sha256": "a50fa2868b298f35800e10c44e01c3480368d2b16ad1ee7d9c75cfb0e9b667f9"
+    }
+  },
+  "protocol": {
+    "electronic_convergence_ev": 1e-07,
+    "finite_displacement_amplitude_angstrom": 0.01,
+    "finite_displacement_supercell": [
+      3,
+      3,
+      1
+    ],
+    "frozen_mode": {
+      "required_inputs": [
+        "q-point",
+        "branch index",
+        "frequency with units",
+        "complex eigenvector with normalization convention"
+      ],
+      "status": "BLOCKED_UNTIL_PHONON_EIGENVECTOR_EXISTS"
+    },
+    "initial_moments_mu_b_by_element": {},
+    "ionic_force_convergence_ev_per_angstrom": 0.01,
+    "kpoint_mesh": [
+      9,
+      9,
+      1
+    ],
+    "magnetism": "scan",
+    "minimum_vacuum_gap_angstrom": 15.0,
+    "plane_wave_cutoff_ev": 520.0,
+    "requested_calculator": "vasp",
+    "spin_orbit_coupling_required": true,
+    "vdw_correction": "D3(BJ)",
+    "xc_functional": "PBE"
+  },
+  "readiness": {
+    "blocking_reasons": [
+      "requested calculator executable is unavailable: vasp",
+      "an explicit, licensed POTCAR was not provided",
+      "a magnetic calculation/scan was requested but no initial moments were supplied",
+      "phonopy CLI and Python module are unavailable",
+      "no DFT energies or forces have been calculated",
+      "no phonon eigenvalues/eigenvectors have been calculated"
+    ],
+    "phonopy_available": false,
+    "pseudopotentials_explicitly_recorded": false,
+    "ready_to_run": false,
+    "reference_structure_prepared": true,
+    "requested_calculator_available": false
+  },
+  "schema_version": 1,
+  "status": "INPUTS_PREPARED_NOT_CALCULATED",
+  "structure": {
+    "c_normal_cell_height_angstrom": 17.863344069590898,
+    "cell_angstrom": [
+      [
+        6.925991198671962,
+        0.0,
+        0.0
+      ],
+      [
+        -3.482215823412342,
+        5.9298649107487265,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        17.863344069590898
+      ]
+    ],
+    "grouped_atom_to_source_atom_index_zero_based": [
+      6,
+      5,
+      8,
+      0,
+      1,
+      4,
+      2,
+      3,
+      7
+    ],
+    "largest_interplane_gap_angstrom": 15.0,
+    "pbc": [
+      true,
+      true,
+      true
+    ],
+    "species_order": [
+      "Br",
+      "I",
+      "I",
+      "Ir",
+      "Ir",
+      "Ir",
+      "Te",
+      "Te",
+      "Te"
+    ],
+    "vacuum_diagnostic_definition": "largest wrapped fractional-z gap multiplied by c-normal cell height; atomic radii are not subtracted"
+  }
+}

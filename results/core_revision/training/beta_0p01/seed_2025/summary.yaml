@@ -1,0 +1,9 @@
+name: beta_0p01
+category: core_revision/training
+seed: 2025
+status: completed
+best_epoch: 17
+batch_size: 16
+monitor_task: joint
+test_joint_pr_auc: 0.8695057610868812
+test_joint_mcc: 0.6415743271739739

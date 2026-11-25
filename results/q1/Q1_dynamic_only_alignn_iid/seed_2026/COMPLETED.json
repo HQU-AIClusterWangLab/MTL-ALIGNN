@@ -1,0 +1,11 @@
+{
+  "name": "Q1_dynamic_only_alignn_iid",
+  "category": "q1",
+  "seed": 2026,
+  "status": "completed",
+  "best_epoch": 37,
+  "batch_size": 16,
+  "monitor_task": "dynamic",
+  "test_dynamic_pr_auc": 0.8712659436482573,
+  "test_dynamic_mcc": 0.5490214737660136
+}

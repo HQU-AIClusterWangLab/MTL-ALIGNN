@@ -1,0 +1,13 @@
+{
+  "signature": "2218eecda09815ff4ae5f9009fd313671bea6d661fd8cf667ecad1bb184efb98",
+  "timestamp": "2026-09-17T03:59:53.838735+00:00",
+  "files_sha256": {
+    "calibration.json": "b364a5dcc5ac4bbfde7825382dffb43829f27d57ab140b78fcf08d1000aafa55",
+    "joint_construction_comparison.csv": "aa05160b3287e75b50cee2faf6cb1320b2cbbabfdfe669b9528bc2cf5ee4d552",
+    "manifest.json": "752d881bab8e2adeae6905ec40ba1cad32387b2769627b04b601dd40ce034a2c",
+    "paired_bootstrap_full_vs_alternatives.csv": "cadf94e9775ac2e97509830b37a1ee72ef0ad7af7fec07004b3a02c619b334d4",
+    "test_predictions.csv": "b7770c230f290b2418fadbcfe0d0076c2817f89489bb29d05ce7f90fb5fa17ec",
+    "thresholds.json": "ce05fe19496aa55315ad2eb2c047aad432934a9c6b7a96ae7c75cd20ce15c270",
+    "validation_predictions.csv": "ed379bf597988840b24ff0b21b64e87cee19cc1656c121246917d6ae44cec58c"
+  }
+}

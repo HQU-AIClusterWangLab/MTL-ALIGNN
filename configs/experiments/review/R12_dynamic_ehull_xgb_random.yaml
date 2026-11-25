@@ -1,0 +1,9 @@
+name: R12_dynamic_ehull_xgb_random
+category: review
+model_type: xgboost
+heads: [dynamic]
+monitor_task: dynamic
+additional_features: [ehull]
+seeds: [2025, 2026, 2027, 2028, 2029]
+split_file: review_splits/random_iid_stratified.csv
+

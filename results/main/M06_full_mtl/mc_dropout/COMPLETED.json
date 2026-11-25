@@ -1,0 +1,6 @@
+{
+  "status": "completed",
+  "seed": 2025,
+  "samples": 30,
+  "checkpoint": "D:\\ck\\two\\results\\main\\M06_full_mtl\\seed_2025\\best_checkpoint.pt"
+}

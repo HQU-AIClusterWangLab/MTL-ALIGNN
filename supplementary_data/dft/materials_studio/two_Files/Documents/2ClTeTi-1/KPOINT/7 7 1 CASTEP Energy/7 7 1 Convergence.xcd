@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="latin1"?>
+<!DOCTYPE XCD []>
+<XCD Version="23.1" NumCharts="1">
+	<CHART_2D>
+		<DATA_2D NumSeries="2">
+			<SERIES_2D UniqueID="0" Name="Energy Change (eV/atom)" NumPoints="24">
+				<POINT_2D XY="1,0.5121798601578776"/>
+				<POINT_2D XY="2,-2.137302929959098"/>
+				<POINT_2D XY="3,-1.46781794213109"/>
+				<POINT_2D XY="4,-2.339728458676559"/>
+				<POINT_2D XY="5,-2.305940865507864"/>
+				<POINT_2D XY="6,-2.791527593690944"/>
+				<POINT_2D XY="7,-3.264761701613383"/>
+				<POINT_2D XY="8,-2.958895928337468"/>
+				<POINT_2D XY="9,-3.163579551242173"/>
+				<POINT_2D XY="10,-3.584312327618178"/>
+				<POINT_2D XY="11,-3.400103807629901"/>
+				<POINT_2D XY="12,-3.610588645750143"/>
+				<POINT_2D XY="13,-3.765046022199194"/>
+				<POINT_2D XY="14,-3.595973804053877"/>
+				<POINT_2D XY="15,-4.096398285758251"/>
+				<POINT_2D XY="16,-3.789364817560128"/>
+				<POINT_2D XY="17,-3.841855086631107"/>
+				<POINT_2D XY="18,-4.049607170072888"/>
+				<POINT_2D XY="19,-4.426755283176091"/>
+				<POINT_2D XY="20,-5.118545328732583"/>
+				<POINT_2D XY="21,-5.538494582185748"/>
+				<POINT_2D XY="22,-6.207545635123137"/>
+				<POINT_2D XY="23,-6.716962162538373"/>
+				<POINT_2D XY="24,-7.351196761564385"/>
+			</SERIES_2D>
+			<SERIES_2D UniqueID="1" Name="" NumPoints="2">
+				<POINT_2D XY="1,-6.301029995663981"/>
+				<POINT_2D XY="24,-6.301029995663981"/>
+			</SERIES_2D>
+		</DATA_2D>
+		<MARKERS_2D NumMarkers="0" Visible="true" Width="1" Style="Solid" Color="255,0,0"/>
+		<CARTESIAN_2D_PLOT PlotType="Line" Visible="1" BackgroundColor="255,255,255" ForegroundColor="0,0,0" Box="1">
+			<TITLE Visible="1" Text="CASTEP SCF Convergence">
+				<FONT/>
+			</TITLE>
+			<LEGEND Visible="1" Heading=""/>
+			<CARTESIAN_AXES_2D XOriginPos="Min" YOriginPos="Min" XTickPos="Auto" YTickPos="Auto">
+				<AXIS_X Visible="true" Reversed="false" Title="Iteration">
+					<FONT/>
+					<AXIS_LINE Visible="true" Width="1" Style="Solid" Color="185,185,185"/>
+					<MAJOR_TICKMARKS Length="6" Visible="true" Width="1" Style="Solid" Color="185,185,185"/>
+					<MINOR_TICKMARKS Length="2" Visible="true" Width="1" Style="Solid" Color="185,185,185"/>
+				</AXIS_X>
+				<AXIS_Y Visible="true" Reversed="false" Title="Convergence (log10)">
+					<FONT/>
+					<AXIS_LINE Visible="true" Width="1" Style="Solid" Color="185,185,185"/>
+					<MAJOR_TICKMARKS Length="6" Visible="true" Width="1" Style="Solid" Color="185,185,185"/>
+					<MINOR_TICKMARKS Length="2" Visible="true" Width="1" Style="Solid" Color="185,185,185"/>
+				</AXIS_Y>
+			</CARTESIAN_AXES_2D>
+			<CARTESIAN_GRID_2D>
+				<GRID_X Visible="true" DefaultSpaced="true" Spacing="0">
+					<MAJOR_LINES Visible="false" Width="1" Style="Solid" Color="236,236,236"/>
+					<MINOR_LINES Visible="false" Width="1" Style="Solid" Color="236,236,236"/>
+				</GRID_X>
+				<GRID_Y Visible="true" DefaultSpaced="true" Spacing="0">
+					<MAJOR_LINES Visible="true" Width="1" Style="Solid" Color="236,236,236"/>
+					<MINOR_LINES Visible="false" Width="1" Style="Solid" Color="236,236,236"/>
+				</GRID_Y>
+			</CARTESIAN_GRID_2D>
+			<CARTESIAN_GRAPH_2D_STYLE LineVisible="true" LineWidth="1" LineStyle="Solid" LineColor="255,0,0" SymbolSize="6" SymbolShape="Dot" SymbolColor="255,0,0" BarOrientation="Horizontal" BarWidth="0.5" BarColor="0,0,255" DendrogramCursorColor="0,0,255" DendrogramCursorWidth="1" DendrogramCursorPosition="0.5"/>
+			<CARTESIAN_GRAPH_2D_STYLE LineVisible="true" LineWidth="1" LineStyle="Dash" LineColor="255,0,0" SymbolSize="6" SymbolShape="None" SymbolColor="255,0,0" BarOrientation="Horizontal" BarWidth="0.5" BarColor="255,0,0" DendrogramCursorColor="255,0,0" DendrogramCursorWidth="1" DendrogramCursorPosition="0.5"/>
+		</CARTESIAN_2D_PLOT>
+	</CHART_2D>
+</XCD>

@@ -1,0 +1,4 @@
+series,display_label,Joint_AP,sample_SD,independent_runs,members_per_estimate,error_bar_definition
+Single-task ALIGNN,ALIGNN,0.8776072605568909,0.018478104053295745,3,1,sample SD across common seeds 2025-2027
+Full MTL single,Full MTL,0.8832284388029977,0.0057385461926201175,3,1,sample SD across common seeds 2025-2027
+Full MTL ensemble,Full MTL ensemble,0.9063548999784637,,1,5,none; one arithmetic probability-mean ensemble

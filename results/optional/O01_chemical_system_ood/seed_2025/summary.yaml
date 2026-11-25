@@ -1,0 +1,8 @@
+name: O01_chemical_system_ood
+category: optional
+seed: 2025
+status: completed
+best_epoch: 18
+batch_size: 16
+test_joint_pr_auc: 0.8847989786577273
+test_joint_mcc: 0.6502858505378653

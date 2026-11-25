@@ -1,0 +1,9 @@
+name: A04_fixed_weight
+category: retuned_2026_11_22
+seed: 2029
+status: completed
+best_epoch: 35
+batch_size: 16
+monitor_task: joint
+test_joint_pr_auc: 0.8835267806770979
+test_joint_mcc: 0.64454170948027

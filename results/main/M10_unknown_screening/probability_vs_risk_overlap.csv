@@ -1,0 +1,5 @@
+K,effective_K,overlap_count,overlap_fraction,jaccard
+10,10,10,1.0,1.0
+20,20,20,1.0,1.0
+50,50,50,1.0,1.0
+100,100,100,1.0,1.0

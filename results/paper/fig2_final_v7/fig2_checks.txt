@@ -1,0 +1,22 @@
+PASS: audit workbook read with header=3 and preserved unchanged.
+PASS: F2 material 10,926 rows; F3 components 14,568 rows; F3 errors 7,284 rows.
+PASS: material IDs and labels align within every required task/split/model comparison.
+PASS: all probabilities are finite in [0,1], labels are binary, and Joint=Thermo AND Dynamic where available.
+PASS: p_ensemble equals the arithmetic mean of the five member probabilities within 1e-12.
+PASS: panel-a raw prediction files match the audited per-member probabilities within 1e-12.
+PASS: common-seed ALIGNN Joint AP=0.877607260557 +/- 0.018478104053 (sample SD, n=3).
+PASS: common-seed Full MTL Joint AP=0.883228438803 +/- 0.005738546193 (sample SD, n=3).
+PASS: Full MTL five-member ensemble Joint AP=0.906354899978.
+NOTICE: supplied ALIGNN value 0.874 +/- 0.014 describes five single-model seeds; the three common seeds used in panels a-b give 0.878 +/- 0.018, so the supplied number was not forced into the figure.
+PASS: retained M=5 supplementary AP values match the previous verification values; maximum absolute difference=4.637e-13.
+PASS: panel-e stored/recomputed violation mismatches=0; epsilon=1.0e-10.
+PASS: panel-f threshold/prediction mismatches=0; thresholds were not changed.
+PASS: panel-c uses four real Full-MTL review ensembles and does not reuse the legacy IID result.
+PASS: panel-c is a horizontal bar chart with a zero baseline; panels c-f data values remain unchanged.
+PASS: panels d-e use the same four-color model encoding and share the compact legend in panel e.
+PASS: typography is role-consistent across panels a-f and uses one font family.
+PASS: panel-a Precision axis is fixed to 0.4-1.0; the prevalence reference line and label are removed.
+PASS: panel-a PR-curve SD bands are omitted; AP sample SD remains in the legend and panel b.
+PASS: panel labels are aligned near the axes; panel-a legend handles are shortened.
+PASS: requested figure dimensions=175 x 110 mm; Arial available.
+PASS: saved PNGs and all four PDFs were visually inspected after Poppler rasterization; no clipping, overlap, or font inconsistency was found.

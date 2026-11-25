@@ -1,0 +1,8 @@
+name: M06_full_mtl
+category: main
+seed: 2029
+status: completed
+best_epoch: 35
+batch_size: 16
+test_joint_pr_auc: 0.8902966289588936
+test_joint_mcc: 0.6632348213104949

@@ -1,0 +1,156 @@
+FIG5A UNKNOWN CANDIDATE LANDSCAPE — DATA AND PROVENANCE AUDIT
+========================================================================
+
+Formal source
+  source file: D:\ck\two\results\main\M10_unknown_screening\unknown_all_predictions.csv
+  source bytes: 13055081
+  source SHA256: c09b9aa4eb76b4e70828403a294d7cecf63f4077f57dcbb9a60cddb23634e98f
+  valid full-pool result candidates under results/: 1
+  source selection: unique formal full-pool export under results/main/M10_unknown_screening
+  duplicate result-value conflict: none
+
+Identical mirrors
+  D:\ck\two\paper\2. Single  Equal  Full 主模型\M10_unknown_screening\unknown_all_predictions.csv (SHA256 identical; ignored)
+  D:\ck\two\paper\8. Unknown 8803\M10_unknown_screening\unknown_all_predictions.csv (SHA256 identical; ignored)
+
+Frozen input/metadata cross-checks
+  unknown pool: D:\ck\two\data\processed\unknown_pool.csv
+  unknown pool SHA256: 23b52783d889833111c2186e0d010ead5441d1dda3b4c401cc5eb5d792c14a23
+  prediction IDs exactly equal unknown_pool.csv IDs: True
+  supervised pool: D:\ck\two\data\processed\supervised.csv
+  supervised pool SHA256: 446e6b1ed1980906260d19a796b8f1c5f682452e5f49ec33766375c54c79be6c
+  Unknown/supervised material-ID overlap: 0
+  supervised train/validation/test rows mixed into figure: False
+  screening summary: D:\ck\two\results\main\M10_unknown_screening\screening_summary.json
+  screening summary SHA256: 724c6f25ef082639c7d5de5e65dc5439c4e946fee804247c496fc3661dd2da19
+  completion marker: D:\ck\two\results\main\M10_unknown_screening\COMPLETED.json
+  completion marker SHA256: 724c6f25ef082639c7d5de5e65dc5439c4e946fee804247c496fc3661dd2da19
+  formal status completed: True
+  frozen temperatures: D:\ck\two\results\main\M06_full_mtl\ensemble\temperatures.json
+  frozen temperatures SHA256: 0c734b7b95c0e9f3601fb60826cf52762e37c0a7057a879c1f767034ec20c46a
+  Thermo temperature: 5.6972858140327922
+  Dynamic temperature: 4.0852188749303986
+  Joint temperature: 4.4976249566255166
+  ranking configuration: D:\ck\two\results\main\M06_full_mtl\ranking\ranking_configuration.json
+  ranking configuration SHA256: 2960817a44401405738eedd552005271fb8d43de12f8fe83f8b0eec8765b2954
+  frozen ranking lambda: 0
+
+Candidate pool validation
+  N: 8803
+  expected N: 8803
+  n_unknown == 8803: True
+  unique material_id: 8803
+  duplicate material_id rows: 0
+  dyn_stab_raw values: Unknown only
+  ranking_scope values: all_unknown only
+  thermo_eligible diagnostic count: 420
+  screening_eligible diagnostic count: 420
+  thermo-eligible filter applied: False
+  Ehull filter applied: False
+  Top-K filter applied: False
+  random sampling applied: False
+  any pre-filter applied: False
+  all 8,803 rows plotted: True
+
+Field mapping and probability definition
+  p_T source field: p_thermo_calibrated
+  p_D source field: p_dynamic_calibrated
+  p_J source field: p_joint_calibrated
+  rank source field: probability_rank
+  rank read directly from formal source: True
+  reranking performed for figure data: False
+  calibrated fields present: True
+  axes use calibrated probabilities: True
+  Joint value uses calibrated probability: True
+  axis probability definition: mean(sigmoid(member_logit / frozen task temperature))
+  rationale: the formal screening export and its calibrated logical diagnostics use the frozen calibrated task probabilities; the formal full-pool rank uses calibrated p_J
+  raw mean fields retained in source CSV: True
+  p_joint_calibrated == pJ_calibrated == score_joint_probability: True
+  p_joint_mean == pJ: True
+
+Ranking validation
+  ranking direction: score_joint_probability descending; uncertainty_normalized ascending; material_id ascending
+  stable sort: mergesort; missing values last
+  rank is unique continuous 1..8803: True
+  stored rank exactly reproduced by formal sort: True
+  exact primary-score tied rows: 0
+  risk rank used for labels/plot: False
+  lambda=0 and risk_rank == probability_rank for all rows: True
+  top_percent formula: 100 * probability_rank / 8803
+  display precision: one decimal place (full precision retained in source CSV)
+
+Highlighted candidates
+2CrSnSe3-1:
+  p_T (p_thermo_calibrated): 0.99743469300853316
+  p_D (p_dynamic_calibrated): 0.98115666785771483
+  p_J (p_joint_calibrated): 0.96806079818577795
+  rank (probability_rank): 43
+  top_percent: 0.48846983982733161
+  display label: 2CrSnSe3-1 | Rank 43 | Top 0.5%
+  source CSV file line (header=1): 6854
+
+2NiSbO3-1:
+  p_T (p_thermo_calibrated): 0.93339399096449083
+  p_D (p_dynamic_calibrated): 0.84001573870712176
+  p_J (p_joint_calibrated): 0.82459142243348693
+  rank (probability_rank): 987
+  top_percent: 11.212086788594798
+  display label: 2NiSbO3-1 | Rank 987 | Top 11.2%
+  source CSV file line (header=1): 7975
+
+1BrI2Ir3Te3-1:
+  p_T (p_thermo_calibrated): 0.98740695761542241
+  p_D (p_dynamic_calibrated): 0.98867458320838275
+  p_J (p_joint_calibrated): 0.98232122145255085
+  rank (probability_rank): 14
+  top_percent: 0.15903669203680562
+  display label: 1BrI2Ir3Te3-1 | Rank 14 | Top 0.2%
+  source CSV file line (header=1): 1443
+
+Sanity checks
+  2CrSnSe3-1 rank == 43: PASS
+  2NiSbO3-1 rank == 987: PASS
+  1BrI2Ir3Te3-1 rank read dynamically from formal source: PASS
+
+Plot encoding
+  x-axis: Predicted thermo probability [0, 1.02]
+  y-axis: Predicted dynamic probability [0, 1.02]
+  background: all 8,803 rows as individual scatter markers
+  sampling/jitter/line/KDE/hexbin/contour: none
+  reference guides: x=0.5 and y=0.5 only
+  highlighted marker coordinates: exact source values
+  annotation labels: dynamically built from stored rank and computed top_percent
+
+Execution
+  execution time: 2026-08-20T14:29:39+08:00
+  script path: D:\ck\two\scripts\plot_fig5a_unknown_landscape.py
+  script SHA256: 284044b8be449a01a6dd466fd4e2f3f839976e9946b4537771e7d2a9aee91066
+  Python: 3.10.20
+  executable: D:\ck\anaconda_env\envs\two\python.exe
+  NumPy: 1.26.4
+  pandas: 2.3.3
+  Matplotlib: 3.10.8
+
+Outputs
+  PDF: D:\ck\two\paper_figures\fig5\Fig5a_unknown_candidate_landscape.pdf
+    bytes: 172691
+    SHA256: 9decb636fa9c21fad59e07b987d7b40246235e43380311d948858e798b49ac16
+  PNG: D:\ck\two\paper_figures\fig5\Fig5a_unknown_candidate_landscape.png
+    bytes: 2054365
+    SHA256: 6887f95928a3439ad2a8c4b41cb93da2c2c13fc4406b18195fe57fe4039ff7eb
+  SVG: D:\ck\two\paper_figures\fig5\Fig5a_unknown_candidate_landscape.svg
+    bytes: 1450462
+    SHA256: 5fc3ce40945cda2d19af5b2295117bd12b67db0e49f31e4bbf8ed7b84c28159a
+  source CSV: D:\ck\two\paper_figures\fig5\Fig5a_unknown_candidate_source_data.csv
+    bytes: 6504484
+    SHA256: ae680869a4cb6f99b836b8acaae732706890926363cb6ce825fe1c5dc9538ff7
+  PNG requested DPI: 600
+  PDF/SVG generated directly by Matplotlib as vector outputs
+  SVG embedded raster image: False
+
+Missing/conflict summary
+  missing required values: none
+  duplicate material_id: none
+  formal source conflicts: none
+  rank sanity conflicts: none
+  result: PASS

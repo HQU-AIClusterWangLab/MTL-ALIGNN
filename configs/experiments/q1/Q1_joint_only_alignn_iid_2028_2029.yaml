@@ -1,0 +1,11 @@
+name: Q1_joint_only_alignn_iid_2028_2029
+category: q1
+model_type: alignn
+heads: [joint]
+active_tasks: [joint]
+monitor_task: joint
+weighting: equal
+logic_beta: 0.0
+logic_lower_bound: false
+seeds: [2028, 2029]
+split_file: iid_split.csv

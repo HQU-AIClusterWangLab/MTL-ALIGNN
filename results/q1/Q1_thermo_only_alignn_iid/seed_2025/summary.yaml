@@ -1,0 +1,9 @@
+name: Q1_thermo_only_alignn_iid
+category: q1
+seed: 2025
+status: completed
+best_epoch: 42
+batch_size: 16
+monitor_task: thermo
+test_thermo_pr_auc: 0.979263025544115
+test_thermo_mcc: 0.8472004263489593

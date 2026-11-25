@@ -1,0 +1,7 @@
+task,baseline,members_each_model,delta_AP,ci_low,ci_high,bootstrap_replicates,bootstrap_seed,interval_definition
+Thermo,Single-task ALIGNN,5,-0.0028462019698778374,-0.011113846898798269,0.004489600286303857,2000,260906,paired material bootstrap percentile 95% CI
+Thermo,Equal MTL,5,0.0018442847632087478,-0.007598581242598876,0.012362877221046226,2000,260906,paired material bootstrap percentile 95% CI
+Dynamic,Single-task ALIGNN,5,0.006850876360772418,-0.006855416338615586,0.02087162017305546,2000,260906,paired material bootstrap percentile 95% CI
+Dynamic,Equal MTL,5,0.015045048685782492,0.004304371740499646,0.02628024302494124,2000,260906,paired material bootstrap percentile 95% CI
+Joint,Single-task ALIGNN,5,0.009414465390181204,-0.0036185834198937117,0.023203607574298436,2000,260906,paired material bootstrap percentile 95% CI
+Joint,Equal MTL,5,0.014849015700553081,0.0014687970598328936,0.02753815044565095,2000,260906,paired material bootstrap percentile 95% CI

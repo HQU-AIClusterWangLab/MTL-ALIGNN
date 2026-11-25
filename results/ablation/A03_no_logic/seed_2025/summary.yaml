@@ -1,0 +1,8 @@
+name: A03_no_logic
+category: ablation
+seed: 2025
+status: completed
+best_epoch: 41
+batch_size: 16
+test_joint_pr_auc: 0.8615584624179505
+test_joint_mcc: 0.6190493352742187

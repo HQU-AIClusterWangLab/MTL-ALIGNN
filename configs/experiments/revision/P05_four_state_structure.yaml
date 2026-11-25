@@ -1,0 +1,65 @@
+name: P05_four_state_structure
+category: paper_revision
+model_type: alignn
+heads: &id001
+- thermo
+- dynamic
+- joint
+active_tasks: *id001
+weighting: equal
+logic_beta: 0.0
+logic_lower_bound: false
+monitor_task: joint
+seeds:
+- 2025
+- 2026
+- 2027
+- 2028
+- 2029
+split_file: review_splits/structure_family_disjoint.csv
+model:
+  alignn_layers: 4
+  gcn_layers: 4
+  embedding_features: 64
+  hidden_features: 256
+  dropout: 0.1
+  cgcnn_layers: 3
+  cgcnn_bond_bins: 41
+  cgcnn_bond_max: 8.0
+  output_mode: four_state
+training:
+  device: auto
+  batch_size: 16
+  minimum_batch_size: 4
+  num_workers: 0
+  max_epochs: 200
+  patience: 30
+  scheduler_patience: 10
+  scheduler_factor: 0.5
+  learning_rate: 0.001
+  weight_decay: 1.0e-05
+  gradient_clip_norm: 5.0
+  class_weighting: none
+  amp: false
+  monitor: joint_pr_auc
+  main_seeds:
+  - 2025
+  - 2026
+  - 2027
+  ensemble_seeds:
+  - 2025
+  - 2026
+  - 2027
+  - 2028
+  - 2029
+  ablation_seeds:
+  - 2025
+  - 2026
+  - 2027
+revision:
+  split: structure
+  method: four_state
+  scope: internal retrospective supplement; external DFT validation is separate
+  frozen:
+    supervised_sha256: 446e6b1ed1980906260d19a796b8f1c5f682452e5f49ec33766375c54c79be6c
+    split_sha256: e9f7043db21ed9035f42b8746706c25a038fa2193ee15bc199b9b1a4f333d7ff

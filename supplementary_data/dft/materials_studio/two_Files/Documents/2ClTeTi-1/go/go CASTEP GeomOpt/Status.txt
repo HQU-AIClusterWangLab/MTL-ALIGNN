@@ -1,0 +1,11 @@
+ Job Name                         :  go
+ type of calculation              :  geometry optimization
+ plane wave basis set cut-off     :  850.0000   eV
+ using functional                 :  Perdew Burke Ernzerhof
+
+ Number of iterations             :  8
+ Energy                           :  -5.18242949E+003  eV
+ Convergence                      :  2.922356E-007  eV/atom
+ Max. Displacement                :  4.064418E-004  A
+ Max. Force                       :  1.771007E-003  eV/A
+ Max. Stress                      :  5.239930E-003  GPa

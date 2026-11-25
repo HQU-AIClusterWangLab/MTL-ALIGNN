@@ -1,0 +1,89 @@
+{
+  "seeds": [
+    2025,
+    2026,
+    2027,
+    2028,
+    2029
+  ],
+  "source": "D:\\ck\\two\\results\\review\\R28_full_no_logic_alignn_composition",
+  "output_mode": "independent",
+  "calibration_fit_split": "val",
+  "threshold_fit_split": "val",
+  "temperatures": {
+    "thermo": 3.119140002597301,
+    "dynamic": 2.1577877467586206,
+    "joint": 2.5560651790584976
+  },
+  "thresholds": {
+    "raw": {
+      "thermo": 0.44555555555555554,
+      "dynamic": 0.6979797979797979,
+      "joint": 0.6039393939393939
+    },
+    "calibrated": {
+      "thermo": 0.45545454545454545,
+      "dynamic": 0.445619780737621,
+      "joint": 0.5857800594374882
+    }
+  },
+  "logical_violations": {
+    "val_raw_members": {
+      "any_violation": 0.7067434210526315,
+      "upper_violation": 0.4125,
+      "lower_violation": 0.29424342105263157,
+      "mean_violation_magnitude": 0.014572010723830412,
+      "tolerance": 1e-07
+    },
+    "val_raw_ensemble": {
+      "any_violation": 0.6348684210526315,
+      "upper_violation": 0.45148026315789475,
+      "lower_violation": 0.18338815789473684,
+      "mean_violation_magnitude": 0.006687626473742714,
+      "tolerance": 1e-07
+    },
+    "test_raw_members": {
+      "any_violation": 0.6992568125516102,
+      "upper_violation": 0.4047894302229562,
+      "lower_violation": 0.294467382328654,
+      "mean_violation_magnitude": 0.015012408799072525,
+      "tolerance": 1e-07
+    },
+    "test_raw_ensemble": {
+      "any_violation": 0.6498761354252683,
+      "upper_violation": 0.44426094137076794,
+      "lower_violation": 0.2056151940545004,
+      "mean_violation_magnitude": 0.008109566972883947,
+      "tolerance": 1e-07
+    },
+    "val_calibrated_members": {
+      "any_violation": 0.5776315789473684,
+      "upper_violation": 0.3087171052631579,
+      "lower_violation": 0.2689144736842105,
+      "mean_violation_magnitude": 0.016155659848982106,
+      "tolerance": 1e-07
+    },
+    "val_calibrated_ensemble": {
+      "any_violation": 0.3536184210526316,
+      "upper_violation": 0.20559210526315788,
+      "lower_violation": 0.14802631578947367,
+      "mean_violation_magnitude": 0.0067141293035971866,
+      "tolerance": 1e-07
+    },
+    "test_calibrated_members": {
+      "any_violation": 0.5682906688687035,
+      "upper_violation": 0.293476465730801,
+      "lower_violation": 0.27481420313790256,
+      "mean_violation_magnitude": 0.016279817720172517,
+      "tolerance": 1e-07
+    },
+    "test_calibrated_ensemble": {
+      "any_violation": 0.34599504541701076,
+      "upper_violation": 0.21552436003303055,
+      "lower_violation": 0.13047068538398018,
+      "mean_violation_magnitude": 0.006240773118820936,
+      "tolerance": 1e-07
+    }
+  },
+  "fusion_rule": "independent"
+}

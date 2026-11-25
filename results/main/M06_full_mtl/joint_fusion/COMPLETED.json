@@ -1,0 +1,5 @@
+{
+  "status": "completed",
+  "learned_fusion_training": "validation set",
+  "learned_fusion_threshold": "5-fold out-of-fold validation predictions"
+}

@@ -1,0 +1,14 @@
+name: A04_fixed_weight
+category: ablation
+model_type: alignn
+heads: [thermo, dynamic, joint]
+active_tasks: [thermo, dynamic, joint]
+weighting: fixed
+fixed_weights:
+  joint: 1.0
+  thermo: 0.5
+  dynamic: 0.5
+logic_beta: 0.10
+logic_lower_bound: true
+seeds: [2025, 2026, 2027, 2028, 2029]
+split_file: iid_split.csv

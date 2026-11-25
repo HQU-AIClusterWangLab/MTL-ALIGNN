@@ -1,0 +1,8 @@
+ Job Name                         :  700
+ type of calculation              :  single point energy
+ plane wave basis set cut-off     :  700.0000   eV
+ using functional                 :  Perdew Burke Ernzerhof
+
+ Number of iterations             :  24
+ Energy                           :  -5.18242979E+003  eV
+ Convergence                      :  3.37456342E-008  eV/atom

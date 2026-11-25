@@ -1,0 +1,9 @@
+name: P01_equal_lc_composition
+category: paper_revision
+seed: 2029
+status: completed
+best_epoch: 18
+batch_size: 16
+monitor_task: joint
+test_joint_pr_auc: 0.8659557197279097
+test_joint_mcc: 0.6257596602247797

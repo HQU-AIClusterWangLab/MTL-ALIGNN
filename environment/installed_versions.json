@@ -1,0 +1,22 @@
+{
+  "python": "3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 16:36:49) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "D:\\ck\\anaconda_env\\envs\\two\\python.exe",
+  "packages": {
+    "torch": "2.2.0+cu121",
+    "torchvision": "0.17.0+cu121",
+    "torchaudio": "2.2.0+cu121",
+    "dgl": "2.2.1+cu121",
+    "torchdata": "0.7.1",
+    "alignn": "2026.4.2",
+    "jarvis-tools": "2026.4.2",
+    "ase": "3.28.0",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "xgboost": "3.2.0",
+    "openpyxl": "3.1.5",
+    "matplotlib": "3.10.8",
+    "scipy": "1.15.3",
+    "pyyaml": "6.0.3"
+  }
+}

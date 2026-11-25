@@ -1,0 +1,9 @@
+name: R03_dynamic_only_alignn_composition
+category: review
+seed: 2028
+status: completed
+best_epoch: 15
+batch_size: 16
+monitor_task: dynamic
+test_dynamic_pr_auc: 0.8526984924991873
+test_dynamic_mcc: 0.5179494025895124

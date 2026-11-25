@@ -1,0 +1,9 @@
+name: R22_equal_mtl_alignn_random
+category: review
+seed: 2028
+status: completed
+best_epoch: 39
+batch_size: 16
+monitor_task: joint
+test_joint_pr_auc: 0.8589650372953047
+test_joint_mcc: 0.6447014821774352

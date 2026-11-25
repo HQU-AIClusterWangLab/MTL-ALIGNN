@@ -1,0 +1,42 @@
+[
+  {
+    "name": "M01_random_forest",
+    "category": "main",
+    "seed": 2025,
+    "status": "completed",
+    "test_joint_pr_auc": 0.8510829612979343,
+    "test_joint_mcc": 0.5635989373051392
+  },
+  {
+    "name": "M01_random_forest",
+    "category": "main",
+    "seed": 2026,
+    "status": "completed",
+    "test_joint_pr_auc": 0.849421400464268,
+    "test_joint_mcc": 0.5929029134352723
+  },
+  {
+    "name": "M01_random_forest",
+    "category": "main",
+    "seed": 2027,
+    "status": "completed",
+    "test_joint_pr_auc": 0.8505041132580978,
+    "test_joint_mcc": 0.5798208856025587
+  },
+  {
+    "name": "M01_random_forest",
+    "category": "main",
+    "seed": 2028,
+    "status": "completed",
+    "test_joint_pr_auc": 0.850650007946042,
+    "test_joint_mcc": 0.5865157929177718
+  },
+  {
+    "name": "M01_random_forest",
+    "category": "main",
+    "seed": 2029,
+    "status": "completed",
+    "test_joint_pr_auc": 0.8516889930791147,
+    "test_joint_mcc": 0.5717717376769715
+  }
+]

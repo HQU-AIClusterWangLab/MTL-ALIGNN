@@ -1,0 +1,32 @@
+[
+  {
+    "name": "O02_structure_family_ood",
+    "category": "optional",
+    "seed": 2025,
+    "status": "completed",
+    "best_epoch": 44,
+    "batch_size": 16,
+    "test_joint_pr_auc": 0.7526300898665307,
+    "test_joint_mcc": 0.4406698476305085
+  },
+  {
+    "name": "O02_structure_family_ood",
+    "category": "optional",
+    "seed": 2026,
+    "status": "completed",
+    "best_epoch": 33,
+    "batch_size": 16,
+    "test_joint_pr_auc": 0.7127944297669782,
+    "test_joint_mcc": 0.4016046046822626
+  },
+  {
+    "name": "O02_structure_family_ood",
+    "category": "optional",
+    "seed": 2027,
+    "status": "completed",
+    "best_epoch": 22,
+    "batch_size": 16,
+    "test_joint_pr_auc": 0.7600609122097015,
+    "test_joint_mcc": 0.3777183670079527
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "name": "R35_full_mtl_alignn_structure",
+    "category": "review",
+    "seed": 2025,
+    "status": "completed",
+    "best_epoch": 23,
+    "batch_size": 16,
+    "monitor_task": "joint",
+    "test_joint_pr_auc": 0.6898020560329101,
+    "test_joint_mcc": 0.3930560831513179
+  },
+  {
+    "name": "R35_full_mtl_alignn_structure",
+    "category": "review",
+    "seed": 2026,
+    "status": "completed",
+    "best_epoch": 18,
+    "batch_size": 16,
+    "monitor_task": "joint",
+    "test_joint_pr_auc": 0.7272415218049784,
+    "test_joint_mcc": 0.442656945726117
+  },
+  {
+    "name": "R35_full_mtl_alignn_structure",
+    "category": "review",
+    "seed": 2027,
+    "status": "completed",
+    "best_epoch": 13,
+    "batch_size": 16,
+    "monitor_task": "joint",
+    "test_joint_pr_auc": 0.6376686989892946,
+    "test_joint_mcc": 0.3625450390642197
+  },
+  {
+    "name": "R35_full_mtl_alignn_structure",
+    "category": "review",
+    "seed": 2028,
+    "status": "completed",
+    "best_epoch": 25,
+    "batch_size": 16,
+    "monitor_task": "joint",
+    "test_joint_pr_auc": 0.7157877381184727,
+    "test_joint_mcc": 0.4274027504393975
+  },
+  {
+    "name": "R35_full_mtl_alignn_structure",
+    "category": "review",
+    "seed": 2029,
+    "status": "completed",
+    "best_epoch": 15,
+    "batch_size": 16,
+    "monitor_task": "joint",
+    "test_joint_pr_auc": 0.6685101058530205,
+    "test_joint_mcc": 0.3727433838353259
+  }
+]

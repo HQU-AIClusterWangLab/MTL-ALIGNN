@@ -1,0 +1,8 @@
+{
+  "name": "M02_xgboost",
+  "category": "main",
+  "seed": 2027,
+  "status": "completed",
+  "test_joint_pr_auc": 0.8483674755279674,
+  "test_joint_mcc": 0.6102106573491962
+}

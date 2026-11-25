@@ -1,0 +1,88 @@
+{
+  "seeds": [
+    2025,
+    2026,
+    2027,
+    2028,
+    2029
+  ],
+  "source": "D:\\ck\\two\\results\\paper_revision\\P06_dual_product_structure",
+  "output_mode": "dual_product",
+  "calibration_fit_split": "val",
+  "threshold_fit_split": "val",
+  "temperatures": {
+    "thermo": 2.291627873865189,
+    "dynamic": 2.7812153836283295
+  },
+  "thresholds": {
+    "raw": {
+      "thermo": 0.41585858585858587,
+      "dynamic": 0.3312860392034053,
+      "joint": 0.22682588208239474
+    },
+    "calibrated": {
+      "thermo": 0.3646542248216892,
+      "dynamic": 0.4797083238486001,
+      "joint": 0.24879147232396637
+    }
+  },
+  "logical_violations": {
+    "val_raw_members": {
+      "any_violation": 0.0,
+      "upper_violation": 0.0,
+      "lower_violation": 0.0,
+      "mean_violation_magnitude": 1.794318886522663e-18,
+      "tolerance": 1e-07
+    },
+    "val_raw_ensemble": {
+      "any_violation": 0.0,
+      "upper_violation": 0.0,
+      "lower_violation": 0.0,
+      "mean_violation_magnitude": 0.0,
+      "tolerance": 1e-07
+    },
+    "test_raw_members": {
+      "any_violation": 0.0,
+      "upper_violation": 0.0,
+      "lower_violation": 0.0,
+      "mean_violation_magnitude": 1.8595681978591574e-18,
+      "tolerance": 1e-07
+    },
+    "test_raw_ensemble": {
+      "any_violation": 0.0,
+      "upper_violation": 0.0,
+      "lower_violation": 0.0,
+      "mean_violation_magnitude": 0.0,
+      "tolerance": 1e-07
+    },
+    "val_calibrated_members": {
+      "any_violation": 0.0,
+      "upper_violation": 0.0,
+      "lower_violation": 0.0,
+      "mean_violation_magnitude": 0.0,
+      "tolerance": 1e-07
+    },
+    "val_calibrated_ensemble": {
+      "any_violation": 0.0,
+      "upper_violation": 0.0,
+      "lower_violation": 0.0,
+      "mean_violation_magnitude": 0.0,
+      "tolerance": 1e-07
+    },
+    "test_calibrated_members": {
+      "any_violation": 0.0,
+      "upper_violation": 0.0,
+      "lower_violation": 0.0,
+      "mean_violation_magnitude": 0.0,
+      "tolerance": 1e-07
+    },
+    "test_calibrated_ensemble": {
+      "any_violation": 0.0,
+      "upper_violation": 0.0,
+      "lower_violation": 0.0,
+      "mean_violation_magnitude": 0.0,
+      "tolerance": 1e-07
+    }
+  },
+  "fusion_rule": "mean of member products"
+}

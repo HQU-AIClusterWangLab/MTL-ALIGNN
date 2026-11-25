@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "spec": "D:\\ck\\two\\configs\\alignn_hparam_search.yaml",
+  "base_experiment": "D:\\ck\\two\\train\\experiments\\main\\M04_single_alignn.yaml",
+  "selection_metric": "validation Joint AP only",
+  "test_used_for_selection": false,
+  "search_design": "one factor at a time, then combined 3-seed confirmation",
+  "screen_seeds": [
+    2025
+  ],
+  "confirm_seeds": [
+    2025,
+    2026,
+    2027
+  ],
+  "frozen_graph_parameters": {
+    "neighbor_strategy": "k-nearest",
+    "cutoff": 8.0,
+    "cutoff_extra": 3.5,
+    "max_neighbors": 12
+  },
+  "screen_trial_count": 13
+}

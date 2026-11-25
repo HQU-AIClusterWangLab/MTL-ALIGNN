@@ -1,0 +1,15 @@
+{
+  "signature": "2218eecda09815ff4ae5f9009fd313671bea6d661fd8cf667ecad1bb184efb98",
+  "timestamp": "2026-09-17T04:00:20.104417+00:00",
+  "files_sha256": {
+    "budget_at_target_recall.csv": "cd803bf911a8d30f2ba82ba9f357bb853f65166377aefe49d803fd89e331402d",
+    "enrichment_summary.csv": "7f52624f696fa9a7e26ebbfedc55685fc4504da5c7cff26587346ea704deee99",
+    "enrichment_vs_budget.pdf": "c2c2d273da650f4456ed7fc41d97001123698d35be14d8a4f6b0816cc743cd7f",
+    "enrichment_vs_budget.png": "9ffeb3a36a1a7c7fe06f6402364534c1885ee6cdf3a4ca96636ca1b82b480960",
+    "manifest.json": "bdb56b95e6110019ccb979ce5dc369a07b45ae6bdf200f9027c2740a5d3a1083",
+    "screening_bootstrap_ci.csv": "dea3b11a91fdf514fd0270c5f33d46d626cf3f7a8daf0f7edac6953b668cb6fd",
+    "screening_curve.csv": "36d88477086a6ef10986cb9d7c535ae14d6b19b2cd81b65204be91e8fb45b714",
+    "screening_recall_vs_budget.pdf": "07fcfd4d2a170249c75597d2f1513c2b023251cc8451e8fd45aee646ed8e57f7",
+    "screening_recall_vs_budget.png": "71ec1ad2ed59df81c4508186c0a339bf1a9aebc7ad8fca37c05fa14e19737f5d"
+  }
+}

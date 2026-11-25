@@ -1,0 +1,7 @@
+configuration,seed,val_joint_ap,best_epoch,batch_size,result_dir
+baseline,2025,0.8854596730624327,26,16,D:\ck\two\results\hparam_search\alignn_baseline\confirm\H90_confirm_baseline_cac54bb407\seed_2025
+baseline,2026,0.8742376509986848,37,16,D:\ck\two\results\hparam_search\alignn_baseline\confirm\H90_confirm_baseline_cac54bb407\seed_2026
+baseline,2027,0.8820644457897673,27,16,D:\ck\two\results\hparam_search\alignn_baseline\confirm\H90_confirm_baseline_cac54bb407\seed_2027
+selected,2025,0.8880679947734753,68,16,D:\ck\two\results\hparam_search\alignn_baseline\confirm\H90_confirm_selected_04b100455e\seed_2025
+selected,2026,0.8812757801366428,54,16,D:\ck\two\results\hparam_search\alignn_baseline\confirm\H90_confirm_selected_04b100455e\seed_2026
+selected,2027,0.8936347580184001,38,16,D:\ck\two\results\hparam_search\alignn_baseline\confirm\H90_confirm_selected_04b100455e\seed_2027

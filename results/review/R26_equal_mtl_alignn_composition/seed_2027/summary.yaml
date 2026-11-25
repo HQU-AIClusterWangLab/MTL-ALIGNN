@@ -1,0 +1,9 @@
+name: R26_equal_mtl_alignn_composition
+category: review
+seed: 2027
+status: completed
+best_epoch: 37
+batch_size: 16
+monitor_task: joint
+test_joint_pr_auc: 0.8745105307814979
+test_joint_mcc: 0.6193997949669896

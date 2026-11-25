@@ -1,0 +1,15 @@
+{
+  "sources": [
+    "D:\\ck\\two",
+    "D:\\ck\\two dft"
+  ],
+  "destination": "D:\\ck\\MTL-ALIGNN",
+  "read_errors": [
+    {
+      "path": "D:\\ck\\two\\.pytest_cache",
+      "error": "[WinError 5] 拒绝访问。: 'D:\\\\ck\\\\two\\\\.pytest_cache'"
+    }
+  ],
+  "source_files": 25610,
+  "source_bytes": 10119498152
+}

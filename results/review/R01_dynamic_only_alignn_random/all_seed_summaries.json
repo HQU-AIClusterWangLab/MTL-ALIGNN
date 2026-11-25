@@ -1,0 +1,57 @@
+[
+  {
+    "name": "R01_dynamic_only_alignn_random",
+    "category": "review",
+    "seed": 2025,
+    "status": "completed",
+    "best_epoch": 48,
+    "batch_size": 16,
+    "monitor_task": "dynamic",
+    "test_dynamic_pr_auc": 0.8892814652056018,
+    "test_dynamic_mcc": 0.5719930483993859
+  },
+  {
+    "name": "R01_dynamic_only_alignn_random",
+    "category": "review",
+    "seed": 2026,
+    "status": "completed",
+    "best_epoch": 25,
+    "batch_size": 16,
+    "monitor_task": "dynamic",
+    "test_dynamic_pr_auc": 0.8765687244096838,
+    "test_dynamic_mcc": 0.5422960914115303
+  },
+  {
+    "name": "R01_dynamic_only_alignn_random",
+    "category": "review",
+    "seed": 2027,
+    "status": "completed",
+    "best_epoch": 43,
+    "batch_size": 16,
+    "monitor_task": "dynamic",
+    "test_dynamic_pr_auc": 0.8737600099987528,
+    "test_dynamic_mcc": 0.5777506974830002
+  },
+  {
+    "name": "R01_dynamic_only_alignn_random",
+    "category": "review",
+    "seed": 2028,
+    "status": "completed",
+    "best_epoch": 26,
+    "batch_size": 16,
+    "monitor_task": "dynamic",
+    "test_dynamic_pr_auc": 0.8942645455505175,
+    "test_dynamic_mcc": 0.5510615177633434
+  },
+  {
+    "name": "R01_dynamic_only_alignn_random",
+    "category": "review",
+    "seed": 2029,
+    "status": "completed",
+    "best_epoch": 29,
+    "batch_size": 16,
+    "monitor_task": "dynamic",
+    "test_dynamic_pr_auc": 0.8938541782230778,
+    "test_dynamic_mcc": 0.5502458222753285
+  }
+]

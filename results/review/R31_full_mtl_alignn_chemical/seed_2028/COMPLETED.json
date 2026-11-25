@@ -1,0 +1,11 @@
+{
+  "name": "R31_full_mtl_alignn_chemical",
+  "category": "review",
+  "seed": 2028,
+  "status": "completed",
+  "best_epoch": 37,
+  "batch_size": 16,
+  "monitor_task": "joint",
+  "test_joint_pr_auc": 0.8593266315233712,
+  "test_joint_mcc": 0.6487493488721987
+}

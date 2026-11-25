@@ -1,0 +1,10 @@
+name: M04_single_alignn
+category: main
+model_type: alignn
+heads: [joint]
+active_tasks: [joint]
+weighting: equal
+logic_beta: 0.0
+logic_lower_bound: false
+seeds: [2025, 2026, 2027]
+split_file: iid_split.csv

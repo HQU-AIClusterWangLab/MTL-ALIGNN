@@ -1,0 +1,624 @@
+FIG. 4 DUMBBELL DATA AUDIT
+==========================
+
+Purpose: Results & Discussion 3.3 - Generalization and applicability domain
+Project root: D:\ck\two
+Plotting script: D:\ck\two\scripts\plot_fig4_generalization.py
+Plotting script SHA256: 6ad886bc75c0cbf323669bed4a78a518102eebe5e4ff2f6756c942ff8f08f41e
+Execution started: 2026-08-18T18:22:42.512489+08:00
+Execution finished: 2026-08-18T18:22:44.502118+08:00
+Execution time (seconds): 1.989210
+Python: 3.10.20 (D:\ck\anaconda_env\envs\two\python.exe)
+Platform: Windows-10-10.0.22631-SP0
+numpy: 1.26.4
+pandas: 2.3.3
+scikit-learn: 1.7.2
+matplotlib: 3.10.8
+PyYAML: 6.0.3
+
+GLOBAL METHOD CONTRACT
+----------------------
+Model: Full MTL ALIGNN
+Member seeds: [2025, 2026, 2027, 2028, 2029] (exactly five independently trained members)
+Raw probability source: stored per-seed p_joint from frozen test_predictions.csv
+Alignment key: material_id (sorted before probability aggregation)
+Ensemble aggregation: arithmetic mean of five stored raw p_joint values in probability space, followed by sklearn.metrics.average_precision_score
+Temperature fitting performed by this script: False
+Calibrated probability used: False
+Legacy data/processed/iid_split.csv used: False
+Model retraining performed: False
+Five-seed single-model mean used as ensemble AP: False
+Reference split: Random strict (R23), not legacy iid_split.csv
+Delta definition: AP_split - AP_random
+Main figure: horizontal reference/dumbbell plot
+Main figure displays: four deterministic raw five-member ensemble AP endpoints
+Random reference line: vertical dashed line at the recomputed Random AP
+Non-random segments: horizontal lines from Random AP to each split AP
+Single-member points displayed: False
+Categorical trend line displayed: False
+Main figure error bars: none
+Manuscript approximate values are sanity references only; they are not plot inputs.
+Sanity-stop tolerance: absolute AP difference > 0.020
+
+STRUCTURE-FAMILY DEFINITION
+---------------------------
+Definition: anonymous_formula(formula)|layergroup
+Construction source: D:\ck\two\data\prepare_data.py
+Construction source SHA256: c41ed406bc91e0f1b8b6660d8f0460c43d01367cb487ce00d61102a190faaf8e
+Strict-split source: D:\ck\two\data\make_review_splits.py
+Strict-split source SHA256: 6b23e3e3a3c4d807ce3494cf9817fe9132d98eb810fc20b906703456b24e5d9d
+Anonymous-formula source: D:\ck\two\data\utils.py
+Anonymous-formula source SHA256: f943d582504a83c00beea226ec5ab5d289110e9f8b5b772f22de4a827ec63913
+Anonymous-formula method: pymatgen Composition(formula).anonymized_formula
+
+[Random]
+Experiment: R23_full_mtl_alignn_random
+Config: D:\ck\two\train\experiments\review\R23_full_mtl_alignn_random.yaml
+Config SHA256: fb454de1bdeb83d9df7b5c1e3575e93b7ebc68275c71d8d9412f8d4d737f0521
+Resolved config: D:\ck\two\results\review\R23_full_mtl_alignn_random\resolved_experiment.yaml
+Resolved config SHA256: 98e211b962728d56cf38c09584a176f7cc6eceffe547ef5d2eebdc21f6bdc647
+Split file: D:\ck\two\data\processed\review_splits\random_iid_stratified.csv
+Split relative path declared by config: review_splits/random_iid_stratified.csv
+Split SHA256: 132e5b97047397c3fe41cdf7e5be154b0e18d8b8aead867317a51976585a7dea
+Frozen hash registry: D:\ck\two\data\processed\review_splits\manifest_sha256.json
+Frozen split audit: D:\ck\two\data\processed\review_splits\audit.json
+Frozen split audit SHA256: 50f6badfd388769dbe73c215c724120b3e17775269a923b7b8e746bcbdddd211
+Frozen manifest set: True
+Split algorithm: review-splits-v1
+Split assignment seed: 42
+Split assignment SHA256: 001755fb7530ddb076babf18871ba5fc48b304669b291ac9a3adbde0082c5179
+Target group column: None
+Target-group disjoint enforced: False
+Target-group cross-split overlap count: None
+n_test: 1215
+n_joint_positive: 569
+joint_positive_rate: 0.468312757201646
+Sorted material-ID SHA256: 3b77d76d345df1ec66a9633cd37c9edcfc943ef7672263d392d45dfc6a0e03ef
+Sorted material-ID + Joint-label SHA256: 833a3aceb24af12f09f49f9f2762be9110ae98101e054d33d07504b8877787c9
+Frozen raw member predictions and Joint AP:
+  seed 2025: 0.843157851433372
+    prediction: D:\ck\two\results\review\R23_full_mtl_alignn_random\seed_2025\test_predictions.csv
+    prediction SHA256: 27717d10bab18a5e23890124a1e85e7f23761acd500270132d1fa58662283633
+    prediction bytes: 437435
+    metrics: D:\ck\two\results\review\R23_full_mtl_alignn_random\seed_2025\metrics.json
+    metrics SHA256: 63997ba39f8750693ec9a07eed447f68ba4f1ac7d7551e096e4a4cec92a710ff
+    completion record: D:\ck\two\results\review\R23_full_mtl_alignn_random\seed_2025\COMPLETED.json
+    completion SHA256: 407d9c245c39ec718eee7040540974ebb42f10f734298e4ce2475c8afdda4140
+    seed resolved config: D:\ck\two\results\review\R23_full_mtl_alignn_random\seed_2025\resolved_experiment.yaml
+    seed resolved config SHA256: 98e211b962728d56cf38c09584a176f7cc6eceffe547ef5d2eebdc21f6bdc647
+    seed/root resolved config byte-identical: True
+    max |stored p_joint - sigmoid(logit_joint)|: 8.5482866341e-08
+    calibrated-like columns present: False
+  seed 2026: 0.857886421029842
+    prediction: D:\ck\two\results\review\R23_full_mtl_alignn_random\seed_2026\test_predictions.csv
+    prediction SHA256: e74401ba3eccb03d3947e4de1c4ba78045bda03010dd513bbcaabeaea7b37586
+    prediction bytes: 429907
+    metrics: D:\ck\two\results\review\R23_full_mtl_alignn_random\seed_2026\metrics.json
+    metrics SHA256: 9a78de102b429ddc4dd95d92b18de015ed0da68049b8607d736d10f194aea551
+    completion record: D:\ck\two\results\review\R23_full_mtl_alignn_random\seed_2026\COMPLETED.json
+    completion SHA256: f6e37f5717cf30d30a13ea3c9c4b13f86c1e3e620badaa088b0e69a17cf6ee0a
+    seed resolved config: D:\ck\two\results\review\R23_full_mtl_alignn_random\seed_2026\resolved_experiment.yaml
+    seed resolved config SHA256: 98e211b962728d56cf38c09584a176f7cc6eceffe547ef5d2eebdc21f6bdc647
+    seed/root resolved config byte-identical: True
+    max |stored p_joint - sigmoid(logit_joint)|: 8.49495686017e-08
+    calibrated-like columns present: False
+  seed 2027: 0.859137958730564
+    prediction: D:\ck\two\results\review\R23_full_mtl_alignn_random\seed_2027\test_predictions.csv
+    prediction SHA256: 2bd5417cc9503d07b1115a5ea966525769bf5ebfc08d535f414cf58bfa9dff7e
+    prediction bytes: 434326
+    metrics: D:\ck\two\results\review\R23_full_mtl_alignn_random\seed_2027\metrics.json
+    metrics SHA256: fb75d62afd11ea4d8b8b4cf1a0cac5ac0ba5226396575ba492f208cd2d5686a9
+    completion record: D:\ck\two\results\review\R23_full_mtl_alignn_random\seed_2027\COMPLETED.json
+    completion SHA256: dea3ceae59daa92dea949e926b2ccb72d0ed0b0533dc90ccfb122320a2e8fb55
+    seed resolved config: D:\ck\two\results\review\R23_full_mtl_alignn_random\seed_2027\resolved_experiment.yaml
+    seed resolved config SHA256: 98e211b962728d56cf38c09584a176f7cc6eceffe547ef5d2eebdc21f6bdc647
+    seed/root resolved config byte-identical: True
+    max |stored p_joint - sigmoid(logit_joint)|: 8.59703483957e-08
+    calibrated-like columns present: False
+  seed 2028: 0.854221820562022
+    prediction: D:\ck\two\results\review\R23_full_mtl_alignn_random\seed_2028\test_predictions.csv
+    prediction SHA256: 03c34b1581ba07ee928a2568317e74a344176d1072a363104f93740282b265cd
+    prediction bytes: 429683
+    metrics: D:\ck\two\results\review\R23_full_mtl_alignn_random\seed_2028\metrics.json
+    metrics SHA256: 263ffc13b581dd25cef0cf146aeedd5b70bc808302b984cf42ac867021494eab
+    completion record: D:\ck\two\results\review\R23_full_mtl_alignn_random\seed_2028\COMPLETED.json
+    completion SHA256: 059fb1485be57dcca239b28a1261302cbc17b7d1012b22cbafb483465469fb22
+    seed resolved config: D:\ck\two\results\review\R23_full_mtl_alignn_random\seed_2028\resolved_experiment.yaml
+    seed resolved config SHA256: 98e211b962728d56cf38c09584a176f7cc6eceffe547ef5d2eebdc21f6bdc647
+    seed/root resolved config byte-identical: True
+    max |stored p_joint - sigmoid(logit_joint)|: 8.63730685863e-08
+    calibrated-like columns present: False
+  seed 2029: 0.873861764217475
+    prediction: D:\ck\two\results\review\R23_full_mtl_alignn_random\seed_2029\test_predictions.csv
+    prediction SHA256: 881bbf70304280f049d12938678c205556094fe7eb7f452e9e5c090b6d8c0ed6
+    prediction bytes: 437159
+    metrics: D:\ck\two\results\review\R23_full_mtl_alignn_random\seed_2029\metrics.json
+    metrics SHA256: a045612778084ef1ac0d4251ca4556459659aa0b1f1c4512dc52928d7d5c5e43
+    completion record: D:\ck\two\results\review\R23_full_mtl_alignn_random\seed_2029\COMPLETED.json
+    completion SHA256: 48f50718e1dc74255caa55b22e91a3c1a52eed8ae58c6858dbc5b13137146bd4
+    seed resolved config: D:\ck\two\results\review\R23_full_mtl_alignn_random\seed_2029\resolved_experiment.yaml
+    seed resolved config SHA256: 98e211b962728d56cf38c09584a176f7cc6eceffe547ef5d2eebdc21f6bdc647
+    seed/root resolved config byte-identical: True
+    max |stored p_joint - sigmoid(logit_joint)|: 8.65091035473e-08
+    calibrated-like columns present: False
+Single-member mean: 0.857653163194655
+Single-member sample SD (numpy.std, ddof=1): 0.011032519538136
+Raw five-member ensemble Joint AP: 0.875870110275709
+Delta AP vs Random: reference (0.000000000000000)
+Aggregation method: material_id-aligned arithmetic mean of stored raw p_joint in probability space across seeds 2025,2026,2027,2028,2029
+Sanity reference AP: 0.876000000000000
+Recomputed minus sanity reference: -0.000129889724291
+Sanity check status: PASS
+Per-experiment seed summary: D:\ck\two\results\review\R23_full_mtl_alignn_random\metrics_mean_std.csv
+Global strict seed summary: D:\ck\two\results\review\strict_gnn_summary_all\experiment_summary.csv
+Formal raw ensemble summary: D:\ck\two\results\review\strict_gnn_summary_all\paired_comparisons.csv
+Formal raw five-member ensemble AP: 0.875870110275709
+Recomputed/formal raw ensemble AP cross-check: exact within 1e-12
+Strict summary completion record: D:\ck\two\results\review\strict_gnn_summary_all\status.json
+Frozen strict summary JSON: D:\ck\two\results\review\strict_gnn_summary_all\summary.json
+Frozen summary input-manifest member hashes matched: 5/5
+Raw ensemble summarizer source: D:\ck\two\train\summarize_review_gnn.py
+Formal pairing audit: D:\ck\two\results\review\strict_gnn_summary_all\pairing_audit.csv
+Formal/recomputed sorted material-ID SHA256: 3b77d76d345df1ec66a9633cd37c9edcfc943ef7672263d392d45dfc6a0e03ef
+Formal cross-variant/seed pairing audit: PASS
+Per-seed metrics/COMPLETED/prediction recomputation conflict: none
+Existing formal raw strict-split five-member ensemble summary: found and matched
+Duplicate review prediction copies:
+  D:\ck\two\results\review - 副本\R23_full_mtl_alignn_random\seed_2025\test_predictions.csv
+    SHA256: 27717d10bab18a5e23890124a1e85e7f23761acd500270132d1fa58662283633
+    byte-identical to primary source: True
+  D:\ck\two\results\review - 副本\R23_full_mtl_alignn_random\seed_2026\test_predictions.csv
+    SHA256: e74401ba3eccb03d3947e4de1c4ba78045bda03010dd513bbcaabeaea7b37586
+    byte-identical to primary source: True
+  D:\ck\two\results\review - 副本\R23_full_mtl_alignn_random\seed_2027\test_predictions.csv
+    SHA256: 2bd5417cc9503d07b1115a5ea966525769bf5ebfc08d535f414cf58bfa9dff7e
+    byte-identical to primary source: True
+  D:\ck\two\results\review - 副本\R23_full_mtl_alignn_random\seed_2028\test_predictions.csv
+    SHA256: 03c34b1581ba07ee928a2568317e74a344176d1072a363104f93740282b265cd
+    byte-identical to primary source: True
+  D:\ck\two\results\review - 副本\R23_full_mtl_alignn_random\seed_2029\test_predictions.csv
+    SHA256: 881bbf70304280f049d12938678c205556094fe7eb7f452e9e5c090b6d8c0ed6
+    byte-identical to primary source: True
+Missing values in member IDs/labels/probabilities: none
+Duplicate material IDs: none
+Member ID/label alignment status: PASS
+
+[Composition-disjoint]
+Experiment: R27_full_mtl_alignn_composition
+Config: D:\ck\two\train\experiments\review\R27_full_mtl_alignn_composition.yaml
+Config SHA256: 70daab320d6b74d71e4bb1d417995c665463ea6409533b7f8d04570efcd387d8
+Resolved config: D:\ck\two\results\review\R27_full_mtl_alignn_composition\resolved_experiment.yaml
+Resolved config SHA256: d988438400b36c3b51d752a2eda70d15d87e3721eb5495afef35c072a49f73c4
+Split file: D:\ck\two\data\processed\review_splits\composition_disjoint.csv
+Split relative path declared by config: review_splits/composition_disjoint.csv
+Split SHA256: bbe570b33c78d89efd569d2408e405c1bb626f0ff81849a4bc4caca066c2fd99
+Frozen hash registry: D:\ck\two\data\processed\review_splits\manifest_sha256.json
+Frozen split audit: D:\ck\two\data\processed\review_splits\audit.json
+Frozen split audit SHA256: 50f6badfd388769dbe73c215c724120b3e17775269a923b7b8e746bcbdddd211
+Frozen manifest set: True
+Split algorithm: review-splits-v1
+Split assignment seed: 143
+Split assignment SHA256: 9d820aac3c327124038601e95451639bcddc87b2e07ee0de4802e3dd97c93f42
+Target group column: canonical_reduced_composition_id
+Target-group disjoint enforced: True
+Target-group cross-split overlap count: 0
+n_test: 1211
+n_joint_positive: 568
+joint_positive_rate: 0.469033856317093
+Sorted material-ID SHA256: 2430c98afe8a8c7e6ea2418ec034cc2a7fd11f97d311737f40b0c9eb6dcb8071
+Sorted material-ID + Joint-label SHA256: 8466d31bc68edabfd0e2c71e5894cb015bd8cbb4c34074ce13bbde5b1d2d2a16
+Frozen raw member predictions and Joint AP:
+  seed 2025: 0.874210320454422
+    prediction: D:\ck\two\results\review\R27_full_mtl_alignn_composition\seed_2025\test_predictions.csv
+    prediction SHA256: e4869e246a626d924250209965bac3c9a6abc9c0d8b9b93ddde37556a23eb0f8
+    prediction bytes: 425540
+    metrics: D:\ck\two\results\review\R27_full_mtl_alignn_composition\seed_2025\metrics.json
+    metrics SHA256: 6118dd54e0d6c8ba51faff836d9d052907be7ef47232476dc6812ccfb2e31b5f
+    completion record: D:\ck\two\results\review\R27_full_mtl_alignn_composition\seed_2025\COMPLETED.json
+    completion SHA256: 9e6c8544a13c9d1b561d96815db0c2a72a762661f3939fdd3ad30351973f8834
+    seed resolved config: D:\ck\two\results\review\R27_full_mtl_alignn_composition\seed_2025\resolved_experiment.yaml
+    seed resolved config SHA256: d988438400b36c3b51d752a2eda70d15d87e3721eb5495afef35c072a49f73c4
+    seed/root resolved config byte-identical: True
+    max |stored p_joint - sigmoid(logit_joint)|: 8.75192964767e-08
+    calibrated-like columns present: False
+  seed 2026: 0.867715375927506
+    prediction: D:\ck\two\results\review\R27_full_mtl_alignn_composition\seed_2026\test_predictions.csv
+    prediction SHA256: e46e396d1ce88620b2bffa0b401717e75006a1ab07b6ccaa98b46f5e99fea649
+    prediction bytes: 436121
+    metrics: D:\ck\two\results\review\R27_full_mtl_alignn_composition\seed_2026\metrics.json
+    metrics SHA256: 882402280cc133b652f74b7b818150c325cbf6bc2a5422fbc59b6d48b3b4deab
+    completion record: D:\ck\two\results\review\R27_full_mtl_alignn_composition\seed_2026\COMPLETED.json
+    completion SHA256: 5dd2ddc8cd460c26ca255bf357d5c5265c08f4d957bf398d7322b7d7e9b36979
+    seed resolved config: D:\ck\two\results\review\R27_full_mtl_alignn_composition\seed_2026\resolved_experiment.yaml
+    seed resolved config SHA256: d988438400b36c3b51d752a2eda70d15d87e3721eb5495afef35c072a49f73c4
+    seed/root resolved config byte-identical: True
+    max |stored p_joint - sigmoid(logit_joint)|: 8.74855697885e-08
+    calibrated-like columns present: False
+  seed 2027: 0.857598748752426
+    prediction: D:\ck\two\results\review\R27_full_mtl_alignn_composition\seed_2027\test_predictions.csv
+    prediction SHA256: e182f4af593a106583345b1f083b44d5f336130bdf2ca121df81afc2a55573d9
+    prediction bytes: 429222
+    metrics: D:\ck\two\results\review\R27_full_mtl_alignn_composition\seed_2027\metrics.json
+    metrics SHA256: 556658841a5ad84204e5c654b04440a424cc1cbf50481b8cc7e2bb258241ce82
+    completion record: D:\ck\two\results\review\R27_full_mtl_alignn_composition\seed_2027\COMPLETED.json
+    completion SHA256: f78ff01f6d9fd16ec441d6cc9898c034101c2250b7b5af354046a142afda39ed
+    seed resolved config: D:\ck\two\results\review\R27_full_mtl_alignn_composition\seed_2027\resolved_experiment.yaml
+    seed resolved config SHA256: d988438400b36c3b51d752a2eda70d15d87e3721eb5495afef35c072a49f73c4
+    seed/root resolved config byte-identical: True
+    max |stored p_joint - sigmoid(logit_joint)|: 8.48081705973e-08
+    calibrated-like columns present: False
+  seed 2028: 0.881517886468246
+    prediction: D:\ck\two\results\review\R27_full_mtl_alignn_composition\seed_2028\test_predictions.csv
+    prediction SHA256: 2318ccc9b86b9be20341b30ab09f2ad23fe0a106209026fd78e692b5081bf129
+    prediction bytes: 428837
+    metrics: D:\ck\two\results\review\R27_full_mtl_alignn_composition\seed_2028\metrics.json
+    metrics SHA256: 7052305b17105b13cb5936504ec4ec0cede988ba3e321c6d49139a3868e0e081
+    completion record: D:\ck\two\results\review\R27_full_mtl_alignn_composition\seed_2028\COMPLETED.json
+    completion SHA256: c32da7667f880aaf522b2e3e35f79f1540fd44bc6fd8a669da6b4ce1cf71365e
+    seed resolved config: D:\ck\two\results\review\R27_full_mtl_alignn_composition\seed_2028\resolved_experiment.yaml
+    seed resolved config SHA256: d988438400b36c3b51d752a2eda70d15d87e3721eb5495afef35c072a49f73c4
+    seed/root resolved config byte-identical: True
+    max |stored p_joint - sigmoid(logit_joint)|: 8.53724823058e-08
+    calibrated-like columns present: False
+  seed 2029: 0.860989150901728
+    prediction: D:\ck\two\results\review\R27_full_mtl_alignn_composition\seed_2029\test_predictions.csv
+    prediction SHA256: 301641f4eee7e59e8a5b2920eb252483d2bc9ad125e4eb70d5b98623ed001354
+    prediction bytes: 428380
+    metrics: D:\ck\two\results\review\R27_full_mtl_alignn_composition\seed_2029\metrics.json
+    metrics SHA256: 27f644b569961c68d7ec1f590b293df1ba10abb5ee263a26d043f56b1d69090e
+    completion record: D:\ck\two\results\review\R27_full_mtl_alignn_composition\seed_2029\COMPLETED.json
+    completion SHA256: aed5fd11189d38ea56506789d2ae6d3de9baf11d1b3438d5b2c15b5a952e35b7
+    seed resolved config: D:\ck\two\results\review\R27_full_mtl_alignn_composition\seed_2029\resolved_experiment.yaml
+    seed resolved config SHA256: d988438400b36c3b51d752a2eda70d15d87e3721eb5495afef35c072a49f73c4
+    seed/root resolved config byte-identical: True
+    max |stored p_joint - sigmoid(logit_joint)|: 8.86256767973e-08
+    calibrated-like columns present: False
+Single-member mean: 0.868406296500866
+Single-member sample SD (numpy.std, ddof=1): 0.009719760721572
+Raw five-member ensemble Joint AP: 0.894701795168709
+Delta AP vs Random: +0.018831684893000
+Aggregation method: material_id-aligned arithmetic mean of stored raw p_joint in probability space across seeds 2025,2026,2027,2028,2029
+Sanity reference AP: 0.895000000000000
+Recomputed minus sanity reference: -0.000298204831291
+Sanity check status: PASS
+Per-experiment seed summary: D:\ck\two\results\review\R27_full_mtl_alignn_composition\metrics_mean_std.csv
+Global strict seed summary: D:\ck\two\results\review\strict_gnn_summary_all\experiment_summary.csv
+Formal raw ensemble summary: D:\ck\two\results\review\strict_gnn_summary_all\paired_comparisons.csv
+Formal raw five-member ensemble AP: 0.894701795168709
+Recomputed/formal raw ensemble AP cross-check: exact within 1e-12
+Strict summary completion record: D:\ck\two\results\review\strict_gnn_summary_all\status.json
+Frozen strict summary JSON: D:\ck\two\results\review\strict_gnn_summary_all\summary.json
+Frozen summary input-manifest member hashes matched: 5/5
+Raw ensemble summarizer source: D:\ck\two\train\summarize_review_gnn.py
+Formal pairing audit: D:\ck\two\results\review\strict_gnn_summary_all\pairing_audit.csv
+Formal/recomputed sorted material-ID SHA256: 2430c98afe8a8c7e6ea2418ec034cc2a7fd11f97d311737f40b0c9eb6dcb8071
+Formal cross-variant/seed pairing audit: PASS
+Per-seed metrics/COMPLETED/prediction recomputation conflict: none
+Existing formal raw strict-split five-member ensemble summary: found and matched
+Duplicate review prediction copies:
+  D:\ck\two\results\review - 副本\R27_full_mtl_alignn_composition\seed_2025\test_predictions.csv
+    SHA256: e4869e246a626d924250209965bac3c9a6abc9c0d8b9b93ddde37556a23eb0f8
+    byte-identical to primary source: True
+  D:\ck\two\results\review - 副本\R27_full_mtl_alignn_composition\seed_2026\test_predictions.csv
+    SHA256: e46e396d1ce88620b2bffa0b401717e75006a1ab07b6ccaa98b46f5e99fea649
+    byte-identical to primary source: True
+  D:\ck\two\results\review - 副本\R27_full_mtl_alignn_composition\seed_2027\test_predictions.csv
+    SHA256: e182f4af593a106583345b1f083b44d5f336130bdf2ca121df81afc2a55573d9
+    byte-identical to primary source: True
+  D:\ck\two\results\review - 副本\R27_full_mtl_alignn_composition\seed_2028\test_predictions.csv
+    SHA256: 2318ccc9b86b9be20341b30ab09f2ad23fe0a106209026fd78e692b5081bf129
+    byte-identical to primary source: True
+  D:\ck\two\results\review - 副本\R27_full_mtl_alignn_composition\seed_2029\test_predictions.csv
+    SHA256: 301641f4eee7e59e8a5b2920eb252483d2bc9ad125e4eb70d5b98623ed001354
+    byte-identical to primary source: True
+Missing values in member IDs/labels/probabilities: none
+Duplicate material IDs: none
+Member ID/label alignment status: PASS
+
+[Chemical-system-disjoint]
+Experiment: R31_full_mtl_alignn_chemical
+Config: D:\ck\two\train\experiments\review\R31_full_mtl_alignn_chemical.yaml
+Config SHA256: 2d3ceb9f9bd301b88339124e3153bc8ec1563aa5c8e260672af6e5f32dd7d944
+Resolved config: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\resolved_experiment.yaml
+Resolved config SHA256: 654fe5bcb5cafc4014cad7ceafebc6e6da5ad9a82a381fbde11b15b4ad7430d5
+Split file: D:\ck\two\data\processed\review_splits\chemical_system_disjoint.csv
+Split relative path declared by config: review_splits/chemical_system_disjoint.csv
+Split SHA256: 7543723d8943b596cee89abf500bb8094c674aec9fe4f196a7622f91bc83d7ce
+Frozen hash registry: D:\ck\two\data\processed\review_splits\manifest_sha256.json
+Frozen split audit: D:\ck\two\data\processed\review_splits\audit.json
+Frozen split audit SHA256: 50f6badfd388769dbe73c215c724120b3e17775269a923b7b8e746bcbdddd211
+Frozen manifest set: True
+Split algorithm: review-splits-v1
+Split assignment seed: 244
+Split assignment SHA256: 0528040d69979add9a4c1e418d488e0474b7972ee127272233ee5c7f6bd549a0
+Target group column: chemical_system_id
+Target-group disjoint enforced: True
+Target-group cross-split overlap count: 0
+n_test: 1214
+n_joint_positive: 566
+joint_positive_rate: 0.466227347611203
+Sorted material-ID SHA256: d3b60ea24c3cc298e701eb03ace436364ce229bc1d9148eecf928f5a6c05debc
+Sorted material-ID + Joint-label SHA256: 5d3b74c88d33b9bffd69a936ccae8159680426d6194e124d928c70511bf5c7e3
+Frozen raw member predictions and Joint AP:
+  seed 2025: 0.868844624269855
+    prediction: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\seed_2025\test_predictions.csv
+    prediction SHA256: 29c0d90aa25b256bb05d81cf5f5e4467961dbb305a74546c6b2d9fa721be76bc
+    prediction bytes: 427332
+    metrics: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\seed_2025\metrics.json
+    metrics SHA256: 3988ecd47324972a08d8e8df7b89d0dece1c5f9e21aa900d1bb9e95904304901
+    completion record: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\seed_2025\COMPLETED.json
+    completion SHA256: 2a8ffaf342a3621433897d3edbf3a732c05922d01b03fa337b2cf1f56a41a149
+    seed resolved config: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\seed_2025\resolved_experiment.yaml
+    seed resolved config SHA256: 654fe5bcb5cafc4014cad7ceafebc6e6da5ad9a82a381fbde11b15b4ad7430d5
+    seed/root resolved config byte-identical: True
+    max |stored p_joint - sigmoid(logit_joint)|: 8.64980675974e-08
+    calibrated-like columns present: False
+  seed 2026: 0.854268226566603
+    prediction: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\seed_2026\test_predictions.csv
+    prediction SHA256: 99fdb1c552554780671e4f5a7ba4ea3ce8a71eca950db71699367d0eacbb00d2
+    prediction bytes: 436574
+    metrics: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\seed_2026\metrics.json
+    metrics SHA256: ce8285b2d68c3ab803bed3f91df6e53f33f5a6e8207d14773c4c6e8e2161edd4
+    completion record: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\seed_2026\COMPLETED.json
+    completion SHA256: f77b87982e2034e1ab822a7b9a61674fcd74587d3d4fddb8b6f50d823433a694
+    seed resolved config: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\seed_2026\resolved_experiment.yaml
+    seed resolved config SHA256: 654fe5bcb5cafc4014cad7ceafebc6e6da5ad9a82a381fbde11b15b4ad7430d5
+    seed/root resolved config byte-identical: True
+    max |stored p_joint - sigmoid(logit_joint)|: 8.84808311064e-08
+    calibrated-like columns present: False
+  seed 2027: 0.851958201673170
+    prediction: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\seed_2027\test_predictions.csv
+    prediction SHA256: 935cb6cce9aafda60275a09090f2e5a128c17dcf29932f8a5e0418cf91dab6ce
+    prediction bytes: 426807
+    metrics: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\seed_2027\metrics.json
+    metrics SHA256: 7c8b48f2115b62c87cce8980c313ac843a544ec5fa6b33da687280b35cac8f6d
+    completion record: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\seed_2027\COMPLETED.json
+    completion SHA256: 6724ec5ecbfaa324ccf65fef12a76408dfeeacec3aaf5a103012bb17570d4ab1
+    seed resolved config: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\seed_2027\resolved_experiment.yaml
+    seed resolved config SHA256: 654fe5bcb5cafc4014cad7ceafebc6e6da5ad9a82a381fbde11b15b4ad7430d5
+    seed/root resolved config byte-identical: True
+    max |stored p_joint - sigmoid(logit_joint)|: 7.8729826769e-08
+    calibrated-like columns present: False
+  seed 2028: 0.859326631523371
+    prediction: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\seed_2028\test_predictions.csv
+    prediction SHA256: bc10498f8e88f00d7eced595c753e2cf377d4cccd9fd8e191e0acf0edc5d85de
+    prediction bytes: 425567
+    metrics: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\seed_2028\metrics.json
+    metrics SHA256: dda0c6774f19e3dd12076376df3ec9591ea55331c8bee1d906ed0bfa6707678b
+    completion record: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\seed_2028\COMPLETED.json
+    completion SHA256: dc5b14084a394322971a767fed6a17f72720904baf508fc2f93a49ddb2aaf952
+    seed resolved config: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\seed_2028\resolved_experiment.yaml
+    seed resolved config SHA256: 654fe5bcb5cafc4014cad7ceafebc6e6da5ad9a82a381fbde11b15b4ad7430d5
+    seed/root resolved config byte-identical: True
+    max |stored p_joint - sigmoid(logit_joint)|: 8.37700546708e-08
+    calibrated-like columns present: False
+  seed 2029: 0.864726318591554
+    prediction: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\seed_2029\test_predictions.csv
+    prediction SHA256: d70f13c9e6fc9da4b183846d8b8eb8d1af2401a3be5dc6a1cf44d133b79a3c08
+    prediction bytes: 435628
+    metrics: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\seed_2029\metrics.json
+    metrics SHA256: 17ffbf4c729be4e7f84439e33b2feed823f2905dec0ddbad89715cd953e63e42
+    completion record: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\seed_2029\COMPLETED.json
+    completion SHA256: 608d0ff2ffeb64b4753c5c1028615de22d5938a653ab66c0359aa2ea96610467
+    seed resolved config: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\seed_2029\resolved_experiment.yaml
+    seed resolved config SHA256: 654fe5bcb5cafc4014cad7ceafebc6e6da5ad9a82a381fbde11b15b4ad7430d5
+    seed/root resolved config byte-identical: True
+    max |stored p_joint - sigmoid(logit_joint)|: 8.20544003854e-08
+    calibrated-like columns present: False
+Single-member mean: 0.859824800524911
+Single-member sample SD (numpy.std, ddof=1): 0.007042534411523
+Raw five-member ensemble Joint AP: 0.885873034465561
+Delta AP vs Random: +0.010002924189851
+Aggregation method: material_id-aligned arithmetic mean of stored raw p_joint in probability space across seeds 2025,2026,2027,2028,2029
+Sanity reference AP: 0.886000000000000
+Recomputed minus sanity reference: -0.000126965534439
+Sanity check status: PASS
+Per-experiment seed summary: D:\ck\two\results\review\R31_full_mtl_alignn_chemical\metrics_mean_std.csv
+Global strict seed summary: D:\ck\two\results\review\strict_gnn_summary_all\experiment_summary.csv
+Formal raw ensemble summary: D:\ck\two\results\review\strict_gnn_summary_all\paired_comparisons.csv
+Formal raw five-member ensemble AP: 0.885873034465561
+Recomputed/formal raw ensemble AP cross-check: exact within 1e-12
+Strict summary completion record: D:\ck\two\results\review\strict_gnn_summary_all\status.json
+Frozen strict summary JSON: D:\ck\two\results\review\strict_gnn_summary_all\summary.json
+Frozen summary input-manifest member hashes matched: 5/5
+Raw ensemble summarizer source: D:\ck\two\train\summarize_review_gnn.py
+Formal pairing audit: D:\ck\two\results\review\strict_gnn_summary_all\pairing_audit.csv
+Formal/recomputed sorted material-ID SHA256: d3b60ea24c3cc298e701eb03ace436364ce229bc1d9148eecf928f5a6c05debc
+Formal cross-variant/seed pairing audit: PASS
+Per-seed metrics/COMPLETED/prediction recomputation conflict: none
+Existing formal raw strict-split five-member ensemble summary: found and matched
+Duplicate review prediction copies:
+  D:\ck\two\results\review - 副本\R31_full_mtl_alignn_chemical\seed_2025\test_predictions.csv
+    SHA256: 29c0d90aa25b256bb05d81cf5f5e4467961dbb305a74546c6b2d9fa721be76bc
+    byte-identical to primary source: True
+  D:\ck\two\results\review - 副本\R31_full_mtl_alignn_chemical\seed_2026\test_predictions.csv
+    SHA256: 99fdb1c552554780671e4f5a7ba4ea3ce8a71eca950db71699367d0eacbb00d2
+    byte-identical to primary source: True
+  D:\ck\two\results\review - 副本\R31_full_mtl_alignn_chemical\seed_2027\test_predictions.csv
+    SHA256: 935cb6cce9aafda60275a09090f2e5a128c17dcf29932f8a5e0418cf91dab6ce
+    byte-identical to primary source: True
+  D:\ck\two\results\review - 副本\R31_full_mtl_alignn_chemical\seed_2028\test_predictions.csv
+    SHA256: bc10498f8e88f00d7eced595c753e2cf377d4cccd9fd8e191e0acf0edc5d85de
+    byte-identical to primary source: True
+  D:\ck\two\results\review - 副本\R31_full_mtl_alignn_chemical\seed_2029\test_predictions.csv
+    SHA256: d70f13c9e6fc9da4b183846d8b8eb8d1af2401a3be5dc6a1cf44d133b79a3c08
+    byte-identical to primary source: True
+Missing values in member IDs/labels/probabilities: none
+Duplicate material IDs: none
+Member ID/label alignment status: PASS
+
+[Structure-family-disjoint]
+Experiment: R35_full_mtl_alignn_structure
+Config: D:\ck\two\train\experiments\review\R35_full_mtl_alignn_structure.yaml
+Config SHA256: d181ac9953508945d7d1f0c07a25ca3ee6705f2a19dd57d202ecf5c569847b03
+Resolved config: D:\ck\two\results\review\R35_full_mtl_alignn_structure\resolved_experiment.yaml
+Resolved config SHA256: 899f24627ba277f004d700dba3b8af55a54de6a64fafb6bcb1b9362da3b7921b
+Split file: D:\ck\two\data\processed\review_splits\structure_family_disjoint.csv
+Split relative path declared by config: review_splits/structure_family_disjoint.csv
+Split SHA256: e9f7043db21ed9035f42b8746706c25a038fa2193ee15bc199b9b1a4f333d7ff
+Frozen hash registry: D:\ck\two\data\processed\review_splits\manifest_sha256.json
+Frozen split audit: D:\ck\two\data\processed\review_splits\audit.json
+Frozen split audit SHA256: 50f6badfd388769dbe73c215c724120b3e17775269a923b7b8e746bcbdddd211
+Frozen manifest set: True
+Split algorithm: review-splits-v1
+Split assignment seed: 345
+Split assignment SHA256: d1c6cb8651128be1bf0c70957740e42deed22f89d0261ea2bd21af014532a2be
+Target group column: structure_family_id
+Target-group disjoint enforced: True
+Target-group cross-split overlap count: 0
+n_test: 1249
+n_joint_positive: 589
+joint_positive_rate: 0.471577261809448
+Sorted material-ID SHA256: 4ce468c6495de446afc1bb51da08ab629cce6e77d0df02c113ef39e70fc4a3be
+Sorted material-ID + Joint-label SHA256: 0382d7e492cad531858b3c9a10fa208074d3910abcc07af4341abac1d2853c47
+Frozen raw member predictions and Joint AP:
+  seed 2025: 0.689802056032910
+    prediction: D:\ck\two\results\review\R35_full_mtl_alignn_structure\seed_2025\test_predictions.csv
+    prediction SHA256: 8e2e34dc618e83f3520949f1fcf399c7cae36d37d823dd9d712d78ed3da36bfe
+    prediction bytes: 447801
+    metrics: D:\ck\two\results\review\R35_full_mtl_alignn_structure\seed_2025\metrics.json
+    metrics SHA256: 35f707a50571bb3fa1e94ac9bbed26475477be7088c9e26dc6168e63a64ff2c6
+    completion record: D:\ck\two\results\review\R35_full_mtl_alignn_structure\seed_2025\COMPLETED.json
+    completion SHA256: e597b66526dbb9cbd61affaafdfd90092822cd29cbadbe4e4ace377566621f7b
+    seed resolved config: D:\ck\two\results\review\R35_full_mtl_alignn_structure\seed_2025\resolved_experiment.yaml
+    seed resolved config SHA256: 899f24627ba277f004d700dba3b8af55a54de6a64fafb6bcb1b9362da3b7921b
+    seed/root resolved config byte-identical: True
+    max |stored p_joint - sigmoid(logit_joint)|: 8.45029581864e-08
+    calibrated-like columns present: False
+  seed 2026: 0.727241521804978
+    prediction: D:\ck\two\results\review\R35_full_mtl_alignn_structure\seed_2026\test_predictions.csv
+    prediction SHA256: 914e830994380b96f91cce4daef7d55c2cc44b7c3b6846c2343b58d65628ce92
+    prediction bytes: 448374
+    metrics: D:\ck\two\results\review\R35_full_mtl_alignn_structure\seed_2026\metrics.json
+    metrics SHA256: 90b0a8d41bbf3db75a6dbdcf55235ba30747ef066329f8f7a59dc2a76c5863bd
+    completion record: D:\ck\two\results\review\R35_full_mtl_alignn_structure\seed_2026\COMPLETED.json
+    completion SHA256: 6144fb2cbaf978e07e8c1d1bcb0375f3e63e15d98445f5b571fd9fbd8b7f9646
+    seed resolved config: D:\ck\two\results\review\R35_full_mtl_alignn_structure\seed_2026\resolved_experiment.yaml
+    seed resolved config SHA256: 899f24627ba277f004d700dba3b8af55a54de6a64fafb6bcb1b9362da3b7921b
+    seed/root resolved config byte-identical: True
+    max |stored p_joint - sigmoid(logit_joint)|: 8.42191634209e-08
+    calibrated-like columns present: False
+  seed 2027: 0.637668698989295
+    prediction: D:\ck\two\results\review\R35_full_mtl_alignn_structure\seed_2027\test_predictions.csv
+    prediction SHA256: 09cc7e76d67434b51b6dfacc95c33c7fc6224e70e19340f5b9018688bdae6e0e
+    prediction bytes: 449492
+    metrics: D:\ck\two\results\review\R35_full_mtl_alignn_structure\seed_2027\metrics.json
+    metrics SHA256: 6a58d778208bb3af2f94e90d7bbc4c05c1f69808084a30769c1d1b14de69373a
+    completion record: D:\ck\two\results\review\R35_full_mtl_alignn_structure\seed_2027\COMPLETED.json
+    completion SHA256: 6801482ad569da6bbba6de165c1972249fd91d40589e1058e2e1147846bcd100
+    seed resolved config: D:\ck\two\results\review\R35_full_mtl_alignn_structure\seed_2027\resolved_experiment.yaml
+    seed resolved config SHA256: 899f24627ba277f004d700dba3b8af55a54de6a64fafb6bcb1b9362da3b7921b
+    seed/root resolved config byte-identical: True
+    max |stored p_joint - sigmoid(logit_joint)|: 8.22500024755e-08
+    calibrated-like columns present: False
+  seed 2028: 0.715787738118473
+    prediction: D:\ck\two\results\review\R35_full_mtl_alignn_structure\seed_2028\test_predictions.csv
+    prediction SHA256: bba9c687094b94bd6b6907f3c8135eb24ae723f61d288e6403c6716e82a6370c
+    prediction bytes: 444691
+    metrics: D:\ck\two\results\review\R35_full_mtl_alignn_structure\seed_2028\metrics.json
+    metrics SHA256: f3ff3d76cf31f2f78d2868b035ca798dad79f91966ce615b5313bb6dcf84a04c
+    completion record: D:\ck\two\results\review\R35_full_mtl_alignn_structure\seed_2028\COMPLETED.json
+    completion SHA256: 0fbe7023962ba748d94dac8ea4cc3630131ac77d1f421d379a713e386e6acb70
+    seed resolved config: D:\ck\two\results\review\R35_full_mtl_alignn_structure\seed_2028\resolved_experiment.yaml
+    seed resolved config SHA256: 899f24627ba277f004d700dba3b8af55a54de6a64fafb6bcb1b9362da3b7921b
+    seed/root resolved config byte-identical: True
+    max |stored p_joint - sigmoid(logit_joint)|: 8.66372916741e-08
+    calibrated-like columns present: False
+  seed 2029: 0.668510105853021
+    prediction: D:\ck\two\results\review\R35_full_mtl_alignn_structure\seed_2029\test_predictions.csv
+    prediction SHA256: 46d691f8aa72fec4be305a7eb9258a44f0b79c778cffb21ee5a3c6b4d16121f2
+    prediction bytes: 449660
+    metrics: D:\ck\two\results\review\R35_full_mtl_alignn_structure\seed_2029\metrics.json
+    metrics SHA256: 9df907b737c6f209774c87fb9f641cc26eb197986e008f1e93c191a53569a3d9
+    completion record: D:\ck\two\results\review\R35_full_mtl_alignn_structure\seed_2029\COMPLETED.json
+    completion SHA256: 2a288cfef234bc17b350901ef4a5c88f8678d9cc678d25edee592102d47c06c5
+    seed resolved config: D:\ck\two\results\review\R35_full_mtl_alignn_structure\seed_2029\resolved_experiment.yaml
+    seed resolved config SHA256: 899f24627ba277f004d700dba3b8af55a54de6a64fafb6bcb1b9362da3b7921b
+    seed/root resolved config byte-identical: True
+    max |stored p_joint - sigmoid(logit_joint)|: 7.99631135751e-08
+    calibrated-like columns present: False
+Single-member mean: 0.687802024159735
+Single-member sample SD (numpy.std, ddof=1): 0.036153155783352
+Raw five-member ensemble Joint AP: 0.725248413194706
+Delta AP vs Random: -0.150621697081004
+Aggregation method: material_id-aligned arithmetic mean of stored raw p_joint in probability space across seeds 2025,2026,2027,2028,2029
+Sanity reference AP: 0.725000000000000
+Recomputed minus sanity reference: +0.000248413194706
+Sanity check status: PASS
+Per-experiment seed summary: D:\ck\two\results\review\R35_full_mtl_alignn_structure\metrics_mean_std.csv
+Global strict seed summary: D:\ck\two\results\review\strict_gnn_summary_all\experiment_summary.csv
+Formal raw ensemble summary: D:\ck\two\results\review\strict_gnn_summary_all\paired_comparisons.csv
+Formal raw five-member ensemble AP: 0.725248413194706
+Recomputed/formal raw ensemble AP cross-check: exact within 1e-12
+Strict summary completion record: D:\ck\two\results\review\strict_gnn_summary_all\status.json
+Frozen strict summary JSON: D:\ck\two\results\review\strict_gnn_summary_all\summary.json
+Frozen summary input-manifest member hashes matched: 5/5
+Raw ensemble summarizer source: D:\ck\two\train\summarize_review_gnn.py
+Formal pairing audit: D:\ck\two\results\review\strict_gnn_summary_all\pairing_audit.csv
+Formal/recomputed sorted material-ID SHA256: 4ce468c6495de446afc1bb51da08ab629cce6e77d0df02c113ef39e70fc4a3be
+Formal cross-variant/seed pairing audit: PASS
+Per-seed metrics/COMPLETED/prediction recomputation conflict: none
+Existing formal raw strict-split five-member ensemble summary: found and matched
+Duplicate review prediction copies:
+  D:\ck\two\results\review - 副本\R35_full_mtl_alignn_structure\seed_2025\test_predictions.csv
+    SHA256: 8e2e34dc618e83f3520949f1fcf399c7cae36d37d823dd9d712d78ed3da36bfe
+    byte-identical to primary source: True
+  D:\ck\two\results\review - 副本\R35_full_mtl_alignn_structure\seed_2026\test_predictions.csv
+    SHA256: 914e830994380b96f91cce4daef7d55c2cc44b7c3b6846c2343b58d65628ce92
+    byte-identical to primary source: True
+  D:\ck\two\results\review - 副本\R35_full_mtl_alignn_structure\seed_2027\test_predictions.csv
+    SHA256: 09cc7e76d67434b51b6dfacc95c33c7fc6224e70e19340f5b9018688bdae6e0e
+    byte-identical to primary source: True
+  D:\ck\two\results\review - 副本\R35_full_mtl_alignn_structure\seed_2028\test_predictions.csv
+    SHA256: bba9c687094b94bd6b6907f3c8135eb24ae723f61d288e6403c6716e82a6370c
+    byte-identical to primary source: True
+  D:\ck\two\results\review - 副本\R35_full_mtl_alignn_structure\seed_2029\test_predictions.csv
+    SHA256: 46d691f8aa72fec4be305a7eb9258a44f0b79c778cffb21ee5a3c6b4d16121f2
+    byte-identical to primary source: True
+Missing values in member IDs/labels/probabilities: none
+Duplicate material IDs: none
+Member ID/label alignment status: PASS
+
+POSITIVE-RATE COMPARABILITY
+---------------------------
+Minimum Joint-positive rate: 0.466227347611203
+Maximum Joint-positive rate: 0.471577261809448
+Max-minus-min rate: 0.005349914198245
+All four rates are reported because AP depends on prevalence; no test set was resampled or altered.
+
+LEGACY IID EXCLUSION
+--------------------
+Explicitly excluded source: D:\ck\two\data\processed\iid_split.csv
+Excluded source SHA256: a299d0e81c8c3d9a1ef754c243da30c3ef9b0b874110e0939171aa334ae7e19a
+Legacy test n: 1214
+Strict Random test n: 1215
+Legacy/strict test ID sets identical: False
+Legacy-only test IDs: 1037
+Strict-only test IDs: 1038
+Legacy file used for model metrics or plotting: False
+
+OUTPUTS
+-------
+Source data CSV: D:\ck\two\paper_figures\fig4\Fig4_source_data.csv
+Source data CSV SHA256: eae13aacb9b96fe6c0dee491f08c12d5f653c3186c3284e51b6c2fa32d304f0d
+PDF: D:\ck\two\paper_figures\fig4\Fig4_generalization_dumbbell.pdf
+PDF SHA256: b9c205d3317fdaa72774a9a728ba1573eba370674eeb23dd1bb10ead6d39f65b
+PNG: D:\ck\two\paper_figures\fig4\Fig4_generalization_dumbbell.png
+PNG SHA256: 0a6a5c2e10481c28bdf53b7005d6753bbac09d982f3f5a49a535003daae0bcb5
+SVG: D:\ck\two\paper_figures\fig4\Fig4_generalization_dumbbell.svg
+SVG SHA256: 0c081fd69188aee7199ddd57d4a3b7a563c5aff90d0aedbfd00ebe48a7c82922
+PNG raster: 2880 x 2040 px
+PNG embedded dpi: (599.9988, 599.9988)
+PDF/SVG saved directly by matplotlib as vector output
+SVG raster <image> elements: none
+
+FINAL CONFLICT CHECK
+--------------------
+Missing required split/member source: none
+Unexpected seed: none
+Raw/calibrated mixing: none
+Legacy fixed IID benchmark mixing: none
+Split-manifest/hash conflict: none
+Result-value conflict: none
+Source files changed during execution: none
+Overall status: PASS

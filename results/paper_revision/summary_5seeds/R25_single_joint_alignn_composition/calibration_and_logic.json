@@ -1,0 +1,35 @@
+{
+  "seeds": [
+    2025,
+    2026,
+    2027,
+    2028,
+    2029
+  ],
+  "source": "D:\\ck\\two\\results\\review\\R25_single_joint_alignn_composition",
+  "output_mode": "independent",
+  "calibration_fit_split": "val",
+  "threshold_fit_split": "val",
+  "temperatures": {
+    "joint": 3.1845408382722247
+  },
+  "thresholds": {
+    "raw": {
+      "joint": 0.401010101010101
+    },
+    "calibrated": {
+      "joint": 0.41585858585858587
+    }
+  },
+  "logical_violations": {
+    "val_raw_members": {},
+    "val_raw_ensemble": {},
+    "test_raw_members": {},
+    "test_raw_ensemble": {},
+    "val_calibrated_members": {},
+    "val_calibrated_ensemble": {},
+    "test_calibrated_members": {},
+    "test_calibrated_ensemble": {}
+  },
+  "fusion_rule": "independent"
+}

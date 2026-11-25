@@ -1,0 +1,11 @@
+{
+  "name": "P05_four_state_structure",
+  "category": "paper_revision",
+  "seed": 2029,
+  "status": "completed",
+  "best_epoch": 14,
+  "batch_size": 16,
+  "monitor_task": "joint",
+  "test_joint_pr_auc": 0.6960024676277541,
+  "test_joint_mcc": 0.4187777016948366
+}

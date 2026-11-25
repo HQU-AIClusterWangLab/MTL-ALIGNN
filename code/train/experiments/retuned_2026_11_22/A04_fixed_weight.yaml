@@ -1,0 +1,30 @@
+name: A04_fixed_weight
+category: retuned_2026_11_22
+model_type: alignn
+heads:
+- thermo
+- dynamic
+- joint
+active_tasks:
+- thermo
+- dynamic
+- joint
+weighting: fixed
+fixed_weights:
+  joint: 1.0
+  thermo: 0.5
+  dynamic: 0.5
+logic_beta: 0.1
+logic_lower_bound: true
+seeds:
+- 2025
+- 2026
+- 2027
+- 2028
+- 2029
+split_file: iid_split.csv
+training:
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+model:
+  dropout: 0.0

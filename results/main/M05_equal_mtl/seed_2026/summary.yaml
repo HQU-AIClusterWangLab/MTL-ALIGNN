@@ -1,0 +1,8 @@
+name: M05_equal_mtl
+category: main
+seed: 2026
+status: completed
+best_epoch: 27
+batch_size: 16
+test_joint_pr_auc: 0.8711935177041391
+test_joint_mcc: 0.6520962573967878

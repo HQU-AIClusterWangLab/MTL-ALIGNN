@@ -1,0 +1,19 @@
+name: B05_iid
+category: core_revision/training
+model_type: alignn
+heads:
+- thermo
+- dynamic
+- joint
+active_tasks:
+- thermo
+- dynamic
+- joint
+weighting: adaptive_auxiliary
+logic_beta: 0.05
+logic_lower_bound: true
+seeds:
+- 2025
+- 2026
+- 2027
+split_file: iid_split.csv

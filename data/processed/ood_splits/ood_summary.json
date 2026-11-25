@@ -1,0 +1,117 @@
+{
+  "chemical_system": {
+    "test": {
+      "n": 1206,
+      "ood_groups": 606,
+      "reduced_formulas": 1021,
+      "thermo_label_positive": 779,
+      "dynamic_label_positive": 713,
+      "joint_label_positive": 564,
+      "thermo_label_rate": 0.6459369817578773,
+      "dynamic_label_rate": 0.5912106135986733,
+      "joint_label_rate": 0.46766169154228854
+    },
+    "train": {
+      "n": 5675,
+      "ood_groups": 2994,
+      "reduced_formulas": 4813,
+      "thermo_label_positive": 3695,
+      "dynamic_label_positive": 3358,
+      "joint_label_positive": 2658,
+      "thermo_label_rate": 0.6511013215859031,
+      "dynamic_label_rate": 0.5917180616740088,
+      "joint_label_rate": 0.4683700440528634
+    },
+    "val": {
+      "n": 1221,
+      "ood_groups": 880,
+      "reduced_formulas": 1032,
+      "thermo_label_positive": 794,
+      "dynamic_label_positive": 720,
+      "joint_label_positive": 570,
+      "thermo_label_rate": 0.6502866502866503,
+      "dynamic_label_rate": 0.5896805896805897,
+      "joint_label_rate": 0.4668304668304668
+    },
+    "ood_group_column": "chemical_system",
+    "test_development_group_overlap": 0
+  },
+  "structure_family": {
+    "test": {
+      "n": 1207,
+      "ood_groups": 103,
+      "reduced_formulas": 1204,
+      "thermo_label_positive": 774,
+      "dynamic_label_positive": 713,
+      "joint_label_positive": 572,
+      "thermo_label_rate": 0.6412593206296603,
+      "dynamic_label_rate": 0.5907207953603977,
+      "joint_label_rate": 0.4739022369511185
+    },
+    "train": {
+      "n": 5685,
+      "ood_groups": 543,
+      "reduced_formulas": 4915,
+      "thermo_label_positive": 3705,
+      "dynamic_label_positive": 3364,
+      "joint_label_positive": 2655,
+      "thermo_label_rate": 0.6517150395778364,
+      "dynamic_label_rate": 0.5917326297273526,
+      "joint_label_rate": 0.46701846965699206
+    },
+    "val": {
+      "n": 1210,
+      "ood_groups": 286,
+      "reduced_formulas": 1054,
+      "thermo_label_positive": 789,
+      "dynamic_label_positive": 714,
+      "joint_label_positive": 565,
+      "thermo_label_rate": 0.6520661157024793,
+      "dynamic_label_rate": 0.5900826446280992,
+      "joint_label_rate": 0.4669421487603306
+    },
+    "ood_group_column": "structure_family",
+    "test_development_group_overlap": 0
+  },
+  "layergroup": {
+    "test": {
+      "n": 1208,
+      "ood_groups": 11,
+      "reduced_formulas": 1068,
+      "thermo_label_positive": 790,
+      "dynamic_label_positive": 726,
+      "joint_label_positive": 568,
+      "thermo_label_rate": 0.6539735099337748,
+      "dynamic_label_rate": 0.6009933774834437,
+      "joint_label_rate": 0.47019867549668876
+    },
+    "train": {
+      "n": 5672,
+      "ood_groups": 57,
+      "reduced_formulas": 4916,
+      "thermo_label_positive": 3682,
+      "dynamic_label_positive": 3344,
+      "joint_label_positive": 2652,
+      "thermo_label_rate": 0.6491537376586742,
+      "dynamic_label_rate": 0.5895627644569816,
+      "joint_label_rate": 0.4675599435825106
+    },
+    "val": {
+      "n": 1222,
+      "ood_groups": 52,
+      "reduced_formulas": 1054,
+      "thermo_label_positive": 796,
+      "dynamic_label_positive": 721,
+      "joint_label_positive": 572,
+      "thermo_label_rate": 0.6513911620294599,
+      "dynamic_label_rate": 0.5900163666121113,
+      "joint_label_rate": 0.46808510638297873
+    },
+    "ood_group_column": "layergroup",
+    "test_development_group_overlap": 0
+  },
+  "elements": {
+    "holdout_count": 55,
+    "summary_path": "D:\\ck\\two\\data\\processed\\ood_splits\\element_holdout_summary.csv"
+  }
+}

@@ -1,0 +1,8 @@
+name: A06_adaptive_all
+category: ablation
+seed: 2025
+status: completed
+best_epoch: 31
+batch_size: 16
+test_joint_pr_auc: 0.8724100536909692
+test_joint_mcc: 0.6495726492745033

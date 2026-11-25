@@ -1,0 +1,8 @@
+name: R17_dynamic_only_xgb_structure
+category: review
+model_type: xgboost
+heads: [dynamic]
+monitor_task: dynamic
+seeds: [2025, 2026, 2027, 2028, 2029]
+split_file: review_splits/structure_family_disjoint.csv
+

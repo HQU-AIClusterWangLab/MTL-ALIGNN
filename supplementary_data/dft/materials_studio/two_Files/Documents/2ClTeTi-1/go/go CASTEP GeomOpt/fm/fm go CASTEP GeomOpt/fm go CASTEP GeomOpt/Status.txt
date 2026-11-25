@@ -1,0 +1,12 @@
+ Job Name                         :  fm_go
+ type of calculation              :  geometry optimization
+ plane wave basis set cut-off     :  850.0000   eV
+ using functional                 :  Perdew Burke Ernzerhof
+
+ Number of iterations             :  10
+ Energy                           :  -5.18243968E+003  eV
+ Convergence                      :  6.123106E-008  eV/atom
+ Max. Displacement                :  6.499606E-005  A
+ Max. Force                       :  6.252674E-004  eV/A
+ 2*Integrated Spin Density        :       1.14241     hbar/2
+ 2*Integrated |Spin Density|      :       1.33728     hbar/2

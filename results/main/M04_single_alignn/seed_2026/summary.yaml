@@ -1,0 +1,8 @@
+name: M04_single_alignn
+category: main
+seed: 2026
+status: completed
+best_epoch: 37
+batch_size: 16
+test_joint_pr_auc: 0.8922226921637498
+test_joint_mcc: 0.6561765182007356
