@@ -1,0 +1,11 @@
+{
+  "name": "M05_equal_mtl",
+  "category": "retuned_2026_11_22",
+  "seed": 2025,
+  "status": "completed",
+  "best_epoch": 19,
+  "batch_size": 16,
+  "monitor_task": "joint",
+  "test_joint_pr_auc": 0.8796897545518286,
+  "test_joint_mcc": 0.6296135372103157
+}

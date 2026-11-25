@@ -1,0 +1,7 @@
+{
+  "direct_joint": 0.4703030303030303,
+  "product_fusion": 0.45545454545454545,
+  "minimum_fusion": 0.4877061237581966,
+  "frechet_lower_bound": 0.365901554890284,
+  "learned_fusion": 0.449358011865253
+}

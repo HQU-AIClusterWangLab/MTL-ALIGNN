@@ -1,0 +1,9 @@
+name: R21_single_joint_alignn_random
+category: review
+seed: 2027
+status: completed
+best_epoch: 21
+batch_size: 16
+monitor_task: joint
+test_joint_pr_auc: 0.8516973768224629
+test_joint_mcc: 0.5809343435095703

@@ -1,0 +1,47 @@
+{
+  "status": "completed",
+  "unknown_count": 8803,
+  "ranking_pool_count": 8803,
+  "ranking_scope": "all_unknown",
+  "thermo_eligible_count": 420,
+  "thermo_ineligible_count": 8383,
+  "top_k": 100,
+  "probability_risk_overlap": 100,
+  "probability_risk_overlap_fraction": 1.0,
+  "lambda": 0.0,
+  "lambda_is_zero": true,
+  "pJ_alias": "p_joint_mean",
+  "pJ_calibrated_alias": "p_joint_calibrated",
+  "logical_consistency_calibrated": {
+    "evaluated_count": 8803,
+    "pJ_gt_pT_count": 180,
+    "pJ_gt_pD_count": 1756,
+    "pJ_below_frechet_count": 683,
+    "any_violation_count": 2619,
+    "any_violation_fraction": 0.2975122117459957,
+    "pJ_gt_pT_magnitude": {
+      "mean": 0.00021516748710665587,
+      "max": 0.047824199159920755
+    },
+    "pJ_gt_pD_magnitude": {
+      "mean": 0.003940923161743131,
+      "max": 0.12155340273827375
+    },
+    "pJ_below_frechet_magnitude": {
+      "mean": 0.0008861767464451302,
+      "max": 0.08953323136745006
+    }
+  },
+  "ranking_configuration": {
+    "uncertainty_method": "deep_ensemble",
+    "uncertainty_score": "predictive_std",
+    "uncertainty_column": "p_joint_std",
+    "uncertainty_q05": 1.909509805224227e-09,
+    "uncertainty_q95": 0.45795855770204436,
+    "lambda": 0.0,
+    "lambda_selection_set": "validation thermo-positive subset",
+    "lambda_selection_objective": "mean Precision@K over configured validation K values"
+  },
+  "ranking_diagnostics_file": "candidate_ranking_diagnostics.json",
+  "interpretation_note": "All Unknown materials are ranked directly by calibrated pJ; the Thermo-positive subset is retained only as a diagnostic. Risk-aware ranking is retained as a secondary decision analysis. Confidence tiers are descriptive strata based on the validation-frozen robust uncertainty scale; they are not formal coverage guarantees."
+}

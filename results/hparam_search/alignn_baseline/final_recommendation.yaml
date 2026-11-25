@@ -1,0 +1,12 @@
+recommended_configuration: selected
+mean_validation_joint_ap: 0.8876595109761727
+sd_validation_joint_ap: 0.006189606435787005
+n_seeds: 3
+selected_values:
+  training.learning_rate: 0.0003
+  training.weight_decay: 0.0001
+  model.alignn_layers: 4
+  model.gcn_layers: 4
+  model.hidden_features: 256
+  model.dropout: 0.0
+test_used_for_selection: false

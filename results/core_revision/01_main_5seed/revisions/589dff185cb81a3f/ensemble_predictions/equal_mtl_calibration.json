@@ -1,0 +1,29 @@
+{
+  "calibration_fit_split": "val",
+  "threshold_fit_split": "val",
+  "temperatures": {
+    "thermo": 1.8695968724817833,
+    "dynamic": 2.475178608846091,
+    "joint": 2.357602018407945
+  },
+  "thresholds": {
+    "raw": {
+      "thermo": 0.4307070707070707,
+      "dynamic": 0.3911111111111111,
+      "joint": 0.25728180820005947
+    },
+    "calibrated": {
+      "thermo": 0.4193713267388689,
+      "dynamic": 0.4634948614543072,
+      "joint": 0.33666666666666667
+    }
+  },
+  "seeds": [
+    2025,
+    2026,
+    2027,
+    2028,
+    2029
+  ],
+  "application": "shared task temperature on each member logit, then mean"
+}

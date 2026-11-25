@@ -1,0 +1,543 @@
+ Job started on host DESKTOP-B3H8NKQ
+ at Fri Jul 31 10:39:52 2026
+
+ +-------------------------------------------------+
+ |                                                 |
+ |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
+ |     C     A  A  S       T    E      P   P       |
+ |     C     AAAA   SS     T    EEE    PPPP        |
+ |     C     A  A     S    T    E      P           |
+ |      CCC  A  A  SSS     T    EEEEE  P           |
+ |                                                 |
+ +-------------------------------------------------+
+ |                                                 |
+ | Materials Studio CASTEP version 2023            |
+ | Ab Initio Total Energy Program                  |
+ |                                                 |
+ | Authors:                                        |
+ | M. Segall, M. Probert, C. Pickard, P. Hasnip,   |
+ | S. Clark, K. Refson, J. R. Yates, M. Payne      |
+ |                                                 |
+ | Contributors:                                   |
+ | P. Lindan, P. Haynes, J. White, V. Milman,      |
+ | N. Govind, M. Gibson, P. Tulip, V. Cocula,      |
+ | B. Montanari, D. Quigley, M. Glover,            |
+ | L. Bernasconi, A. Perlov, M. Plummer,           |
+ | E. McNellis, J. Meyer, J. Gale, D. Jochym       |
+ | J. Aarons, B. Walker, R. Gillen, D. Jones       |
+ | T. Green, I. J. Bush, C. J. Armstrong,          |
+ | E. J. Higgins, E. L. Brown, M. S. McFly,        |
+ | J. Wilkins, B-C. Shih, P. J. P. Byrne,          |
+ | R. J. Maurer, J. C. Womack, J. Dziedzic,        |
+ | A. Bartok-Partay, L. LeBlanc, T. K. Stenczel,   |
+ | J. Kermode, S. Sturniolo, B. Shi, B. Durham     |
+ | M. Evans, M. J. Smith                           |
+ |                                                 |
+ | Copyright (c) 2000 - 2022                       |
+ |                                                 |
+ | Please cite                                     |
+ |                                                 |
+ |     "First principles methods using CASTEP"     |
+ |                                                 |
+ |         Zeitschrift fuer Kristallographie       |
+ |           220(5-6) pp. 567-570 (2005)           |
+ |                                                 |
+ | S. J. Clark, M. D. Segall, C. J. Pickard,       |
+ | P. J. Hasnip, M. J. Probert, K. Refson,         |
+ | M. C. Payne                                     |
+ |                                                 |
+ |       in all publications arising from          |
+ |              your use of CASTEP                 |
+ |                                                 |
+ +-------------------------------------------------+
+ |                                                 |
+ |              http://www.castep.org              |
+ |                                                 |
+ +-------------------------------------------------+
+ 
+ 
+ This version was compiled for x86_64-windows-msvc2017 on Oct 26 2022
+ Code version:    fdad7da
+ Intel(R) Math Kernel Library Version 2019.0.4 
+ Fundamental constants values: CODATA 2018
+ 
+License checkout of MS_castep successful
+ 
+ 
+ Atomic calculation performed for H: 1s1
+ 
+ Converged in 41 iterations to an ae energy of -12.488 eV
+ 
+ Identity difference: 2.63E-05
+ 
+   ============================================================                
+   | Pseudopotential Report - Date of generation 31-07-2026   |                
+   ------------------------------------------------------------                
+   | Element: H Ionic charge:  1.00 Level of theory: PBE      |                
+   | Atomic Solver: Koelling-Harmon                           |                
+   |                                                          |                
+   |               Reference Electronic Structure             |                
+   |         Orbital         Occupation         Energy        |                
+   |            1s              1.000           -0.239        |                
+   |                                                          |                
+   |                 Pseudopotential Definition               |                
+   |        Beta     l      e      Rc     scheme   norm       |                
+   |          1      0   -0.239   0.599     qc      0         |                
+   |          2      0    0.250   0.599     qc      0         |                
+   |         loc     1    0.000   0.599     pn      0         |                
+   |                                                          |                
+   | Augmentation charge Rinner = 0.421                       |                
+   | No partial core correction                               |                
+   ------------------------------------------------------------                
+   | "1|0.6|9|10|15|10UU(qc=8)[]"                             |                
+   ------------------------------------------------------------                
+   |      Author: Chris J. Pickard, Cambridge University      |                
+   ============================================================                
+ 
+ Doing a self consistent calculation for the test configuration
+ 
+ Atomic calculation performed for H: 1s1
+ 
+ Converged in 41 iterations to an ae energy of -12.488 eV
+ 
+ ---------------------------------------
+ AE eigenvalue nl 10 =       -0.23860176
+ ---------------------------------------
+ PS eigenvalue nl 10 =       -0.23857601
+ ---------------------------------------
+ Maximum eigenvalue error:   2.57E-05
+ 
+ Derived cutoff energies: C=   1 M=   6 F=  10 E=  20
+ 
+ Checking for ghost states up to   1.51185 Ha
+ 
+ No Ghost States Identified
+ 
+ ***************************************
+ 
+ Atomic calculation performed for Al: 1s2 2s2 2p6 3s2 3p1
+ 
+ Converged in 54 iterations to an ae energy of -6603.783 eV
+ 
+ Identity difference: 2.43E-04
+ 
+   ============================================================                
+   | Pseudopotential Report - Date of generation 31-07-2026   |                
+   ------------------------------------------------------------                
+   | Element: Al Ionic charge:  3.00 Level of theory: PBE     |                
+   | Atomic Solver: Koelling-Harmon                           |                
+   |                                                          |                
+   |               Reference Electronic Structure             |                
+   |         Orbital         Occupation         Energy        |                
+   |            3s              2.000           -0.285        |                
+   |            3p              1.000           -0.100        |                
+   |                                                          |                
+   |                 Pseudopotential Definition               |                
+   |        Beta     l      e      Rc     scheme   norm       |                
+   |          1      0   -0.285   2.192     qc      0         |                
+   |          2      0    0.250   2.192     qc      0         |                
+   |          3      1   -0.100   2.192     qc      0         |                
+   |          4      1    0.250   2.192     qc      0         |                
+   |          5      2    0.000   2.000     qc      0         |                
+   |          6      2    0.250   2.000     qc      0         |                
+   |         loc     3    0.000   2.192     pn      0         |                
+   |                                                          |                
+   | Augmentation charge Rinner = 1.398                       |                
+   | Partial core correction Rc = 1.398                       |                
+   ------------------------------------------------------------                
+   | "3|2.2|2.2|1.4|3.5|5|7|30UU:31UU:32U2U2[]"               |                
+   ------------------------------------------------------------                
+   |      Author: Chris J. Pickard, Cambridge University      |                
+   ============================================================                
+ 
+ Doing a self consistent calculation for the test configuration
+ 
+ Atomic calculation performed for Al: 1s2 2s2 2p6 3s2 3p1
+ 
+ Converged in 54 iterations to an ae energy of -6603.783 eV
+ 
+ ---------------------------------------
+ AE eigenvalue nl 10 =      -55.53347827
+ AE eigenvalue nl 20 =       -3.97499262
+ AE eigenvalue nl 21 =       -2.55933606
+ AE eigenvalue nl 30 =       -0.28491403
+ AE eigenvalue nl 31 =       -0.09966789
+ ---------------------------------------
+ PS eigenvalue nl 30 =       -0.28483634
+ PS eigenvalue nl 31 =       -0.09959215
+ ---------------------------------------
+ Maximum eigenvalue error:   7.77E-05
+ 
+ Derived cutoff energies: C=   1 M=   2 F=   4 E=   6
+ 
+ Checking for ghost states up to   1.42753 Ha
+ 
+ No Ghost States Identified
+ 
+ ***************************************
+ 
+ Atomic calculation performed for Se: 1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p4
+ 
+ Converged in 77 iterations to an ae energy of -66122.631 eV
+ 
+ Identity difference: 1.68E-03
+ 
+   ============================================================                
+   | Pseudopotential Report - Date of generation 31-07-2026   |                
+   ------------------------------------------------------------                
+   | Element: Se Ionic charge: 16.00 Level of theory: PBE     |                
+   | Atomic Solver: Koelling-Harmon                           |                
+   |                                                          |                
+   |               Reference Electronic Structure             |                
+   |         Orbital         Occupation         Energy        |                
+   |            3d             10.000           -1.952        |                
+   |            4s              2.000           -0.635        |                
+   |            4p              4.000           -0.239        |                
+   |                                                          |                
+   |                 Pseudopotential Definition               |                
+   |        Beta     l      e      Rc     scheme   norm       |                
+   |          1      0   -0.635   1.994     qc      0         |                
+   |          2      0    0.250   1.994     qc      0         |                
+   |          3      1   -0.239   1.994     qc      0         |                
+   |          4      1    0.250   1.994     qc      0         |                
+   |          5      2   -1.952   1.994     qc      0         |                
+   |          6      2    0.250   1.994     qc      0         |                
+   |         loc     3    0.000   1.994     pn      0         |                
+   |                                                          |                
+   | Augmentation charge Rinner = 1.405                       |                
+   | Partial core correction Rc = 1.405                       |                
+   ------------------------------------------------------------                
+   | "3|2|10|13|14.5|40UU:41UU:32UU(qc=6)[]"                  |                
+   ------------------------------------------------------------                
+   |      Author: Chris J. Pickard, Cambridge University      |                
+   ============================================================                
+ 
+ Doing a self consistent calculation for the test configuration
+ 
+ Atomic calculation performed for Se: 1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p4
+ 
+ Converged in 77 iterations to an ae energy of -66122.631 eV
+ 
+ ---------------------------------------
+ AE eigenvalue nl 10 =     -459.55473053
+ AE eigenvalue nl 20 =      -59.06339468
+ AE eigenvalue nl 21 =      -51.94933657
+ AE eigenvalue nl 30 =       -7.84645027
+ AE eigenvalue nl 31 =       -5.62191210
+ AE eigenvalue nl 32 =       -1.95230469
+ AE eigenvalue nl 40 =       -0.63529945
+ AE eigenvalue nl 41 =       -0.23929212
+ ---------------------------------------
+ PS eigenvalue nl 32 =       -1.95121252
+ PS eigenvalue nl 40 =       -0.63528595
+ PS eigenvalue nl 41 =       -0.23927626
+ ---------------------------------------
+ Maximum eigenvalue error:   1.09E-03
+ 
+ Derived cutoff energies: C=   8 M=  12 F=  12 E=  14
+ 
+ Checking for ghost states up to   1.39820 Ha
+ 
+ No Ghost States Identified
+ 
+ ***************************************
+ 
+ Pseudo atomic calculation performed for H 1s1
+ 
+ Converged in 14 iterations to a total energy of -12.4863 eV
+ 
+ Pseudo atomic calculation performed for Al 3s2 3p1
+ 
+ Converged in 16 iterations to a total energy of -107.1308 eV
+ 
+ Pseudo atomic calculation performed for Se 3d10 4s2 4p4
+ 
+ Converged in 25 iterations to a total energy of -3420.2800 eV
+ Calculation parallelised over 6 processes.
+ Data is distributed by k-point(6-way)
+
+ ************************************ Title ************************************
+ CASTEP calculation from BIOVIA Materials Studio 2023
+
+ ***************************** General Parameters ******************************
+  
+ output verbosity                               : normal  (1)
+ write checkpoint data to                       : 8_8_1.check
+ type of calculation                            : single point energy
+ stress calculation                             : off
+ density difference calculation                 : off
+ electron localisation func (ELF) calculation   : off
+ Hirshfeld analysis                             : off
+ polarisation (Berry phase) analysis            : off
+ molecular orbital projected DOS                : off
+ deltaSCF calculation                           : off
+ unlimited duration calculation
+ timing information                             : on
+ memory usage estimate                          : on
+ write extra output files                       : on
+ write final potential to formatted file        : off
+ write final density to formatted file          : off
+ write BibTeX reference list                    : on
+ write OTFG pseudopotential files               : on
+ write electrostatic potential file             : on
+ write bands file                               : on
+ checkpoint writing                             : both castep_bin and check files
+  
+ output         length unit                     : A
+ output           mass unit                     : amu
+ output           time unit                     : ps
+ output         charge unit                     : e
+ output           spin unit                     : hbar/2
+ output         energy unit                     : eV
+ output          force unit                     : eV/A
+ output       velocity unit                     : A/ps
+ output       pressure unit                     : GPa
+ output     inv_length unit                     : 1/A
+ output      frequency unit                     : cm-1
+ output force constant unit                     : eV/A**2
+ output         volume unit                     : A**3
+ output   IR intensity unit                     : (D/A)**2/amu
+ output         dipole unit                     : D
+ output         efield unit                     : eV/A/e
+ output        entropy unit                     : J/mol/K
+ output    efield chi2 unit                     : pm/V
+  
+ wavefunctions paging                           : none
+ random number generator seed                   :  104006324
+ data distribution                              : optimal for this architecture
+ optimization strategy                          : maximize speed(+++)
+
+ *********************** Exchange-Correlation Parameters ***********************
+  
+ using functional                               : Perdew Burke Ernzerhof
+ relativistic treatment                         : Koelling-Harmon
+ DFT+D: Semi-empirical dispersion correction    : off
+
+ ************************* Pseudopotential Parameters **************************
+  
+ pseudopotential representation                 : reciprocal space
+ <beta|phi> representation                      : reciprocal space
+ spin-orbit coupling                            : off
+
+ **************************** Basis Set Parameters *****************************
+  
+ plane wave basis set cut-off                   :   900.0000   eV
+ size of standard grid                          :     2.0000
+ size of   fine   gmax                          :    30.7390   1/A
+ largest prime factor in FFT                    :          5
+ finite basis set correction                    : none
+
+ **************************** Electronic Parameters ****************************
+  
+ number of  electrons                           :  72.00    
+ net charge of system                           :  0.000    
+ treating system as non-spin-polarized
+ number of bands                                :         44
+
+ ********************* Electronic Minimization Parameters **********************
+  
+ Method: Treating system as metallic with density mixing treatment of electrons,
+         and number of  SD  steps               :          1
+         and number of  CG  steps               :          4
+  
+ total energy / atom convergence tol.           : 0.5000E-06   eV
+ eigen-energy convergence tolerance             : 0.9091E-07   eV
+ max force / atom convergence tol.              : ignored
+ convergence tolerance window                   :          3   cycles
+ max. number of SCF cycles                      :        300
+ number of fixed-spin iterations                :         10
+ smearing scheme                                : Gaussian
+ smearing width                                 : 0.1000       eV
+ Fermi energy convergence tolerance             : 0.2721E-13   eV
+ periodic dipole correction                     : NONE
+
+ ************************** Density Mixing Parameters **************************
+  
+ density-mixing scheme                          : Pulay
+ max. length of mixing history                  :         20
+ charge density mixing amplitude                : 0.5000    
+ cut-off energy for mixing                      :  900.0       eV
+ charge density mixing g-vector                 :  1.500       1/A
+
+ *******************************************************************************
+  
+ 
+                           -------------------------------
+                                      Unit Cell
+                           -------------------------------
+        Real Lattice(A)                      Reciprocal Lattice(1/A)
+     3.6753941     0.0000000     0.0000000        1.709526975   0.000000000   0.000000000
+     0.0000000     5.2319815     0.0000000        0.000000000   1.200918859   0.000000000
+     0.0000000     0.0000000    21.3676701        0.000000000   0.000000000   0.294051025
+ 
+                       Lattice parameters(A)       Cell Angles
+                    a =      3.675394          alpha =   90.000000
+                    b =      5.231982          beta  =   90.000000
+                    c =     21.367670          gamma =   90.000000
+ 
+                       Current cell volume =           410.891620       A**3
+                                   density =             0.904908   AMU/A**3
+                                           =             1.502634     g/cm^3
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+                         Total number of ions in cell =    8
+                      Total number of species in cell =    3
+                        Max number of any one species =    4
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element    Atom        Fractional coordinates of atoms  x
+            x            Number           u          v          w      x
+            x----------------------------------------------------------x
+            x  H            1         0.750000   0.003681   0.351071   x 
+            x  H            2         0.250000   0.996319   0.648929   x 
+            x  Al           1         0.250000   0.247104   0.451648   x 
+            x  Al           2         0.750000   0.752896   0.548352   x 
+            x  Se           1         0.250000   0.750225   0.464242   x 
+            x  Se           2         0.750000   0.249775   0.535758   x 
+            x  Se           3         0.250000   0.720445   0.632392   x 
+            x  Se           4         0.750000   0.279555   0.367608   x 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+                         No user defined ionic velocities
+ 
+                           -------------------------------
+                                   Details of Species
+                           -------------------------------
+ 
+                               Mass of species in AMU
+                                    H    1.0080000
+                                    Al   26.9820004
+                                    Se   78.9599991
+ 
+                          Electric Quadrupole Moment (Barn)
+                                    H    0.0028600 Isotope  2
+                                    Al    0.1466000 Isotope 27
+                                    Se    1.0000000 No Isotope Defined
+ 
+                          Files used for pseudopotentials:
+                                    H 1|0.6|9|10|15|10UU(qc=8)[]
+                                    Al 3|2.2|2.2|1.4|3.5|5|7|30UU:31UU:32U2U2[]
+                                    Se 3|2|10|13|14.5|40UU:41UU:32UU(qc=6)[]
+ 
+                           -------------------------------
+                              k-Points For BZ Sampling
+                           -------------------------------
+                       MP grid size for SCF calculation is  8  8  1
+                            with an offset of   0.000  0.000  0.000
+                       Number of kpoints used =            32
+ 
+                           -------------------------------
+                               Symmetry and Constraints
+                           -------------------------------
+ 
+                      Maximum deviation from symmetry =  0.00000         ANG
+ 
+                      Number of symmetry operations   =           1
+         There are no ionic constraints specified or generated for this cell
+                      Point group of crystal =     1: C1, 1, 1
+                      Space group of crystal =    11: P2_1/m, -P 2yb
+ 
+             Set iprint > 1 for details on symmetry rotations/translations
+ 
+                         Centre of mass is NOT constrained
+ 
+                         Number of cell constraints= 0
+                         Cell constraints are:  1 2 3 4 5 6
+ 
+                         External pressure/stress (GPa)
+                          0.00000   0.00000   0.00000
+                                    0.00000   0.00000
+                                              0.00000
+ 
++---------------- MEMORY AND SCRATCH DISK ESTIMATES PER PROCESS --------------+
+|                                                     Memory          Disk    |
+| Baseline code, static data and system overhead        0.0 MB         0.0 MB |
+| BLAS internal memory storage                          0.0 MB         0.0 MB |
+| Model and support data                             1629.9 MB         0.0 MB |
+| Electronic energy minimisation requirements         360.9 MB         0.0 MB |
+| Force calculation requirements                       60.9 MB         0.0 MB |
+|                                               ----------------------------- |
+| Approx. total storage required per process         1990.8 MB         0.0 MB |
+|                                                                             |
+| Requirements will fluctuate during execution and may exceed these estimates |
++-----------------------------------------------------------------------------+
+Calculating approximate eigenstates for fixed initial Hamiltonian
+Cut-off for approx. calculation is   89.988 eV
+Improving approx. states at cut-off of  450.000 eV
+Resetting cut-off to  900.000 eV
+Calculating total energy with cut-off of  900.000 eV.
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
+                               energy          per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -1.39387569E+004  0.00000000E+000                        49.81  <-- SCF
+      1  -1.39546293E+004 -1.90365211E+000   1.98404608E+000      82.66  <-- SCF
+      2  -1.39548500E+004 -1.90941298E+000   2.75823545E-002     132.75  <-- SCF
+      3  -1.39544438E+004 -1.81833439E+000  -5.07637572E-002     168.53  <-- SCF
+      4  -1.39543174E+004 -1.69296203E+000  -1.58085997E-002     204.36  <-- SCF
+      5  -1.39543012E+004 -1.59882038E+000  -2.02757338E-003     237.03  <-- SCF
+      6  -1.39542921E+004 -1.50638675E+000  -1.13514141E-003     265.25  <-- SCF
+      7  -1.39542867E+004 -1.43170026E+000  -6.68401608E-004     288.94  <-- SCF
+      8  -1.39542846E+004 -1.37446228E+000  -2.65009734E-004     317.11  <-- SCF
+      9  -1.39542810E+004 -1.31662757E+000  -4.52915200E-004     347.67  <-- SCF
+     10  -1.39542802E+004 -1.28039525E+000  -9.88207165E-005     374.98  <-- SCF
+     11  -1.39542802E+004 -1.23049854E+000  -7.82225500E-007     398.22  <-- SCF
+     12  -1.39542812E+004 -1.18019238E+000   1.28231436E-004     420.28  <-- SCF
+     13  -1.39542830E+004 -1.16751434E+000   2.26009739E-004     449.66  <-- SCF
+     14  -1.39542840E+004 -1.13144016E+000   1.26858416E-004     479.02  <-- SCF
+     15  -1.39542853E+004 -1.11510981E+000   1.52259178E-004     497.59  <-- SCF
+     16  -1.39542855E+004 -1.11543603E+000   2.52972249E-005     523.28  <-- SCF
+     17  -1.39542856E+004 -1.11471336E+000   2.10900986E-005     549.80  <-- SCF
+     18  -1.39542856E+004 -1.11488829E+000   2.37318613E-006     577.23  <-- SCF
+     19  -1.39542857E+004 -1.11482074E+000   1.26482381E-006     603.88  <-- SCF
+     20  -1.39542857E+004 -1.11473496E+000   1.58087170E-007     635.12  <-- SCF
+     21  -1.39542857E+004 -1.11471991E+000   5.86971328E-008     660.55  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -13954.28565834     eV
+Final free energy (E-TS)    =  -13954.28565834     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -13954.28565834     eV
+ 
+
+Writing analysis data to 8_8_1.castep_bin
+
+Writing model to 8_8_1.check
+ 
+ ************************** Forces **************************
+ *                                                          *
+ *               Cartesian components (eV/A)                *
+ * -------------------------------------------------------- *
+ *                         x            y            z      *
+ *                                                          *
+ * H               1     -0.00000      0.05933      0.01725 *
+ * H               2     -0.00000     -0.05935     -0.01725 *
+ * Al              1     -0.00000     -0.00317      0.00233 *
+ * Al              2     -0.00000      0.00316     -0.00232 *
+ * Se              1     -0.00000      0.00281     -0.00374 *
+ * Se              2     -0.00000     -0.00281      0.00374 *
+ * Se              3     -0.00000      0.05911     -0.00552 *
+ * Se              4      0.00001     -0.05908      0.00552 *
+ *                                                          *
+ ************************************************************
+
+Writing analysis data to 8_8_1.castep_bin
+
+Writing model to 8_8_1.check
+ 
+ A BibTeX formatted list of references used in this run has been written to 
+ 8_8_1.bib
+ 
+Initialisation time =     16.19 s
+Calculation time    =    671.09 s
+Finalisation time   =      1.77 s
+Total time          =    689.05 s
+ 
+Overall parallel efficiency rating: Very good (88%)
+ 
+Data was distributed by:-
+k-point (6-way); efficiency rating: Excellent (90%)

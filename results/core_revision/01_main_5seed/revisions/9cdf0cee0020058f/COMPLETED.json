@@ -1,0 +1,26 @@
+{
+  "signature": "9cdf0cee0020058f594674179d1fd25c38da4649f8316c12f8f4637df1f2c32a",
+  "timestamp": "2026-09-17T04:05:09.650920+00:00",
+  "files_sha256": {
+    "configuration_audit.csv": "75dce357080714e3f82790673c5428978bcfa644ae9b594b1c5c5a32a0df0271",
+    "ensemble_metrics.csv": "4a34e6ac3eae11316b894605842a6e9e221d020cf060d161900eae5f6b9cd65a",
+    "five_seed_summary.csv": "9ed6aadedb4d8b32d9364c9429aef516f577d12d8bd84c429301fcd37f2be400",
+    "manifest.json": "029fb43a2d96b37dd6601e655d74fac3cae24440f740fb3b658cd93b879a6213",
+    "member_metrics.csv": "9aa4ee5036bdc9458abd058535e49d881503eaf4a9c1032673b5d8c7497b38ea",
+    "ensemble_predictions\\d_only_calibration.json": "8e1f61708898d9a5bc5dce2cbb4fda27bdceed9ca19da78cb80e8d9485ba5e98",
+    "ensemble_predictions\\d_only_test.csv": "e0a5c842311ba8d72eef67e9287247a352eaa5622db72435f657c92f53939116",
+    "ensemble_predictions\\d_only_val.csv": "39d45d171a6759b2202eb2403c88b8e671cc35e9d99945bdff98899156bfac34",
+    "ensemble_predictions\\equal_mtl_calibration.json": "7fda0527acf4ea65b987be86f909284c1090a8b526fce1f4335f5b1cc7a1048f",
+    "ensemble_predictions\\equal_mtl_test.csv": "5ced040b67f80b1a5d8cf53d21faafa37a501a29b07b1df7d3a818842120b4f7",
+    "ensemble_predictions\\equal_mtl_val.csv": "cb6fb145009a4374446663715ba9fe377ea89c5b02be1e8555083ef7c3ab81ec",
+    "ensemble_predictions\\full_mtl_calibration.json": "79f1aed3018571dd86c731d4c694acb187e1d7e17b5414520acebc5471d4e944",
+    "ensemble_predictions\\full_mtl_test.csv": "cd3d0eed463f058792defe353dec7104b878a3f21aa0af3dee3af0dea81ee945",
+    "ensemble_predictions\\full_mtl_val.csv": "e66aac65db05b1999ffddc65d9f1bf9ab357e50d634bd12f495e883fdbbdecc0",
+    "ensemble_predictions\\single_task_joint_calibration.json": "91f485497e601c60231595572676cfac66858fbd9274bfdb898314fbe5d338ac",
+    "ensemble_predictions\\single_task_joint_test.csv": "478b68d18c22f4db7e607f7acf6f674d2c9f59193a0967e24c5d30e32d08e488",
+    "ensemble_predictions\\single_task_joint_val.csv": "f918273070d64dd067a642f86f6b16cbe1983bac8c2c1b4c9def978a7b6c9e79",
+    "ensemble_predictions\\t_only_calibration.json": "65fd7e882fc0617525ba054a5d28c30e64060533ffb5ff4616248cfecac34023",
+    "ensemble_predictions\\t_only_test.csv": "35a670e1472c7393edf5ce7f38aa31c172241f8f898da6707cb94f08ce96a34e",
+    "ensemble_predictions\\t_only_val.csv": "60c0d8216b6860bcc01f16297e7e89775bcef664ef996e9a92b28047f7b38b8b"
+  }
+}

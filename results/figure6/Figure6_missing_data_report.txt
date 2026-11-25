@@ -1,0 +1,11 @@
+FIGURE 6 DATA STATUS: RESOLVED
+========================================================================================
+The earlier missing-data state is obsolete.
+
+Available phonon inputs:
+- BrI2Ir3Te3: self-calculated 600-dpi ck Phon2.tif; CASTEP .phonon checked.
+- Cr2Sn2Se6: 900-dpi literature phonon panel with source record.
+- Ni2Sb2O6: native 600-dpi literature phonon panel with source record.
+
+Formal Figure6.png, Figure6.pdf, and Figure6.svg were generated successfully.
+See Figure6_audit.txt and Figure6_run_log.txt for the verified sources and values.

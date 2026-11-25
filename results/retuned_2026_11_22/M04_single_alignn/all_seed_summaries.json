@@ -1,0 +1,57 @@
+[
+  {
+    "name": "M04_single_alignn",
+    "category": "retuned_2026_11_22",
+    "seed": 2025,
+    "status": "completed",
+    "best_epoch": 68,
+    "batch_size": 16,
+    "monitor_task": "joint",
+    "test_joint_pr_auc": 0.8876615917874805,
+    "test_joint_mcc": 0.6514631106623964
+  },
+  {
+    "name": "M04_single_alignn",
+    "category": "retuned_2026_11_22",
+    "seed": 2026,
+    "status": "completed",
+    "best_epoch": 54,
+    "batch_size": 16,
+    "monitor_task": "joint",
+    "test_joint_pr_auc": 0.8847507800574693,
+    "test_joint_mcc": 0.6182216173365261
+  },
+  {
+    "name": "M04_single_alignn",
+    "category": "retuned_2026_11_22",
+    "seed": 2027,
+    "status": "completed",
+    "best_epoch": 38,
+    "batch_size": 16,
+    "monitor_task": "joint",
+    "test_joint_pr_auc": 0.8832904189729516,
+    "test_joint_mcc": 0.6575883642961148
+  },
+  {
+    "name": "M04_single_alignn",
+    "category": "retuned_2026_11_22",
+    "seed": 2028,
+    "status": "completed",
+    "best_epoch": 33,
+    "batch_size": 16,
+    "monitor_task": "joint",
+    "test_joint_pr_auc": 0.8842206371918027,
+    "test_joint_mcc": 0.6557787134102498
+  },
+  {
+    "name": "M04_single_alignn",
+    "category": "retuned_2026_11_22",
+    "seed": 2029,
+    "status": "completed",
+    "best_epoch": 49,
+    "batch_size": 16,
+    "monitor_task": "joint",
+    "test_joint_pr_auc": 0.8964324859467862,
+    "test_joint_mcc": 0.6515797809198522
+  }
+]

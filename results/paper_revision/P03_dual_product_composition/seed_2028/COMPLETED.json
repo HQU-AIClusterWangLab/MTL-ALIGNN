@@ -1,0 +1,11 @@
+{
+  "name": "P03_dual_product_composition",
+  "category": "paper_revision",
+  "seed": 2028,
+  "status": "completed",
+  "best_epoch": 35,
+  "batch_size": 16,
+  "monitor_task": "joint",
+  "test_joint_pr_auc": 0.8700607601834979,
+  "test_joint_mcc": 0.6283305397410256
+}

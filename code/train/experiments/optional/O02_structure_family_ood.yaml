@@ -1,0 +1,10 @@
+name: O02_structure_family_ood
+category: optional
+model_type: alignn
+heads: [thermo, dynamic, joint]
+active_tasks: [thermo, dynamic, joint]
+weighting: adaptive_auxiliary
+logic_beta: 0.10
+logic_lower_bound: true
+seeds: [2025, 2026, 2027]
+split_file: ood_splits/structure_family_holdout.csv

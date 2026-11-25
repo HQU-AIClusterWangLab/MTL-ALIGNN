@@ -1,0 +1,1894 @@
+{
+  "algorithm_version": "review-splits-v1",
+  "canonical_composition_definition": {
+    "atom_order_invariant": true,
+    "common_supercell_multiplier_invariant": true,
+    "formula_format": "Hill formula with count 1 omitted",
+    "id_format": "Element=count tokens separated by |",
+    "ordering": "Hill order (C, H, then alphabetical; alphabetical without C)",
+    "reduction": "divide all positive element counts by their gcd",
+    "source": "integer counts = round(natoms * frac_Z_001..frac_Z_118)"
+  },
+  "current_iid_split_canonical_leakage_audit": {
+    "assignment_sha256": "29f1c21ec197d6201c6f76e542d7b8341027b47c07f19a0aa60827abc85e06db",
+    "canonical_composition_leakage_detected": true,
+    "coverage": {
+      "all_source_rows_covered_once": true,
+      "all_three_splits_present": true,
+      "assigned_rows": 8102,
+      "material_id_unique": true,
+      "source_rows": 8102
+    },
+    "group_columns_with_nonzero_cross_split_overlap": [
+      "canonical_reduced_composition_id",
+      "chemical_system_id",
+      "structure_family_id"
+    ],
+    "interpretation": "Any non-zero canonical reduced-composition overlap means the current iid_split.csv is not composition-disjoint under atom-count canonicalization.",
+    "legacy_claimed_group_column": "reduced_formula",
+    "pairwise_group_overlap": {
+      "canonical_reduced_composition_id": {
+        "train__test": {
+          "examples": [
+            "Ag=1|Br=1",
+            "Ag=1|Cl=1|H=1|S=1",
+            "Ag=1|F=1",
+            "Ag=1|I=1",
+            "Ag=1|I=1|Se=1",
+            "Ag=1|S=1",
+            "Ag=1|S=2",
+            "Ag=1|Te=2",
+            "Ag=2|Te=1",
+            "Al=1|Br=1|S=1"
+          ],
+          "overlap_group_count": 206
+        },
+        "train__val": {
+          "examples": [
+            "Ag=1|Cl=1|H=1|O=1",
+            "Ag=1|Cl=1|Se=1",
+            "Ag=1|Cl=2",
+            "Ag=1|F=1",
+            "Ag=1|F=3",
+            "Ag=1|I=1",
+            "Ag=1|I=2",
+            "Ag=1|I=3",
+            "Ag=1|Se=2",
+            "Al=1|Cl=1|S=1"
+          ],
+          "overlap_group_count": 200
+        },
+        "val__test": {
+          "examples": [
+            "Ag=1|Br=1|Se=1",
+            "Ag=1|F=1",
+            "Ag=1|I=1",
+            "Al=1|Br=1|Te=1",
+            "Al=1|I=1|S=1",
+            "Al=1|I=1|Te=1",
+            "Al=1|Se=1",
+            "Al=2|Se=3",
+            "As=1|Be=1|Tl=1",
+            "Au=1|Br=1|Se=1"
+          ],
+          "overlap_group_count": 53
+        }
+      },
+      "chemical_system_id": {
+        "train__test": {
+          "examples": [
+            "Ag-Au-Br",
+            "Ag-Br",
+            "Ag-Br-Se",
+            "Ag-Cl-H-S",
+            "Ag-Cu-Te",
+            "Ag-F",
+            "Ag-I",
+            "Ag-I-S",
+            "Ag-I-Se",
+            "Ag-S"
+          ],
+          "overlap_group_count": 387
+        },
+        "train__val": {
+          "examples": [
+            "Ag-As-Cl-Se",
+            "Ag-Au-Cl",
+            "Ag-Br-Cl",
+            "Ag-Br-Se",
+            "Ag-Br-Te",
+            "Ag-Cl",
+            "Ag-Cl-Ge",
+            "Ag-Cl-H-O",
+            "Ag-Cl-Se",
+            "Ag-F"
+          ],
+          "overlap_group_count": 427
+        },
+        "val__test": {
+          "examples": [
+            "Ag-Br-Ca",
+            "Ag-Br-Se",
+            "Ag-F",
+            "Ag-I",
+            "Ag-I-S-Sr",
+            "Ag-Se",
+            "Al-Br-Te",
+            "Al-I-S",
+            "Al-I-Te",
+            "Al-Se"
+          ],
+          "overlap_group_count": 162
+        }
+      },
+      "reduced_formula": {
+        "train__test": {
+          "examples": [],
+          "overlap_group_count": 0
+        },
+        "train__val": {
+          "examples": [],
+          "overlap_group_count": 0
+        },
+        "val__test": {
+          "examples": [],
+          "overlap_group_count": 0
+        }
+      },
+      "structure_family_id": {
+        "train__test": {
+          "examples": [
+            "A2B2C11|p-3m1",
+            "A2B2C2D3|p-6m2",
+            "A2B2C3D4|p-3m1",
+            "A2B2C3D4|p4/mmm",
+            "A2B2C3D4|pm11",
+            "A2B2C3D5|p4/mmm",
+            "A2B2C3|cm11",
+            "A2B2C3|p-6m2",
+            "A2B2C5|c2/m11",
+            "A2B2C5|p-3m1"
+          ],
+          "overlap_group_count": 271
+        },
+        "train__val": {
+          "examples": [
+            "A2B2C2D3|cm2m",
+            "A2B2C2D3|p-6m2",
+            "A2B2C2D7|p-1",
+            "A2B2C3D4|p-3m1",
+            "A2B2C3D4|pm11",
+            "A2B2C3D5|p4/mmm",
+            "A2B2C3|c211",
+            "A2B2C3|p-6m2",
+            "A2B2C5|cm11",
+            "A2B2C5|p-3m1"
+          ],
+          "overlap_group_count": 261
+        },
+        "val__test": {
+          "examples": [
+            "A2B2C2D3|p-6m2",
+            "A2B2C3D4|p-3m1",
+            "A2B2C3D4|pm11",
+            "A2B2C3D5|p4/mmm",
+            "A2B2C3|p-6m2",
+            "A2B2C5|p-3m1",
+            "A2B2C5|p-6m2",
+            "A2B2C5|p3m1",
+            "A2B3C4|p-3m1",
+            "A2B3C5|pmmn"
+          ],
+          "overlap_group_count": 188
+        }
+      },
+      "structure_hash": {
+        "train__test": {
+          "examples": [],
+          "overlap_group_count": 0
+        },
+        "train__val": {
+          "examples": [],
+          "overlap_group_count": 0
+        },
+        "val__test": {
+          "examples": [],
+          "overlap_group_count": 0
+        }
+      }
+    },
+    "split_summary": {
+      "test": {
+        "group_size_distributions": {
+          "canonical_reduced_composition_id": {
+            "max": 7,
+            "mean": 1.228744939271255,
+            "median": 1.0,
+            "min": 1,
+            "n_groups": 988,
+            "q25": 1.0,
+            "q75": 1.0
+          },
+          "chemical_system_id": {
+            "max": 8,
+            "mean": 1.3795454545454546,
+            "median": 1.0,
+            "min": 1,
+            "n_groups": 880,
+            "q25": 1.0,
+            "q75": 1.0
+          },
+          "reduced_formula": {
+            "max": 5,
+            "mean": 1.1786407766990292,
+            "median": 1.0,
+            "min": 1,
+            "n_groups": 1030,
+            "q25": 1.0,
+            "q75": 1.0
+          },
+          "structure_family_id": {
+            "max": 72,
+            "mean": 3.878594249201278,
+            "median": 1.0,
+            "min": 1,
+            "n_groups": 313,
+            "q25": 1.0,
+            "q75": 3.0
+          },
+          "structure_hash": {
+            "max": 1,
+            "mean": 1.0,
+            "median": 1.0,
+            "min": 1,
+            "n_groups": 1214,
+            "q25": 1.0,
+            "q75": 1.0
+          }
+        },
+        "label_positive_counts": {
+          "dynamic_label": 717,
+          "joint_label": 568,
+          "thermo_label": 790
+        },
+        "label_rates": {
+          "dynamic_label": 0.5906095551894563,
+          "joint_label": 0.46787479406919275,
+          "thermo_label": 0.6507413509060955
+        },
+        "n_rows": 1214,
+        "n_unique_material_ids": 1214
+      },
+      "train": {
+        "group_size_distributions": {
+          "canonical_reduced_composition_id": {
+            "max": 22,
+            "mean": 1.3761223004125211,
+            "median": 1.0,
+            "min": 1,
+            "n_groups": 4121,
+            "q25": 1.0,
+            "q75": 1.0
+          },
+          "chemical_system_id": {
+            "max": 37,
+            "mean": 1.8264090177133656,
+            "median": 1.0,
+            "min": 1,
+            "n_groups": 3105,
+            "q25": 1.0,
+            "q75": 2.0
+          },
+          "reduced_formula": {
+            "max": 5,
+            "mean": 1.1799833541406575,
+            "median": 1.0,
+            "min": 1,
+            "n_groups": 4806,
+            "q25": 1.0,
+            "q75": 1.0
+          },
+          "structure_family_id": {
+            "max": 319,
+            "mean": 9.53109243697479,
+            "median": 2.0,
+            "min": 1,
+            "n_groups": 595,
+            "q25": 1.0,
+            "q75": 7.0
+          },
+          "structure_hash": {
+            "max": 1,
+            "mean": 1.0,
+            "median": 1.0,
+            "min": 1,
+            "n_groups": 5671,
+            "q25": 1.0,
+            "q75": 1.0
+          }
+        },
+        "label_positive_counts": {
+          "dynamic_label": 3356,
+          "joint_label": 2654,
+          "thermo_label": 3686
+        },
+        "label_rates": {
+          "dynamic_label": 0.5917827543643096,
+          "joint_label": 0.4679950625991889,
+          "thermo_label": 0.6499735496385117
+        },
+        "n_rows": 5671,
+        "n_unique_material_ids": 5671
+      },
+      "val": {
+        "group_size_distributions": {
+          "canonical_reduced_composition_id": {
+            "max": 5,
+            "mean": 1.2231155778894471,
+            "median": 1.0,
+            "min": 1,
+            "n_groups": 995,
+            "q25": 1.0,
+            "q75": 1.0
+          },
+          "chemical_system_id": {
+            "max": 7,
+            "mean": 1.3567447045707914,
+            "median": 1.0,
+            "min": 1,
+            "n_groups": 897,
+            "q25": 1.0,
+            "q75": 1.0
+          },
+          "reduced_formula": {
+            "max": 5,
+            "mean": 1.1815533980582524,
+            "median": 1.0,
+            "min": 1,
+            "n_groups": 1030,
+            "q25": 1.0,
+            "q75": 1.0
+          },
+          "structure_family_id": {
+            "max": 69,
+            "mean": 3.875796178343949,
+            "median": 1.0,
+            "min": 1,
+            "n_groups": 314,
+            "q25": 1.0,
+            "q75": 3.0
+          },
+          "structure_hash": {
+            "max": 1,
+            "mean": 1.0,
+            "median": 1.0,
+            "min": 1,
+            "n_groups": 1217,
+            "q25": 1.0,
+            "q75": 1.0
+          }
+        },
+        "label_positive_counts": {
+          "dynamic_label": 718,
+          "joint_label": 570,
+          "thermo_label": 792
+        },
+        "label_rates": {
+          "dynamic_label": 0.589975349219392,
+          "joint_label": 0.4683648315529992,
+          "thermo_label": 0.6507806080525883
+        },
+        "n_rows": 1217,
+        "n_unique_material_ids": 1217
+      }
+    },
+    "target_group_column": "canonical_reduced_composition_id",
+    "target_group_disjoint_enforced": false,
+    "target_group_overlap_unique_count": 399,
+    "target_group_pairwise_overlap_count_sum": 459,
+    "unique_cross_split_group_overlap": {
+      "canonical_reduced_composition_id": {
+        "examples": [
+          "Ag=1|Br=1",
+          "Ag=1|Br=1|Se=1",
+          "Ag=1|Cl=1|H=1|O=1",
+          "Ag=1|Cl=1|H=1|S=1",
+          "Ag=1|Cl=1|Se=1",
+          "Ag=1|Cl=2",
+          "Ag=1|F=1",
+          "Ag=1|F=3",
+          "Ag=1|I=1",
+          "Ag=1|I=1|Se=1"
+        ],
+        "unique_groups_spanning_all_three_splits": 30,
+        "unique_groups_spanning_exactly_two_splits": 369,
+        "unique_groups_spanning_multiple_splits": 399
+      },
+      "chemical_system_id": {
+        "examples": [
+          "Ag-As-Cl-Se",
+          "Ag-Au-Br",
+          "Ag-Au-Cl",
+          "Ag-Br",
+          "Ag-Br-Ca",
+          "Ag-Br-Cl",
+          "Ag-Br-Se",
+          "Ag-Br-Te",
+          "Ag-Cl",
+          "Ag-Cl-Ge"
+        ],
+        "unique_groups_spanning_all_three_splits": 130,
+        "unique_groups_spanning_exactly_two_splits": 586,
+        "unique_groups_spanning_multiple_splits": 716
+      },
+      "reduced_formula": {
+        "examples": [],
+        "unique_groups_spanning_all_three_splits": 0,
+        "unique_groups_spanning_exactly_two_splits": 0,
+        "unique_groups_spanning_multiple_splits": 0
+      },
+      "structure_family_id": {
+        "examples": [
+          "A2B2C11|p-3m1",
+          "A2B2C2D3|cm2m",
+          "A2B2C2D3|p-6m2",
+          "A2B2C2D7|p-1",
+          "A2B2C3D4|p-3m1",
+          "A2B2C3D4|p4/mmm",
+          "A2B2C3D4|pm11",
+          "A2B2C3D5|p4/mmm",
+          "A2B2C3|c211",
+          "A2B2C3|cm11"
+        ],
+        "unique_groups_spanning_all_three_splits": 182,
+        "unique_groups_spanning_exactly_two_splits": 174,
+        "unique_groups_spanning_multiple_splits": 356
+      },
+      "structure_hash": {
+        "examples": [],
+        "unique_groups_spanning_all_three_splits": 0,
+        "unique_groups_spanning_exactly_two_splits": 0,
+        "unique_groups_spanning_multiple_splits": 0
+      }
+    }
+  },
+  "frozen_manifest_set": true,
+  "manifests": {
+    "chemical_system_disjoint": {
+      "assignment_sha256": "0528040d69979add9a4c1e418d488e0474b7972ee127272233ee5c7f6bd549a0",
+      "coverage": {
+        "all_source_rows_covered_once": true,
+        "all_three_splits_present": true,
+        "assigned_rows": 8102,
+        "material_id_unique": true,
+        "source_rows": 8102
+      },
+      "filename": "chemical_system_disjoint.csv",
+      "group_columns_with_nonzero_cross_split_overlap": [
+        "structure_family_id"
+      ],
+      "manifest_sha256": "7543723d8943b596cee89abf500bb8094c674aec9fe4f196a7622f91bc83d7ce",
+      "pairwise_group_overlap": {
+        "canonical_reduced_composition_id": {
+          "train__test": {
+            "examples": [],
+            "overlap_group_count": 0
+          },
+          "train__val": {
+            "examples": [],
+            "overlap_group_count": 0
+          },
+          "val__test": {
+            "examples": [],
+            "overlap_group_count": 0
+          }
+        },
+        "chemical_system_id": {
+          "train__test": {
+            "examples": [],
+            "overlap_group_count": 0
+          },
+          "train__val": {
+            "examples": [],
+            "overlap_group_count": 0
+          },
+          "val__test": {
+            "examples": [],
+            "overlap_group_count": 0
+          }
+        },
+        "structure_family_id": {
+          "train__test": {
+            "examples": [
+              "A2B2C2D3|p-6m2",
+              "A2B2C2D7|p-1",
+              "A2B2C3D4|p-3m1",
+              "A2B2C3D4|p4/mmm",
+              "A2B2C3D4|pm11",
+              "A2B2C3D5|p4/mmm",
+              "A2B2C3|c211",
+              "A2B2C3|p-6m2",
+              "A2B2C5|c2/m11",
+              "A2B2C5|p-3m1"
+            ],
+            "overlap_group_count": 263
+          },
+          "train__val": {
+            "examples": [
+              "A2B2C11|p-3m1",
+              "A2B2C2D3|p-6m2",
+              "A2B2C3D4|p-3m1",
+              "A2B2C3D4|p4/mmm",
+              "A2B2C3D4|pm11",
+              "A2B2C3D5|p4/mmm",
+              "A2B2C3|c211",
+              "A2B2C3|cm11",
+              "A2B2C3|p-6m2",
+              "A2B2C5|cm11"
+            ],
+            "overlap_group_count": 259
+          },
+          "val__test": {
+            "examples": [
+              "A2B2C2D3|p-6m2",
+              "A2B2C3D4|p-3m1",
+              "A2B2C3D4|p4/mmm",
+              "A2B2C3D4|pm11",
+              "A2B2C3D5|p4/mmm",
+              "A2B2C3|c211",
+              "A2B2C3|p-6m2",
+              "A2B2C5|p-3m1",
+              "A2B2C5|p-6m2",
+              "A2B2C5|p3m1"
+            ],
+            "overlap_group_count": 193
+          }
+        },
+        "structure_hash": {
+          "train__test": {
+            "examples": [],
+            "overlap_group_count": 0
+          },
+          "train__val": {
+            "examples": [],
+            "overlap_group_count": 0
+          },
+          "val__test": {
+            "examples": [],
+            "overlap_group_count": 0
+          }
+        }
+      },
+      "path": "D:\\ck\\two\\data\\processed\\review_splits\\chemical_system_disjoint.csv",
+      "seed": 244,
+      "split_summary": {
+        "test": {
+          "group_size_distributions": {
+            "canonical_reduced_composition_id": {
+              "max": 16,
+              "mean": 1.390607101947308,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 873,
+              "q25": 1.0,
+              "q75": 1.0
+            },
+            "chemical_system_id": {
+              "max": 25,
+              "mean": 2.0033003300330035,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 606,
+              "q25": 1.0,
+              "q75": 2.0
+            },
+            "structure_family_id": {
+              "max": 63,
+              "mean": 3.829652996845426,
+              "median": 2.0,
+              "min": 1,
+              "n_groups": 317,
+              "q25": 1.0,
+              "q75": 3.0
+            },
+            "structure_hash": {
+              "max": 1,
+              "mean": 1.0,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 1214,
+              "q25": 1.0,
+              "q75": 1.0
+            }
+          },
+          "label_positive_counts": {
+            "dynamic_label": 714,
+            "joint_label": 566,
+            "thermo_label": 785
+          },
+          "label_rates": {
+            "dynamic_label": 0.5881383855024712,
+            "joint_label": 0.46622734761120266,
+            "thermo_label": 0.6466227347611203
+          },
+          "n_rows": 1214,
+          "n_unique_material_ids": 1214
+        },
+        "train": {
+          "group_size_distributions": {
+            "canonical_reduced_composition_id": {
+              "max": 22,
+              "mean": 1.4356185175815837,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 3953,
+              "q25": 1.0,
+              "q75": 1.0
+            },
+            "chemical_system_id": {
+              "max": 38,
+              "mean": 2.009560906515581,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 2824,
+              "q25": 1.0,
+              "q75": 2.0
+            },
+            "structure_family_id": {
+              "max": 333,
+              "mean": 9.58614864864865,
+              "median": 2.0,
+              "min": 1,
+              "n_groups": 592,
+              "q25": 1.0,
+              "q75": 7.0
+            },
+            "structure_hash": {
+              "max": 1,
+              "mean": 1.0,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 5675,
+              "q25": 1.0,
+              "q75": 1.0
+            }
+          },
+          "label_positive_counts": {
+            "dynamic_label": 3355,
+            "joint_label": 2659,
+            "thermo_label": 3693
+          },
+          "label_rates": {
+            "dynamic_label": 0.5911894273127754,
+            "joint_label": 0.46854625550660794,
+            "thermo_label": 0.6507488986784141
+          },
+          "n_rows": 5675,
+          "n_unique_material_ids": 5675
+        },
+        "val": {
+          "group_size_distributions": {
+            "canonical_reduced_composition_id": {
+              "max": 22,
+              "mean": 1.4287396937573615,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 849,
+              "q25": 1.0,
+              "q75": 1.0
+            },
+            "chemical_system_id": {
+              "max": 31,
+              "mean": 2.0016501650165015,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 606,
+              "q25": 1.0,
+              "q75": 2.0
+            },
+            "structure_family_id": {
+              "max": 64,
+              "mean": 4.003300330033003,
+              "median": 2.0,
+              "min": 1,
+              "n_groups": 303,
+              "q25": 1.0,
+              "q75": 3.0
+            },
+            "structure_hash": {
+              "max": 1,
+              "mean": 1.0,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 1213,
+              "q25": 1.0,
+              "q75": 1.0
+            }
+          },
+          "label_positive_counts": {
+            "dynamic_label": 722,
+            "joint_label": 567,
+            "thermo_label": 790
+          },
+          "label_rates": {
+            "dynamic_label": 0.5952184666117065,
+            "joint_label": 0.4674361088211047,
+            "thermo_label": 0.651277823577906
+          },
+          "n_rows": 1213,
+          "n_unique_material_ids": 1213
+        }
+      },
+      "target_group_column": "chemical_system_id",
+      "target_group_disjoint_enforced": true,
+      "target_group_overlap_unique_count": 0,
+      "target_group_pairwise_overlap_count_sum": 0,
+      "unique_cross_split_group_overlap": {
+        "canonical_reduced_composition_id": {
+          "examples": [],
+          "unique_groups_spanning_all_three_splits": 0,
+          "unique_groups_spanning_exactly_two_splits": 0,
+          "unique_groups_spanning_multiple_splits": 0
+        },
+        "chemical_system_id": {
+          "examples": [],
+          "unique_groups_spanning_all_three_splits": 0,
+          "unique_groups_spanning_exactly_two_splits": 0,
+          "unique_groups_spanning_multiple_splits": 0
+        },
+        "structure_family_id": {
+          "examples": [
+            "A2B2C11|p-3m1",
+            "A2B2C2D3|p-6m2",
+            "A2B2C2D7|p-1",
+            "A2B2C3D4|p-3m1",
+            "A2B2C3D4|p4/mmm",
+            "A2B2C3D4|pm11",
+            "A2B2C3D5|p4/mmm",
+            "A2B2C3|c211",
+            "A2B2C3|cm11",
+            "A2B2C3|p-6m2"
+          ],
+          "unique_groups_spanning_all_three_splits": 187,
+          "unique_groups_spanning_exactly_two_splits": 154,
+          "unique_groups_spanning_multiple_splits": 341
+        },
+        "structure_hash": {
+          "examples": [],
+          "unique_groups_spanning_all_three_splits": 0,
+          "unique_groups_spanning_exactly_two_splits": 0,
+          "unique_groups_spanning_multiple_splits": 0
+        }
+      }
+    },
+    "composition_disjoint": {
+      "assignment_sha256": "9d820aac3c327124038601e95451639bcddc87b2e07ee0de4802e3dd97c93f42",
+      "coverage": {
+        "all_source_rows_covered_once": true,
+        "all_three_splits_present": true,
+        "assigned_rows": 8102,
+        "material_id_unique": true,
+        "source_rows": 8102
+      },
+      "filename": "composition_disjoint.csv",
+      "group_columns_with_nonzero_cross_split_overlap": [
+        "chemical_system_id",
+        "structure_family_id"
+      ],
+      "manifest_sha256": "bbe570b33c78d89efd569d2408e405c1bb626f0ff81849a4bc4caca066c2fd99",
+      "pairwise_group_overlap": {
+        "canonical_reduced_composition_id": {
+          "train__test": {
+            "examples": [],
+            "overlap_group_count": 0
+          },
+          "train__val": {
+            "examples": [],
+            "overlap_group_count": 0
+          },
+          "val__test": {
+            "examples": [],
+            "overlap_group_count": 0
+          }
+        },
+        "chemical_system_id": {
+          "train__test": {
+            "examples": [
+              "Ag-As-Cl-Se",
+              "Ag-Au-F",
+              "Ag-Au-Se",
+              "Ag-Br-S",
+              "Ag-Br-Se",
+              "Ag-Br-Te",
+              "Ag-Cl-Te",
+              "Ag-F",
+              "Ag-I",
+              "Ag-Sb-Se"
+            ],
+            "overlap_group_count": 286
+          },
+          "train__val": {
+            "examples": [
+              "Ag-Au-Br",
+              "Ag-Au-Cl",
+              "Ag-Br",
+              "Ag-Br-Cl",
+              "Ag-Br-I",
+              "Ag-Br-Mn",
+              "Ag-Cl-S",
+              "Ag-Cu-Te",
+              "Ag-I-Se",
+              "Ag-O-Se"
+            ],
+            "overlap_group_count": 275
+          },
+          "val__test": {
+            "examples": [
+              "Ag-Ca-Cl-O",
+              "Ag-Cl",
+              "Ag-Cu-I",
+              "Al-Mg-Te",
+              "As-Cr-O",
+              "As-S",
+              "B-Cl-Zr",
+              "Bi-S",
+              "Br-Cl-Ga-Mn",
+              "Br-Cl-Zr"
+            ],
+            "overlap_group_count": 89
+          }
+        },
+        "structure_family_id": {
+          "train__test": {
+            "examples": [
+              "A2B2C11|p-3m1",
+              "A2B2C2D3|p-6m2",
+              "A2B2C2D7|p-1",
+              "A2B2C3D4|p-3m1",
+              "A2B2C3D4|p4/mmm",
+              "A2B2C3D4|pm11",
+              "A2B2C3D5|p4/mmm",
+              "A2B2C3|p-6m2",
+              "A2B2C5|p-3m1",
+              "A2B2C5|p-6m2"
+            ],
+            "overlap_group_count": 262
+          },
+          "train__val": {
+            "examples": [
+              "A2B2C2D3|cm2m",
+              "A2B2C2D3|p-6m2",
+              "A2B2C3D4|p-3m1",
+              "A2B2C3D4|p4/mmm",
+              "A2B2C3D4|pm11",
+              "A2B2C3D5|p4/mmm",
+              "A2B2C3|p-6m2",
+              "A2B2C5|p-3m1",
+              "A2B2C5|p3m1",
+              "A2B3C4|p-3m1"
+            ],
+            "overlap_group_count": 272
+          },
+          "val__test": {
+            "examples": [
+              "A2B2C2D3|p-6m2",
+              "A2B2C3D4|p-3m1",
+              "A2B2C3D4|p4/mmm",
+              "A2B2C3D4|pm11",
+              "A2B2C3D5|p4/mmm",
+              "A2B2C3|p-6m2",
+              "A2B2C5|p-3m1",
+              "A2B2C5|p3m1",
+              "A2B3C4|p-3m1",
+              "A2B3C9|p-6"
+            ],
+            "overlap_group_count": 206
+          }
+        },
+        "structure_hash": {
+          "train__test": {
+            "examples": [],
+            "overlap_group_count": 0
+          },
+          "train__val": {
+            "examples": [],
+            "overlap_group_count": 0
+          },
+          "val__test": {
+            "examples": [],
+            "overlap_group_count": 0
+          }
+        }
+      },
+      "path": "D:\\ck\\two\\data\\processed\\review_splits\\composition_disjoint.csv",
+      "seed": 143,
+      "split_summary": {
+        "test": {
+          "group_size_distributions": {
+            "canonical_reduced_composition_id": {
+              "max": 12,
+              "mean": 1.4213615023474178,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 852,
+              "q25": 1.0,
+              "q75": 1.0
+            },
+            "chemical_system_id": {
+              "max": 18,
+              "mean": 1.5156445556946183,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 799,
+              "q25": 1.0,
+              "q75": 1.0
+            },
+            "structure_family_id": {
+              "max": 81,
+              "mean": 3.9318181818181817,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 308,
+              "q25": 1.0,
+              "q75": 3.0
+            },
+            "structure_hash": {
+              "max": 1,
+              "mean": 1.0,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 1211,
+              "q25": 1.0,
+              "q75": 1.0
+            }
+          },
+          "label_positive_counts": {
+            "dynamic_label": 716,
+            "joint_label": 568,
+            "thermo_label": 784
+          },
+          "label_rates": {
+            "dynamic_label": 0.5912469033856317,
+            "joint_label": 0.4690338563170933,
+            "thermo_label": 0.6473988439306358
+          },
+          "n_rows": 1211,
+          "n_unique_material_ids": 1211
+        },
+        "train": {
+          "group_size_distributions": {
+            "canonical_reduced_composition_id": {
+              "max": 22,
+              "mean": 1.4291110551498363,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 3971,
+              "q25": 1.0,
+              "q75": 1.0
+            },
+            "chemical_system_id": {
+              "max": 30,
+              "mean": 1.8594364351245085,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 3052,
+              "q25": 1.0,
+              "q75": 2.0
+            },
+            "structure_family_id": {
+              "max": 328,
+              "mean": 9.667802385008518,
+              "median": 2.0,
+              "min": 1,
+              "n_groups": 587,
+              "q25": 1.0,
+              "q75": 7.0
+            },
+            "structure_hash": {
+              "max": 1,
+              "mean": 1.0,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 5675,
+              "q25": 1.0,
+              "q75": 1.0
+            }
+          },
+          "label_positive_counts": {
+            "dynamic_label": 3360,
+            "joint_label": 2657,
+            "thermo_label": 3690
+          },
+          "label_rates": {
+            "dynamic_label": 0.5920704845814978,
+            "joint_label": 0.46819383259911895,
+            "thermo_label": 0.6502202643171806
+          },
+          "n_rows": 5675,
+          "n_unique_material_ids": 5675
+        },
+        "val": {
+          "group_size_distributions": {
+            "canonical_reduced_composition_id": {
+              "max": 22,
+              "mean": 1.4272300469483568,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 852,
+              "q25": 1.0,
+              "q75": 1.0
+            },
+            "chemical_system_id": {
+              "max": 22,
+              "mean": 1.558974358974359,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 780,
+              "q25": 1.0,
+              "q75": 2.0
+            },
+            "structure_family_id": {
+              "max": 54,
+              "mean": 3.684848484848485,
+              "median": 2.0,
+              "min": 1,
+              "n_groups": 330,
+              "q25": 1.0,
+              "q75": 3.0
+            },
+            "structure_hash": {
+              "max": 1,
+              "mean": 1.0,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 1216,
+              "q25": 1.0,
+              "q75": 1.0
+            }
+          },
+          "label_positive_counts": {
+            "dynamic_label": 715,
+            "joint_label": 567,
+            "thermo_label": 794
+          },
+          "label_rates": {
+            "dynamic_label": 0.5879934210526315,
+            "joint_label": 0.4662828947368421,
+            "thermo_label": 0.6529605263157895
+          },
+          "n_rows": 1216,
+          "n_unique_material_ids": 1216
+        }
+      },
+      "target_group_column": "canonical_reduced_composition_id",
+      "target_group_disjoint_enforced": true,
+      "target_group_overlap_unique_count": 0,
+      "target_group_pairwise_overlap_count_sum": 0,
+      "unique_cross_split_group_overlap": {
+        "canonical_reduced_composition_id": {
+          "examples": [],
+          "unique_groups_spanning_all_three_splits": 0,
+          "unique_groups_spanning_exactly_two_splits": 0,
+          "unique_groups_spanning_multiple_splits": 0
+        },
+        "chemical_system_id": {
+          "examples": [
+            "Ag-As-Cl-Se",
+            "Ag-Au-Br",
+            "Ag-Au-Cl",
+            "Ag-Au-F",
+            "Ag-Au-Se",
+            "Ag-Br",
+            "Ag-Br-Cl",
+            "Ag-Br-I",
+            "Ag-Br-Mn",
+            "Ag-Br-S"
+          ],
+          "unique_groups_spanning_all_three_splits": 55,
+          "unique_groups_spanning_exactly_two_splits": 485,
+          "unique_groups_spanning_multiple_splits": 540
+        },
+        "structure_family_id": {
+          "examples": [
+            "A2B2C11|p-3m1",
+            "A2B2C2D3|cm2m",
+            "A2B2C2D3|p-6m2",
+            "A2B2C2D7|p-1",
+            "A2B2C3D4|p-3m1",
+            "A2B2C3D4|p4/mmm",
+            "A2B2C3D4|pm11",
+            "A2B2C3D5|p4/mmm",
+            "A2B2C3|p-6m2",
+            "A2B2C5|p-3m1"
+          ],
+          "unique_groups_spanning_all_three_splits": 199,
+          "unique_groups_spanning_exactly_two_splits": 143,
+          "unique_groups_spanning_multiple_splits": 342
+        },
+        "structure_hash": {
+          "examples": [],
+          "unique_groups_spanning_all_three_splits": 0,
+          "unique_groups_spanning_exactly_two_splits": 0,
+          "unique_groups_spanning_multiple_splits": 0
+        }
+      }
+    },
+    "random_iid_stratified": {
+      "assignment_sha256": "001755fb7530ddb076babf18871ba5fc48b304669b291ac9a3adbde0082c5179",
+      "coverage": {
+        "all_source_rows_covered_once": true,
+        "all_three_splits_present": true,
+        "assigned_rows": 8102,
+        "material_id_unique": true,
+        "source_rows": 8102
+      },
+      "filename": "random_iid_stratified.csv",
+      "group_columns_with_nonzero_cross_split_overlap": [
+        "canonical_reduced_composition_id",
+        "chemical_system_id",
+        "structure_family_id"
+      ],
+      "manifest_sha256": "132e5b97047397c3fe41cdf7e5be154b0e18d8b8aead867317a51976585a7dea",
+      "pairwise_group_overlap": {
+        "canonical_reduced_composition_id": {
+          "train__test": {
+            "examples": [
+              "Ag=1|Br=1",
+              "Ag=1|Br=2",
+              "Ag=1|Br=2|H=1",
+              "Ag=1|Cl=1",
+              "Ag=1|Cl=1|H=1|O=1",
+              "Ag=1|Cl=2",
+              "Ag=1|F=1",
+              "Ag=1|F=2",
+              "Ag=1|I=1",
+              "Ag=1|I=2"
+            ],
+            "overlap_group_count": 405
+          },
+          "train__val": {
+            "examples": [
+              "Ag=1|Au=1|I=4",
+              "Ag=1|Br=1",
+              "Ag=1|Br=2",
+              "Ag=1|Br=3",
+              "Ag=1|Cl=1",
+              "Ag=1|Cl=1|Se=2",
+              "Ag=1|Cl=2",
+              "Ag=1|I=1",
+              "Ag=1|I=1|Se=1",
+              "Ag=1|I=2"
+            ],
+            "overlap_group_count": 399
+          },
+          "val__test": {
+            "examples": [
+              "Ag=1|Br=1",
+              "Ag=1|Br=2",
+              "Ag=1|Cl=1",
+              "Ag=1|Cl=1|Se=1",
+              "Ag=1|Cl=2",
+              "Ag=1|I=1",
+              "Ag=1|I=2",
+              "Ag=1|Se=1",
+              "Ag=1|Se=2",
+              "Ag=1|Te=1"
+            ],
+            "overlap_group_count": 157
+          }
+        },
+        "chemical_system_id": {
+          "train__test": {
+            "examples": [
+              "Ag-Br",
+              "Ag-Br-Ca",
+              "Ag-Br-Cl",
+              "Ag-Br-H",
+              "Ag-Br-O-Sr",
+              "Ag-Br-Te",
+              "Ag-Cl",
+              "Ag-Cl-H-O",
+              "Ag-Cl-Se",
+              "Ag-Cu-Te"
+            ],
+            "overlap_group_count": 519
+          },
+          "train__val": {
+            "examples": [
+              "Ag-Au-I",
+              "Ag-Br",
+              "Ag-Br-S",
+              "Ag-Cl",
+              "Ag-Cl-Se",
+              "Ag-Cu-Te",
+              "Ag-I",
+              "Ag-I-Se",
+              "Ag-O-Se",
+              "Ag-P-Se"
+            ],
+            "overlap_group_count": 501
+          },
+          "val__test": {
+            "examples": [
+              "Ag-As-Cl-Se",
+              "Ag-Br",
+              "Ag-Cl",
+              "Ag-Cl-Se",
+              "Ag-Cu-Te",
+              "Ag-I",
+              "Ag-I-Te",
+              "Ag-S",
+              "Ag-Se",
+              "Ag-Te"
+            ],
+            "overlap_group_count": 246
+          }
+        },
+        "structure_family_id": {
+          "train__test": {
+            "examples": [
+              "A2B2C11|p-3m1",
+              "A2B2C2D3|cm2m",
+              "A2B2C2D3|p-6m2",
+              "A2B2C2D3|p3m1",
+              "A2B2C3D4|p-3m1",
+              "A2B2C3D4|p4/mmm",
+              "A2B2C3D4|pm11",
+              "A2B2C3D5|p4/mmm",
+              "A2B2C3|cm11",
+              "A2B2C3|p-1"
+            ],
+            "overlap_group_count": 268
+          },
+          "train__val": {
+            "examples": [
+              "A2B2C2D3|cm2m",
+              "A2B2C2D3|p-6m2",
+              "A2B2C3D4|p-3m1",
+              "A2B2C3D4|p4/mmm",
+              "A2B2C3D4|pm11",
+              "A2B2C3D5|p4/mmm",
+              "A2B2C3|cm11",
+              "A2B2C3|p-6m2",
+              "A2B2C5|p-3m1",
+              "A2B2C5|p-6m2"
+            ],
+            "overlap_group_count": 260
+          },
+          "val__test": {
+            "examples": [
+              "A2B2C2D3|cm2m",
+              "A2B2C2D3|p-6m2",
+              "A2B2C3D4|p-3m1",
+              "A2B2C3D4|p4/mmm",
+              "A2B2C3D4|pm11",
+              "A2B2C3D5|p4/mmm",
+              "A2B2C3|cm11",
+              "A2B2C3|p-6m2",
+              "A2B2C5|p-3m1",
+              "A2B2C5|p-6m2"
+            ],
+            "overlap_group_count": 195
+          }
+        },
+        "structure_hash": {
+          "train__test": {
+            "examples": [],
+            "overlap_group_count": 0
+          },
+          "train__val": {
+            "examples": [],
+            "overlap_group_count": 0
+          },
+          "val__test": {
+            "examples": [],
+            "overlap_group_count": 0
+          }
+        }
+      },
+      "path": "D:\\ck\\two\\data\\processed\\review_splits\\random_iid_stratified.csv",
+      "seed": 42,
+      "split_summary": {
+        "test": {
+          "group_size_distributions": {
+            "canonical_reduced_composition_id": {
+              "max": 5,
+              "mean": 1.0780834072759538,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 1127,
+              "q25": 1.0,
+              "q75": 1.0
+            },
+            "chemical_system_id": {
+              "max": 6,
+              "mean": 1.2525773195876289,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 970,
+              "q25": 1.0,
+              "q75": 1.0
+            },
+            "structure_family_id": {
+              "max": 73,
+              "mean": 3.894230769230769,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 312,
+              "q25": 1.0,
+              "q75": 4.0
+            },
+            "structure_hash": {
+              "max": 1,
+              "mean": 1.0,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 1215,
+              "q25": 1.0,
+              "q75": 1.0
+            }
+          },
+          "label_positive_counts": {
+            "dynamic_label": 719,
+            "joint_label": 569,
+            "thermo_label": 790
+          },
+          "label_rates": {
+            "dynamic_label": 0.5917695473251029,
+            "joint_label": 0.4683127572016461,
+            "thermo_label": 0.6502057613168725
+          },
+          "n_rows": 1215,
+          "n_unique_material_ids": 1215
+        },
+        "train": {
+          "group_size_distributions": {
+            "canonical_reduced_composition_id": {
+              "max": 16,
+              "mean": 1.325543351250292,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 4279,
+              "q25": 1.0,
+              "q75": 1.0
+            },
+            "chemical_system_id": {
+              "max": 24,
+              "mean": 1.7887101860611794,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 3171,
+              "q25": 1.0,
+              "q75": 2.0
+            },
+            "structure_family_id": {
+              "max": 311,
+              "mean": 9.48494983277592,
+              "median": 2.0,
+              "min": 1,
+              "n_groups": 598,
+              "q25": 1.0,
+              "q75": 7.0
+            },
+            "structure_hash": {
+              "max": 1,
+              "mean": 1.0,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 5672,
+              "q25": 1.0,
+              "q75": 1.0
+            }
+          },
+          "label_positive_counts": {
+            "dynamic_label": 3353,
+            "joint_label": 2654,
+            "thermo_label": 3688
+          },
+          "label_rates": {
+            "dynamic_label": 0.5911495063469676,
+            "joint_label": 0.4679125528913963,
+            "thermo_label": 0.6502115655853314
+          },
+          "n_rows": 5672,
+          "n_unique_material_ids": 5672
+        },
+        "val": {
+          "group_size_distributions": {
+            "canonical_reduced_composition_id": {
+              "max": 5,
+              "mean": 1.0995475113122173,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 1105,
+              "q25": 1.0,
+              "q75": 1.0
+            },
+            "chemical_system_id": {
+              "max": 9,
+              "mean": 1.2870762711864407,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 944,
+              "q25": 1.0,
+              "q75": 1.0
+            },
+            "structure_family_id": {
+              "max": 76,
+              "mean": 3.9320388349514563,
+              "median": 2.0,
+              "min": 1,
+              "n_groups": 309,
+              "q25": 1.0,
+              "q75": 3.0
+            },
+            "structure_hash": {
+              "max": 1,
+              "mean": 1.0,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 1215,
+              "q25": 1.0,
+              "q75": 1.0
+            }
+          },
+          "label_positive_counts": {
+            "dynamic_label": 719,
+            "joint_label": 569,
+            "thermo_label": 790
+          },
+          "label_rates": {
+            "dynamic_label": 0.5917695473251029,
+            "joint_label": 0.4683127572016461,
+            "thermo_label": 0.6502057613168725
+          },
+          "n_rows": 1215,
+          "n_unique_material_ids": 1215
+        }
+      },
+      "target_group_column": null,
+      "target_group_disjoint_enforced": false,
+      "target_group_overlap_unique_count": null,
+      "target_group_pairwise_overlap_count_sum": null,
+      "unique_cross_split_group_overlap": {
+        "canonical_reduced_composition_id": {
+          "examples": [
+            "Ag=1|Au=1|I=4",
+            "Ag=1|Br=1",
+            "Ag=1|Br=2",
+            "Ag=1|Br=2|H=1",
+            "Ag=1|Br=3",
+            "Ag=1|Cl=1",
+            "Ag=1|Cl=1|H=1|O=1",
+            "Ag=1|Cl=1|Se=1",
+            "Ag=1|Cl=1|Se=2",
+            "Ag=1|Cl=2"
+          ],
+          "unique_groups_spanning_all_three_splits": 125,
+          "unique_groups_spanning_exactly_two_splits": 586,
+          "unique_groups_spanning_multiple_splits": 711
+        },
+        "chemical_system_id": {
+          "examples": [
+            "Ag-As-Cl-Se",
+            "Ag-Au-I",
+            "Ag-Br",
+            "Ag-Br-Ca",
+            "Ag-Br-Cl",
+            "Ag-Br-H",
+            "Ag-Br-O-Sr",
+            "Ag-Br-S",
+            "Ag-Br-Te",
+            "Ag-Cl"
+          ],
+          "unique_groups_spanning_all_three_splits": 217,
+          "unique_groups_spanning_exactly_two_splits": 615,
+          "unique_groups_spanning_multiple_splits": 832
+        },
+        "structure_family_id": {
+          "examples": [
+            "A2B2C11|p-3m1",
+            "A2B2C2D3|cm2m",
+            "A2B2C2D3|p-6m2",
+            "A2B2C2D3|p3m1",
+            "A2B2C3D4|p-3m1",
+            "A2B2C3D4|p4/mmm",
+            "A2B2C3D4|pm11",
+            "A2B2C3D5|p4/mmm",
+            "A2B2C3|cm11",
+            "A2B2C3|p-1"
+          ],
+          "unique_groups_spanning_all_three_splits": 188,
+          "unique_groups_spanning_exactly_two_splits": 159,
+          "unique_groups_spanning_multiple_splits": 347
+        },
+        "structure_hash": {
+          "examples": [],
+          "unique_groups_spanning_all_three_splits": 0,
+          "unique_groups_spanning_exactly_two_splits": 0,
+          "unique_groups_spanning_multiple_splits": 0
+        }
+      }
+    },
+    "structure_family_disjoint": {
+      "assignment_sha256": "d1c6cb8651128be1bf0c70957740e42deed22f89d0261ea2bd21af014532a2be",
+      "coverage": {
+        "all_source_rows_covered_once": true,
+        "all_three_splits_present": true,
+        "assigned_rows": 8102,
+        "material_id_unique": true,
+        "source_rows": 8102
+      },
+      "filename": "structure_family_disjoint.csv",
+      "group_columns_with_nonzero_cross_split_overlap": [
+        "canonical_reduced_composition_id",
+        "chemical_system_id"
+      ],
+      "manifest_sha256": "e9f7043db21ed9035f42b8746706c25a038fa2193ee15bc199b9b1a4f333d7ff",
+      "pairwise_group_overlap": {
+        "canonical_reduced_composition_id": {
+          "train__test": {
+            "examples": [
+              "Ag=1|Br=1",
+              "Ag=1|Br=1|Se=1",
+              "Ag=1|Br=2",
+              "Ag=1|Br=3",
+              "Ag=1|Cl=1",
+              "Ag=1|Cl=1|S=1",
+              "Ag=1|Cl=1|Se=1",
+              "Ag=1|Cl=2",
+              "Ag=1|Cl=3",
+              "Ag=1|F=1"
+            ],
+            "overlap_group_count": 493
+          },
+          "train__val": {
+            "examples": [
+              "Ag=1|Br=1",
+              "Ag=1|Br=2",
+              "Ag=1|Cl=1",
+              "Ag=1|Cl=2",
+              "Ag=1|F=1",
+              "Ag=1|F=2",
+              "Ag=1|I=1",
+              "Ag=1|I=2",
+              "Ag=1|I=3",
+              "Ag=1|Se=1"
+            ],
+            "overlap_group_count": 366
+          },
+          "val__test": {
+            "examples": [
+              "Ag=1|Br=1",
+              "Ag=1|Br=2",
+              "Ag=1|Cl=1",
+              "Ag=1|Cl=2",
+              "Ag=1|F=1",
+              "Ag=1|I=1",
+              "Ag=1|I=2",
+              "Ag=1|I=3",
+              "Al=1|Cl=1|Se=1",
+              "Al=1|I=1|Se=1"
+            ],
+            "overlap_group_count": 102
+          }
+        },
+        "chemical_system_id": {
+          "train__test": {
+            "examples": [
+              "Ag-Au-Br",
+              "Ag-Au-Se",
+              "Ag-Br",
+              "Ag-Br-Se",
+              "Ag-Br-Te",
+              "Ag-Cl",
+              "Ag-Cl-Ge",
+              "Ag-Cl-S",
+              "Ag-Cl-Se",
+              "Ag-Cl-Te"
+            ],
+            "overlap_group_count": 507
+          },
+          "train__val": {
+            "examples": [
+              "Ag-Br",
+              "Ag-Br-Cl",
+              "Ag-Cl",
+              "Ag-F",
+              "Ag-I",
+              "Ag-Se",
+              "Al-Cl-Se",
+              "Al-Ge-S",
+              "Al-Ge-Se",
+              "Al-Ge-Te"
+            ],
+            "overlap_group_count": 487
+          },
+          "val__test": {
+            "examples": [
+              "Ag-Br",
+              "Ag-Cl",
+              "Ag-F",
+              "Ag-I",
+              "Ag-Se",
+              "Al-Cl-Se",
+              "Al-Co-Se",
+              "Al-I-Se",
+              "Al-Mn-Se",
+              "Al-Ni-S"
+            ],
+            "overlap_group_count": 332
+          }
+        },
+        "structure_family_id": {
+          "train__test": {
+            "examples": [],
+            "overlap_group_count": 0
+          },
+          "train__val": {
+            "examples": [],
+            "overlap_group_count": 0
+          },
+          "val__test": {
+            "examples": [],
+            "overlap_group_count": 0
+          }
+        },
+        "structure_hash": {
+          "train__test": {
+            "examples": [],
+            "overlap_group_count": 0
+          },
+          "train__val": {
+            "examples": [],
+            "overlap_group_count": 0
+          },
+          "val__test": {
+            "examples": [],
+            "overlap_group_count": 0
+          }
+        }
+      },
+      "path": "D:\\ck\\two\\data\\processed\\review_splits\\structure_family_disjoint.csv",
+      "seed": 345,
+      "split_summary": {
+        "test": {
+          "group_size_distributions": {
+            "canonical_reduced_composition_id": {
+              "max": 3,
+              "mean": 1.0522325189553496,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 1187,
+              "q25": 1.0,
+              "q75": 1.0
+            },
+            "chemical_system_id": {
+              "max": 8,
+              "mean": 1.3078534031413613,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 955,
+              "q25": 1.0,
+              "q75": 1.0
+            },
+            "structure_family_id": {
+              "max": 305,
+              "mean": 12.12621359223301,
+              "median": 3.0,
+              "min": 1,
+              "n_groups": 103,
+              "q25": 1.0,
+              "q75": 8.0
+            },
+            "structure_hash": {
+              "max": 1,
+              "mean": 1.0,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 1249,
+              "q25": 1.0,
+              "q75": 1.0
+            }
+          },
+          "label_positive_counts": {
+            "dynamic_label": 734,
+            "joint_label": 589,
+            "thermo_label": 804
+          },
+          "label_rates": {
+            "dynamic_label": 0.5876701361088871,
+            "joint_label": 0.47157726180944753,
+            "thermo_label": 0.6437149719775821
+          },
+          "n_rows": 1249,
+          "n_unique_material_ids": 1249
+        },
+        "train": {
+          "group_size_distributions": {
+            "canonical_reduced_composition_id": {
+              "max": 16,
+              "mean": 1.294522117808847,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 4363,
+              "q25": 1.0,
+              "q75": 1.0
+            },
+            "chemical_system_id": {
+              "max": 27,
+              "mean": 1.793585265163544,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 3149,
+              "q25": 1.0,
+              "q75": 2.0
+            },
+            "structure_family_id": {
+              "max": 460,
+              "mean": 11.815899581589958,
+              "median": 2.0,
+              "min": 1,
+              "n_groups": 478,
+              "q25": 1.0,
+              "q75": 7.75
+            },
+            "structure_hash": {
+              "max": 1,
+              "mean": 1.0,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 5648,
+              "q25": 1.0,
+              "q75": 1.0
+            }
+          },
+          "label_positive_counts": {
+            "dynamic_label": 3339,
+            "joint_label": 2630,
+            "thermo_label": 3702
+          },
+          "label_rates": {
+            "dynamic_label": 0.5911827195467422,
+            "joint_label": 0.4656515580736544,
+            "thermo_label": 0.6554532577903682
+          },
+          "n_rows": 5648,
+          "n_unique_material_ids": 5648
+        },
+        "val": {
+          "group_size_distributions": {
+            "canonical_reduced_composition_id": {
+              "max": 4,
+              "mean": 1.1942517343904857,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 1009,
+              "q25": 1.0,
+              "q75": 1.0
+            },
+            "chemical_system_id": {
+              "max": 5,
+              "mean": 1.2539021852237253,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 961,
+              "q25": 1.0,
+              "q75": 1.0
+            },
+            "structure_family_id": {
+              "max": 302,
+              "mean": 11.699029126213592,
+              "median": 3.0,
+              "min": 1,
+              "n_groups": 103,
+              "q25": 1.0,
+              "q75": 7.0
+            },
+            "structure_hash": {
+              "max": 1,
+              "mean": 1.0,
+              "median": 1.0,
+              "min": 1,
+              "n_groups": 1205,
+              "q25": 1.0,
+              "q75": 1.0
+            }
+          },
+          "label_positive_counts": {
+            "dynamic_label": 718,
+            "joint_label": 573,
+            "thermo_label": 762
+          },
+          "label_rates": {
+            "dynamic_label": 0.595850622406639,
+            "joint_label": 0.4755186721991701,
+            "thermo_label": 0.6323651452282157
+          },
+          "n_rows": 1205,
+          "n_unique_material_ids": 1205
+        }
+      },
+      "target_group_column": "structure_family_id",
+      "target_group_disjoint_enforced": true,
+      "target_group_overlap_unique_count": 0,
+      "target_group_pairwise_overlap_count_sum": 0,
+      "unique_cross_split_group_overlap": {
+        "canonical_reduced_composition_id": {
+          "examples": [
+            "Ag=1|Br=1",
+            "Ag=1|Br=1|Se=1",
+            "Ag=1|Br=2",
+            "Ag=1|Br=3",
+            "Ag=1|Cl=1",
+            "Ag=1|Cl=1|S=1",
+            "Ag=1|Cl=1|Se=1",
+            "Ag=1|Cl=2",
+            "Ag=1|Cl=3",
+            "Ag=1|F=1"
+          ],
+          "unique_groups_spanning_all_three_splits": 77,
+          "unique_groups_spanning_exactly_two_splits": 730,
+          "unique_groups_spanning_multiple_splits": 807
+        },
+        "chemical_system_id": {
+          "examples": [
+            "Ag-Au-Br",
+            "Ag-Au-Se",
+            "Ag-Br",
+            "Ag-Br-Cl",
+            "Ag-Br-Se",
+            "Ag-Br-Te",
+            "Ag-Cl",
+            "Ag-Cl-Ge",
+            "Ag-Cl-S",
+            "Ag-Cl-Se"
+          ],
+          "unique_groups_spanning_all_three_splits": 297,
+          "unique_groups_spanning_exactly_two_splits": 435,
+          "unique_groups_spanning_multiple_splits": 732
+        },
+        "structure_family_id": {
+          "examples": [],
+          "unique_groups_spanning_all_three_splits": 0,
+          "unique_groups_spanning_exactly_two_splits": 0,
+          "unique_groups_spanning_multiple_splits": 0
+        },
+        "structure_hash": {
+          "examples": [],
+          "unique_groups_spanning_all_three_splits": 0,
+          "unique_groups_spanning_exactly_two_splits": 0,
+          "unique_groups_spanning_multiple_splits": 0
+        }
+      }
+    }
+  },
+  "near_duplicate_structure_audit": {
+    "available_geometry_tolerant_fingerprint": false,
+    "limitation": "No geometry-tolerant structure fingerprint is present in supervised.csv. The exact structure_hash check cannot rule out near duplicates represented with a different cell basis, origin, tolerance, strain, or relaxation.",
+    "performed_check": "exact cross-split overlap of existing structure_hash"
+  },
+  "parameters": {
+    "base_seed": 42,
+    "group_search_trials_per_holdout": 800,
+    "ratios": {
+      "test": 0.15,
+      "train": 0.7,
+      "val": 0.15
+    }
+  },
+  "schema_version": 1,
+  "software": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.20",
+    "scikit_learn": "1.7.2"
+  },
+  "source": {
+    "legacy_iid_path": "D:\\ck\\two\\data\\processed\\iid_split.csv",
+    "legacy_iid_sha256": "a299d0e81c8c3d9a1ef754c243da30c3ef9b0b874110e0939171aa334ae7e19a",
+    "supervised_path": "D:\\ck\\two\\data\\processed\\supervised.csv",
+    "supervised_rows": 8102,
+    "supervised_sha256": "446e6b1ed1980906260d19a796b8f1c5f682452e5f49ec33766375c54c79be6c"
+  }
+}

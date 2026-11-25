@@ -1,0 +1,10 @@
+name: R32_full_no_logic_alignn_chemical
+category: review
+model_type: alignn
+heads: [thermo, dynamic, joint]
+active_tasks: [thermo, dynamic, joint]
+weighting: adaptive_auxiliary
+logic_beta: 0.0
+logic_lower_bound: false
+seeds: [2025, 2026, 2027, 2028, 2029]
+split_file: review_splits/chemical_system_disjoint.csv

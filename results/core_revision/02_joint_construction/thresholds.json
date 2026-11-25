@@ -1,0 +1,13 @@
+{
+  "fit_split": "val",
+  "joint_classification": {
+    "Direct Joint": 0.38412183150071094,
+    "Full MTL": 0.4703030303030303,
+    "Product": 0.28821944390151605,
+    "Minimum": 0.6435353535353535
+  },
+  "hard_and": {
+    "thermo": 0.6894015149762522,
+    "dynamic": 0.4406060606060606
+  }
+}

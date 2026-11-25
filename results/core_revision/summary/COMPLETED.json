@@ -1,0 +1,15 @@
+{
+  "signature": "2218eecda09815ff4ae5f9009fd313671bea6d661fd8cf667ecad1bb184efb98",
+  "timestamp": "2026-09-17T04:00:21.666521+00:00",
+  "files_sha256": {
+    "beta_sensitivity_table.csv": "73104f7993e3d38cc168bc1d0169d8ae1d530b48aeaa7deb13992204940546c2",
+    "joint_construction_table.csv": "beb8165becf69f478a09ae1273a9c190937e4802b5f2a842908f0ba827e3e239",
+    "key_numbers.json": "1cb7cc58c23942073c59afc6537558217f3787078732523c1e704362cd7e5c00",
+    "main_5seed_table.csv": "ac25b931ecff6784dd5d3620d2973ed5e8563ec29529650dd8a4b15b74572d92",
+    "paired_bootstrap_table.csv": "15ebed5bf87944b041945291c69590bf767005ee7714b6623220940d51aaefed",
+    "README.md": "3457d6bf492401e18c7eab47209cd12714f3d1f011213a8e5de4c6df33bef74f",
+    "result_manifest.json": "68a909b1fb2b391419fd00dfa95c00cb3a0430a64ec22429a8b9662d4af9b09d",
+    "risk_increment_table.csv": "a799cb731763c6d049d4f0bf51ce225d60d058abf5ff80e7f0f074cf6bb2315a",
+    "screening_efficiency_table.csv": "5cb3d9044db704a04aaad0a7b8ac0f13afeca9314c7f59240a2e62359bf2b6e8"
+  }
+}

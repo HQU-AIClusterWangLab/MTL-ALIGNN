@@ -1,0 +1,11 @@
+{
+  "name": "R04_dynamic_ehull_alignn_composition",
+  "category": "review",
+  "seed": 2027,
+  "status": "completed",
+  "best_epoch": 32,
+  "batch_size": 16,
+  "monitor_task": "dynamic",
+  "test_dynamic_pr_auc": 0.8714508718891907,
+  "test_dynamic_mcc": 0.5428167377615298
+}

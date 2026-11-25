@@ -1,0 +1,11 @@
+{
+  "name": "R25_single_joint_alignn_composition",
+  "category": "review",
+  "seed": 2025,
+  "status": "completed",
+  "best_epoch": 32,
+  "batch_size": 16,
+  "monitor_task": "joint",
+  "test_joint_pr_auc": 0.8769812865841373,
+  "test_joint_mcc": 0.6302541752587986
+}

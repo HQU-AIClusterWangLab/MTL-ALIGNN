@@ -1,0 +1,5 @@
+ Job started on host DESKTOP-B3H8NKQ
+ at Mon Jul 13 17:00:59 2026
+
+[mpiexec@DESKTOP-B3H8NKQ] wmain (mpiexec.c:2162): assert (pg->intel.exitcodes != NULL) failed
+[mpiexec@DESKTOP-B3H8NKQ] HYD_sock_write (..\windows\src\hydra_sock.c:387): write error (errno = 34)

@@ -1,0 +1,10 @@
+{
+  "name": "A01_joint_thermo",
+  "category": "ablation",
+  "seed": 2027,
+  "status": "completed",
+  "best_epoch": 58,
+  "batch_size": 16,
+  "test_joint_pr_auc": 0.8863805122396672,
+  "test_joint_mcc": 0.6274645642488816
+}

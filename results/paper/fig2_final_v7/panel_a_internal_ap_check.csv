@@ -1,0 +1,8 @@
+series,source_model,seed,aggregation,AP
+Single-task ALIGNN,Single-task ALIGNN,2025,M=1,0.8837617956281608
+Single-task ALIGNN,Single-task ALIGNN,2026,M=1,0.8922226921637498
+Single-task ALIGNN,Single-task ALIGNN,2027,M=1,0.856837293878762
+Full MTL single,Full MTL,2025,M=1,0.8864860285272598
+Full MTL single,Full MTL,2026,M=1,0.8766024452960135
+Full MTL single,Full MTL,2027,M=1,0.8865968425857196
+Full MTL ensemble,Full MTL,ensemble,M=5 probability mean,0.9063548999784637

@@ -1,0 +1,16 @@
+{
+  "python": "3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 16:36:49) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "D:\\ck\\anaconda_env\\envs\\two\\python.exe",
+  "torch": "2.2.0+cu121",
+  "torch_cuda": "12.1",
+  "dgl": "2.2.1+cu121",
+  "alignn": "2026.4.2",
+  "ase": "3.28.0",
+  "pandas": "2.3.3",
+  "sklearn": "1.7.2",
+  "cuda_available": true,
+  "cwd": "D:\\ck\\two",
+  "gpu": "NVIDIA GeForce RTX 4090 D",
+  "gpu_memory_gb": 23.9876708984375,
+  "git_commit": null
+}

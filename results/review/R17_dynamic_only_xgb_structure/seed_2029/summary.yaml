@@ -1,0 +1,7 @@
+name: R17_dynamic_only_xgb_structure
+category: review
+seed: 2029
+status: completed
+monitor_task: dynamic
+test_dynamic_pr_auc: 0.7372289661285545
+test_dynamic_mcc: 0.2909403432173223

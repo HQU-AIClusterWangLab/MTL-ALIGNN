@@ -1,0 +1,30 @@
+name: alignn_baseline_hparam_search
+base_experiment: train/experiments/main/M04_single_alignn.yaml
+selection_metric: val_joint.pr_auc
+
+# Phase 1: inexpensive one-factor-at-a-time screening.
+screen_seeds: [2025]
+
+# Phase 2: compare the baseline and the combined selected setting.
+confirm_seeds: [2025, 2026, 2027]
+
+# The original graph cache was generated once with cutoff=8.0 and
+# max_neighbors=12. Changing those values would require separate graph caches;
+# this search therefore keeps all graph-construction parameters frozen.
+frozen_graph_parameters:
+  neighbor_strategy: k-nearest
+  cutoff: 8.0
+  cutoff_extra: 3.5
+  max_neighbors: 12
+
+# Each parameter is varied independently around the current baseline. The best
+# validation value from each factor is combined and then confirmed over 3 seeds.
+parameters:
+  training.learning_rate: [0.0003, 0.001, 0.003]
+  training.weight_decay: [0.0, 0.00001, 0.0001]
+  model.alignn_layers: [2, 4, 6]
+  model.gcn_layers: [2, 4, 6]
+  model.hidden_features: [128, 256, 512]
+  model.dropout: [0.0, 0.1, 0.2]
+
+output_dir: results/hparam_search/alignn_baseline

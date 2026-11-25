@@ -1,0 +1,7 @@
+name: R18_dynamic_ehull_xgb_structure
+category: review
+seed: 2027
+status: completed
+monitor_task: dynamic
+test_dynamic_pr_auc: 0.7852564319280508
+test_dynamic_mcc: 0.3914357872264577

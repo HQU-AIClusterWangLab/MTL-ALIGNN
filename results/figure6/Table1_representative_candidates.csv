@@ -1,0 +1,4 @@
+Candidate,Rank,Top fraction (%),p_J,u_J,E_hull (eV atom^-1),Independent dynamical evidence
+BrI2Ir3Te3,14,0.159036692037,0.982321221453,3.19872089982e-07,0.099292695308,Imaginary modes observed (self-calculated CASTEP phonon dispersion)
+Cr2Sn2Se6,43,0.488469839827,0.968060798186,7.90412427688e-06,0.104227537586,No imaginary modes reported (literature; structure match likely)
+Ni2Sb2O6,987,11.2120867886,0.824591422433,0.0588640676134,0.148307178664,No imaginary modes reported (literature; structure match likely)

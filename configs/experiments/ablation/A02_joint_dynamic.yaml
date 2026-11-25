@@ -1,0 +1,10 @@
+name: A02_joint_dynamic
+category: ablation
+model_type: alignn
+heads: [dynamic, joint]
+active_tasks: [dynamic, joint]
+weighting: adaptive_auxiliary
+logic_beta: 0.0
+logic_lower_bound: false
+seeds: [2025, 2026, 2027]
+split_file: iid_split.csv

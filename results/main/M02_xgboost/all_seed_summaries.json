@@ -1,0 +1,42 @@
+[
+  {
+    "name": "M02_xgboost",
+    "category": "main",
+    "seed": 2025,
+    "status": "completed",
+    "test_joint_pr_auc": 0.8473709312480214,
+    "test_joint_mcc": 0.6175409664731352
+  },
+  {
+    "name": "M02_xgboost",
+    "category": "main",
+    "seed": 2026,
+    "status": "completed",
+    "test_joint_pr_auc": 0.845982173790572,
+    "test_joint_mcc": 0.6079937385989038
+  },
+  {
+    "name": "M02_xgboost",
+    "category": "main",
+    "seed": 2027,
+    "status": "completed",
+    "test_joint_pr_auc": 0.8483674755279674,
+    "test_joint_mcc": 0.6102106573491962
+  },
+  {
+    "name": "M02_xgboost",
+    "category": "main",
+    "seed": 2028,
+    "status": "completed",
+    "test_joint_pr_auc": 0.8453056174288573,
+    "test_joint_mcc": 0.6111359976770594
+  },
+  {
+    "name": "M02_xgboost",
+    "category": "main",
+    "seed": 2029,
+    "status": "completed",
+    "test_joint_pr_auc": 0.8439678284143793,
+    "test_joint_mcc": 0.6021390361454083
+  }
+]

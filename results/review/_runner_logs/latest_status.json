@@ -1,0 +1,11 @@
+﻿{
+    "state":  "completed",
+    "gnn_set":  "All",
+    "process_id":  12920,
+    "started_at_utc":  "2026-08-12T08:55:21.5895312Z",
+    "updated_at_utc":  "2026-08-13T23:47:57.3703566Z",
+    "transcript":  "D:\\ck\\two\\results\\review\\_runner_logs\\strict_gnn_All_20260812_165521.transcript.log",
+    "native_log":  "D:\\ck\\two\\results\\review\\_runner_logs\\strict_gnn_All_20260812_165521.native.log",
+    "exit_code":  0,
+    "message":  "Strict review GNN queue completed."
+}

@@ -1,0 +1,9 @@
+name: R07_dynamic_only_alignn_structure
+category: review
+seed: 2026
+status: completed
+best_epoch: 39
+batch_size: 16
+monitor_task: dynamic
+test_dynamic_pr_auc: 0.7600572529186636
+test_dynamic_mcc: 0.30620812519421925

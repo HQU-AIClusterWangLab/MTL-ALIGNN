@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-25",
+  "package": "D:\\ck\\MTL-ALIGNN",
+  "updated_text_files": 33,
+  "renamed_entries": 4,
+  "validation": {
+    "literal_chinese_in_paths": 0,
+    "literal_chinese_in_text": 0,
+    "chinese_in_xlsx": 0,
+    "unchanged_files_verified": 5681,
+    "protected_file_counts": {
+      ".db": 1,
+      ".csv": 1489,
+      ".xlsx": 11,
+      ".pt": 5,
+      ".pdf": 43,
+      ".png": 44,
+      ".svg": 11,
+      ".cif": 404,
+      ".castep": 85,
+      ".cell": 90,
+      ".param": 90,
+      ".phonon": 7
+    },
+    "python_syntax_files_checked": 76,
+    "entry_dry_runs": [
+      {
+        "entry": "predict.py",
+        "result": {
+          "module": "train.screen_unknown",
+          "experiment_dir": "D:\\ck\\MTL-ALIGNN\\results\\main\\M06_full_mtl",
+          "weights_dir": "D:\\ck\\MTL-ALIGNN\\models\\experiments\\main\\M06_full_mtl",
+          "output_dir": "D:\\ck\\MTL-ALIGNN\\results\\reproduced\\unknown_screening",
+          "checked_inputs": 10,
+          "graph_cache": {
+            "subset": "unknown",
+            "rows": 8803,
+            "missing_graphs": 8803,
+            "regeneration_required": true
+          }
+        }
+      },
+      {
+        "entry": "train_fold.py",
+        "result": {
+          "module": "train.train_gnn",
+          "experiment": "D:\\ck\\MTL-ALIGNN\\configs\\experiments\\main\\M06_full_mtl.yaml",
+          "seed": null,
+          "project_config": "D:\\ck\\MTL-ALIGNN\\configs\\config.yaml",
+          "output_root": "D:\\ck\\MTL-ALIGNN\\results\\reproduced",
+          "graph_cache": {
+            "subset": "supervised",
+            "rows": 8102,
+            "missing_graphs": 8102,
+            "regeneration_required": true
+          }
+        }
+      }
+    ],
+    "duplicate_targets_checked": 2397
+  },
+  "original_source_directories_unchanged": true,
+  "original_external_path_identifiers": "Preserved using Unicode escapes where necessary; no original external directories were renamed.",
+  "numerical_data_and_model_weights": "Unchanged; verified by SHA-256.",
+  "package_file_count": 5720,
+  "package_bytes": 659532606,
+  "package_MB": 659.53,
+  "package_MiB": 628.98
+}

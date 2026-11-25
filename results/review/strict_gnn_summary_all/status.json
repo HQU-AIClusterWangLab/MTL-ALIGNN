@@ -1,0 +1,30 @@
+{
+  "generated_at_utc": "2026-08-14T00:51:54.829511+00:00",
+  "state": "completed",
+  "scope": "all",
+  "summary_artifacts_valid": true,
+  "required_seeds": [
+    2025,
+    2026,
+    2027,
+    2028,
+    2029
+  ],
+  "required_seed_count": 5,
+  "expected_experiments": 24,
+  "expected_seed_runs": 120,
+  "complete_seed_runs": 120,
+  "pending_seed_runs": 0,
+  "invalid_seed_runs": 0,
+  "completion_rule": "Every expected seed must have a valid COMPLETED.json plus all required artifacts: val_predictions.csv, test_predictions.csv, thresholds.json, metrics.json, resolved_experiment.yaml",
+  "bootstrap_replicates": 2000,
+  "output_files": [
+    "progress.csv",
+    "per_seed_metrics.csv",
+    "experiment_summary.csv",
+    "paired_comparisons.csv",
+    "pairing_audit.csv",
+    "summary.json",
+    "summary.xlsx"
+  ]
+}

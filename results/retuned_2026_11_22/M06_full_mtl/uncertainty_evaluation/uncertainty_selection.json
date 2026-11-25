@@ -1,0 +1,7 @@
+{
+    "method":  "deep_ensemble",
+    "score":  "predictive_std",
+    "selection_set":  "pre_specified",
+    "selection_rule":  "five raw-member sample standard deviation",
+    "column":  "p_joint_std"
+}

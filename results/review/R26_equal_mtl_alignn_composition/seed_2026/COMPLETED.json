@@ -1,0 +1,11 @@
+{
+  "name": "R26_equal_mtl_alignn_composition",
+  "category": "review",
+  "seed": 2026,
+  "status": "completed",
+  "best_epoch": 44,
+  "batch_size": 16,
+  "monitor_task": "joint",
+  "test_joint_pr_auc": 0.884445057545575,
+  "test_joint_mcc": 0.6217160018387187
+}

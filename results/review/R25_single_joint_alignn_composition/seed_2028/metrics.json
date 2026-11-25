@@ -1,0 +1,34 @@
+{
+  "seed": 2028,
+  "best_epoch": 60,
+  "monitor_task": "joint",
+  "best_val_monitor_pr_auc": 0.8988429899164069,
+  "batch_size": 16,
+  "runtime_seconds": 4210.521698236465,
+  "device": "cuda:0",
+  "pretrained_backbone": null,
+  "conditioning_features": [],
+  "conditioning_stats": {},
+  "val_joint": {
+    "threshold": 0.22777777777777777,
+    "pr_auc": 0.8988429899164069,
+    "f1": 0.823123382226057,
+    "mcc": 0.6627920771994957,
+    "balanced_accuracy": 0.8320370777997896,
+    "nll": 1.254843522691446,
+    "brier": 0.16075548096760803,
+    "ece": 0.15756288620780645,
+    "roc_auc": 0.9041436696803928
+  },
+  "test_joint": {
+    "threshold": 0.22777777777777777,
+    "pr_auc": 0.8814602732858898,
+    "f1": 0.8202531645569621,
+    "mcc": 0.6507672609997939,
+    "balanced_accuracy": 0.8259506494644382,
+    "nll": 1.2068406687127797,
+    "brier": 0.16089220790010414,
+    "ece": 0.15690641727819632,
+    "roc_auc": 0.9027665213677085
+  }
+}

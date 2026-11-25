@@ -1,0 +1,163 @@
+{
+  "figure": "Figure 6: Candidate prioritization and phonon validation",
+  "ranking_source": "D:\\ck\\two\\results\\main\\M10_unknown_screening\\unknown_all_predictions.csv",
+  "candidate_count": 8803,
+  "highlights": {
+    "BrI2Ir3Te3": {
+      "material_id": "1BrI2Ir3Te3-1",
+      "source_formula": "Ir3BrI2Te3",
+      "rank": 14,
+      "p_joint_calibrated": 0.9823212214525509,
+      "u_joint": 3.198720899820027e-07,
+      "ehull": 0.0992926953079701,
+      "top_fraction_percent": 0.15903669203680562
+    },
+    "Cr2Sn2Se6": {
+      "material_id": "2CrSnSe3-1",
+      "source_formula": "Cr2Sn2Se6",
+      "rank": 43,
+      "p_joint_calibrated": 0.968060798185778,
+      "u_joint": 7.904124276884984e-06,
+      "ehull": 0.1042275375859463,
+      "top_fraction_percent": 0.4884698398273316
+    },
+    "Ni2Sb2O6": {
+      "material_id": "2NiSbO3-1",
+      "source_formula": "Ni2O6Sb2",
+      "rank": 987,
+      "p_joint_calibrated": 0.8245914224334869,
+      "u_joint": 0.0588640676133608,
+      "ehull": 0.1483071786636237,
+      "top_fraction_percent": 11.212086788594796
+    }
+  },
+  "phonon_images": {
+    "BrI2Ir3Te3": {
+      "path": "C:\\Users\\WHQ\\Desktop\\\u8bba\u6587\u521d\u7a3f\\\u56fe\\\u7ed3\u679c\u56fe\\\u4ee3\u7801\\\u58f0\u5b50\u8c31\u56fe\\ck Phon2.tif",
+      "format": "TIFF",
+      "width_px": 4992,
+      "height_px": 3871,
+      "dpi": [
+        600.0,
+        600.0
+      ],
+      "size_bytes": 418938,
+      "sha256": "8E41A01B818BD808A0E445AFB8E431723B43EF818F335DF2473FCD6028D8DB36"
+    },
+    "Cr2Sn2Se6": {
+      "path": "C:\\Users\\WHQ\\Desktop\\\u8bba\u6587\u521d\u7a3f\\\u56fe\\\u7ed3\u679c\u56fe\\\u4ee3\u7801\\\u58f0\u5b50\u8c31\u56fe\\Cr2Sn2Se6\\Cr2Sn2Se6_phonon.png",
+      "format": "PNG",
+      "width_px": 2625,
+      "height_px": 3463,
+      "dpi": [
+        899.9982,
+        899.9982
+      ],
+      "size_bytes": 2321355,
+      "sha256": "DCD660DD38A021815AE69728C6FF01B04EB9AABB99D4ACCC0E679FF0DB2890A1"
+    },
+    "Ni2Sb2O6": {
+      "path": "C:\\Users\\WHQ\\Desktop\\\u8bba\u6587\u521d\u7a3f\\\u56fe\\\u7ed3\u679c\u56fe\\\u4ee3\u7801\\\u58f0\u5b50\u8c31\u56fe\\Ni2Sb2O6\\Ni2Sb2O6_phonon.png",
+      "format": "PNG",
+      "width_px": 2030,
+      "height_px": 1665,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "size_bytes": 292529,
+      "sha256": "AB93C344E71751146C6C1E84865FAA6F8879F518F70BB4E26ADDC656E1490EE8"
+    }
+  },
+  "br_castep_phonon": {
+    "path": "D:\\ck\\two dft\\two_Files\\Documents\\phonon\\BrI2Ir3Te3_phonon_recheck\\03_disp_001\\PHON_PhonDisp.phonon",
+    "unit": "cm-1",
+    "qpoint_count": 15,
+    "branch_count": 27,
+    "qpoints": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.083333,
+        0.0,
+        0.0
+      ],
+      [
+        0.166667,
+        0.0,
+        0.0
+      ],
+      [
+        0.25,
+        0.0,
+        0.0
+      ],
+      [
+        0.333333,
+        0.0,
+        0.0
+      ],
+      [
+        0.416667,
+        0.0,
+        0.0
+      ],
+      [
+        0.5,
+        0.0,
+        0.0
+      ],
+      [
+        0.444333,
+        0.111,
+        0.0
+      ],
+      [
+        0.388667,
+        0.222,
+        0.0
+      ],
+      [
+        0.333,
+        0.333,
+        0.0
+      ],
+      [
+        0.2775,
+        0.2775,
+        0.0
+      ],
+      [
+        0.222,
+        0.222,
+        0.0
+      ],
+      [
+        0.1665,
+        0.1665,
+        0.0
+      ],
+      [
+        0.111,
+        0.111,
+        0.0
+      ],
+      [
+        0.0555,
+        0.0555,
+        0.0
+      ]
+    ],
+    "min_frequency": -8.624904,
+    "max_frequency": 192.271642,
+    "min_frequency_thz": -0.2585681170174032,
+    "max_frequency_thz": 5.764158815887603,
+    "imaginary_modes": true,
+    "size_bytes": 452882,
+    "sha256": "B2422B3C39E56105D2B5678E34FCA9B6E4A16C8804C00EA6B71E9B858673BC36"
+  },
+  "partial_figure": false
+}

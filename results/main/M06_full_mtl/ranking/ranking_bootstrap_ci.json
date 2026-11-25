@@ -1,0 +1,606 @@
+{
+  "all_test": {
+    "random": {
+      "precision_at_10": {
+        "lower_95": 0.2,
+        "upper_95": 0.8
+      },
+      "yield_at_10": {
+        "lower_95": 2.0,
+        "upper_95": 8.0
+      },
+      "enrichment_at_10": {
+        "lower_95": 0.4274647887323944,
+        "upper_95": 1.7098591549295776
+      },
+      "precision_at_20": {
+        "lower_95": 0.3,
+        "upper_95": 0.75
+      },
+      "yield_at_20": {
+        "lower_95": 6.0,
+        "upper_95": 15.0
+      },
+      "enrichment_at_20": {
+        "lower_95": 0.6411971830985915,
+        "upper_95": 1.602992957746479
+      },
+      "precision_at_50": {
+        "lower_95": 0.44,
+        "upper_95": 0.72
+      },
+      "yield_at_50": {
+        "lower_95": 22.0,
+        "upper_95": 36.0
+      },
+      "enrichment_at_50": {
+        "lower_95": 0.9404225352112676,
+        "upper_95": 1.5388732394366196
+      },
+      "precision_at_100": {
+        "lower_95": 0.42975,
+        "upper_95": 0.61
+      },
+      "yield_at_100": {
+        "lower_95": 42.975,
+        "upper_95": 61.0
+      },
+      "enrichment_at_100": {
+        "lower_95": 0.9185149647887324,
+        "upper_95": 1.3037676056338028
+      }
+    },
+    "joint_probability": {
+      "precision_at_10": {
+        "lower_95": 1.0,
+        "upper_95": 1.0
+      },
+      "yield_at_10": {
+        "lower_95": 10.0,
+        "upper_95": 10.0
+      },
+      "enrichment_at_10": {
+        "lower_95": 2.137323943661972,
+        "upper_95": 2.137323943661972
+      },
+      "precision_at_20": {
+        "lower_95": 0.95,
+        "upper_95": 1.0
+      },
+      "yield_at_20": {
+        "lower_95": 19.0,
+        "upper_95": 20.0
+      },
+      "enrichment_at_20": {
+        "lower_95": 2.030457746478873,
+        "upper_95": 2.137323943661972
+      },
+      "precision_at_50": {
+        "lower_95": 0.9,
+        "upper_95": 1.0
+      },
+      "yield_at_50": {
+        "lower_95": 45.0,
+        "upper_95": 50.0
+      },
+      "enrichment_at_50": {
+        "lower_95": 1.9235915492957747,
+        "upper_95": 2.137323943661972
+      },
+      "precision_at_100": {
+        "lower_95": 0.94975,
+        "upper_95": 1.0
+      },
+      "yield_at_100": {
+        "lower_95": 94.975,
+        "upper_95": 100.0
+      },
+      "enrichment_at_100": {
+        "lower_95": 2.0299234154929575,
+        "upper_95": 2.137323943661972
+      }
+    },
+    "dynamic_probability": {
+      "precision_at_10": {
+        "lower_95": 1.0,
+        "upper_95": 1.0
+      },
+      "yield_at_10": {
+        "lower_95": 10.0,
+        "upper_95": 10.0
+      },
+      "enrichment_at_10": {
+        "lower_95": 2.137323943661972,
+        "upper_95": 2.137323943661972
+      },
+      "precision_at_20": {
+        "lower_95": 1.0,
+        "upper_95": 1.0
+      },
+      "yield_at_20": {
+        "lower_95": 20.0,
+        "upper_95": 20.0
+      },
+      "enrichment_at_20": {
+        "lower_95": 2.137323943661972,
+        "upper_95": 2.137323943661972
+      },
+      "precision_at_50": {
+        "lower_95": 0.92,
+        "upper_95": 1.0
+      },
+      "yield_at_50": {
+        "lower_95": 46.0,
+        "upper_95": 50.0
+      },
+      "enrichment_at_50": {
+        "lower_95": 1.9663380281690142,
+        "upper_95": 2.137323943661972
+      },
+      "precision_at_100": {
+        "lower_95": 0.86,
+        "upper_95": 0.97
+      },
+      "yield_at_100": {
+        "lower_95": 86.0,
+        "upper_95": 97.0
+      },
+      "enrichment_at_100": {
+        "lower_95": 1.8380985915492958,
+        "upper_95": 2.0732042253521126
+      }
+    },
+    "product_fusion": {
+      "precision_at_10": {
+        "lower_95": 1.0,
+        "upper_95": 1.0
+      },
+      "yield_at_10": {
+        "lower_95": 10.0,
+        "upper_95": 10.0
+      },
+      "enrichment_at_10": {
+        "lower_95": 2.137323943661972,
+        "upper_95": 2.137323943661972
+      },
+      "precision_at_20": {
+        "lower_95": 1.0,
+        "upper_95": 1.0
+      },
+      "yield_at_20": {
+        "lower_95": 20.0,
+        "upper_95": 20.0
+      },
+      "enrichment_at_20": {
+        "lower_95": 2.137323943661972,
+        "upper_95": 2.137323943661972
+      },
+      "precision_at_50": {
+        "lower_95": 0.9,
+        "upper_95": 1.0
+      },
+      "yield_at_50": {
+        "lower_95": 45.0,
+        "upper_95": 50.0
+      },
+      "enrichment_at_50": {
+        "lower_95": 1.9235915492957747,
+        "upper_95": 2.137323943661972
+      },
+      "precision_at_100": {
+        "lower_95": 0.94,
+        "upper_95": 1.0
+      },
+      "yield_at_100": {
+        "lower_95": 94.0,
+        "upper_95": 100.0
+      },
+      "enrichment_at_100": {
+        "lower_95": 2.0090845070422536,
+        "upper_95": 2.137323943661972
+      }
+    },
+    "minimum_fusion": {
+      "precision_at_10": {
+        "lower_95": 1.0,
+        "upper_95": 1.0
+      },
+      "yield_at_10": {
+        "lower_95": 10.0,
+        "upper_95": 10.0
+      },
+      "enrichment_at_10": {
+        "lower_95": 2.137323943661972,
+        "upper_95": 2.137323943661972
+      },
+      "precision_at_20": {
+        "lower_95": 0.95,
+        "upper_95": 1.0
+      },
+      "yield_at_20": {
+        "lower_95": 19.0,
+        "upper_95": 20.0
+      },
+      "enrichment_at_20": {
+        "lower_95": 2.030457746478873,
+        "upper_95": 2.137323943661972
+      },
+      "precision_at_50": {
+        "lower_95": 0.92,
+        "upper_95": 1.0
+      },
+      "yield_at_50": {
+        "lower_95": 46.0,
+        "upper_95": 50.0
+      },
+      "enrichment_at_50": {
+        "lower_95": 1.9663380281690142,
+        "upper_95": 2.137323943661972
+      },
+      "precision_at_100": {
+        "lower_95": 0.95,
+        "upper_95": 1.0
+      },
+      "yield_at_100": {
+        "lower_95": 95.0,
+        "upper_95": 100.0
+      },
+      "enrichment_at_100": {
+        "lower_95": 2.030457746478873,
+        "upper_95": 2.137323943661972
+      }
+    },
+    "risk_aware": {
+      "precision_at_10": {
+        "lower_95": 1.0,
+        "upper_95": 1.0
+      },
+      "yield_at_10": {
+        "lower_95": 10.0,
+        "upper_95": 10.0
+      },
+      "enrichment_at_10": {
+        "lower_95": 2.137323943661972,
+        "upper_95": 2.137323943661972
+      },
+      "precision_at_20": {
+        "lower_95": 0.95,
+        "upper_95": 1.0
+      },
+      "yield_at_20": {
+        "lower_95": 19.0,
+        "upper_95": 20.0
+      },
+      "enrichment_at_20": {
+        "lower_95": 2.030457746478873,
+        "upper_95": 2.137323943661972
+      },
+      "precision_at_50": {
+        "lower_95": 0.9,
+        "upper_95": 1.0
+      },
+      "yield_at_50": {
+        "lower_95": 45.0,
+        "upper_95": 50.0
+      },
+      "enrichment_at_50": {
+        "lower_95": 1.9235915492957747,
+        "upper_95": 2.137323943661972
+      },
+      "precision_at_100": {
+        "lower_95": 0.94975,
+        "upper_95": 1.0
+      },
+      "yield_at_100": {
+        "lower_95": 94.975,
+        "upper_95": 100.0
+      },
+      "enrichment_at_100": {
+        "lower_95": 2.0299234154929575,
+        "upper_95": 2.137323943661972
+      }
+    }
+  },
+  "thermo_positive_test": {
+    "random": {
+      "precision_at_10": {
+        "lower_95": 0.4,
+        "upper_95": 1.0
+      },
+      "yield_at_10": {
+        "lower_95": 4.0,
+        "upper_95": 10.0
+      },
+      "enrichment_at_10": {
+        "lower_95": 0.5563380281690141,
+        "upper_95": 1.3908450704225352
+      },
+      "precision_at_20": {
+        "lower_95": 0.5487500000000001,
+        "upper_95": 0.9
+      },
+      "yield_at_20": {
+        "lower_95": 10.975000000000001,
+        "upper_95": 18.0
+      },
+      "enrichment_at_20": {
+        "lower_95": 0.7632262323943664,
+        "upper_95": 1.2517605633802817
+      },
+      "precision_at_50": {
+        "lower_95": 0.64,
+        "upper_95": 0.86
+      },
+      "yield_at_50": {
+        "lower_95": 32.0,
+        "upper_95": 43.0
+      },
+      "enrichment_at_50": {
+        "lower_95": 0.8901408450704226,
+        "upper_95": 1.1961267605633803
+      },
+      "precision_at_100": {
+        "lower_95": 0.62,
+        "upper_95": 0.78
+      },
+      "yield_at_100": {
+        "lower_95": 62.0,
+        "upper_95": 78.0
+      },
+      "enrichment_at_100": {
+        "lower_95": 0.8623239436619718,
+        "upper_95": 1.0848591549295776
+      }
+    },
+    "joint_probability": {
+      "precision_at_10": {
+        "lower_95": 1.0,
+        "upper_95": 1.0
+      },
+      "yield_at_10": {
+        "lower_95": 10.0,
+        "upper_95": 10.0
+      },
+      "enrichment_at_10": {
+        "lower_95": 1.3908450704225352,
+        "upper_95": 1.3908450704225352
+      },
+      "precision_at_20": {
+        "lower_95": 1.0,
+        "upper_95": 1.0
+      },
+      "yield_at_20": {
+        "lower_95": 20.0,
+        "upper_95": 20.0
+      },
+      "enrichment_at_20": {
+        "lower_95": 1.3908450704225352,
+        "upper_95": 1.3908450704225352
+      },
+      "precision_at_50": {
+        "lower_95": 0.94,
+        "upper_95": 1.0
+      },
+      "yield_at_50": {
+        "lower_95": 47.0,
+        "upper_95": 50.0
+      },
+      "enrichment_at_50": {
+        "lower_95": 1.3073943661971832,
+        "upper_95": 1.3908450704225352
+      },
+      "precision_at_100": {
+        "lower_95": 0.97,
+        "upper_95": 1.0
+      },
+      "yield_at_100": {
+        "lower_95": 97.0,
+        "upper_95": 100.0
+      },
+      "enrichment_at_100": {
+        "lower_95": 1.3491197183098593,
+        "upper_95": 1.3908450704225352
+      }
+    },
+    "dynamic_probability": {
+      "precision_at_10": {
+        "lower_95": 1.0,
+        "upper_95": 1.0
+      },
+      "yield_at_10": {
+        "lower_95": 10.0,
+        "upper_95": 10.0
+      },
+      "enrichment_at_10": {
+        "lower_95": 1.3908450704225352,
+        "upper_95": 1.3908450704225352
+      },
+      "precision_at_20": {
+        "lower_95": 1.0,
+        "upper_95": 1.0
+      },
+      "yield_at_20": {
+        "lower_95": 20.0,
+        "upper_95": 20.0
+      },
+      "enrichment_at_20": {
+        "lower_95": 1.3908450704225352,
+        "upper_95": 1.3908450704225352
+      },
+      "precision_at_50": {
+        "lower_95": 0.96,
+        "upper_95": 1.0
+      },
+      "yield_at_50": {
+        "lower_95": 48.0,
+        "upper_95": 50.0
+      },
+      "enrichment_at_50": {
+        "lower_95": 1.3352112676056338,
+        "upper_95": 1.3908450704225352
+      },
+      "precision_at_100": {
+        "lower_95": 0.97,
+        "upper_95": 1.0
+      },
+      "yield_at_100": {
+        "lower_95": 97.0,
+        "upper_95": 100.0
+      },
+      "enrichment_at_100": {
+        "lower_95": 1.3491197183098593,
+        "upper_95": 1.3908450704225352
+      }
+    },
+    "product_fusion": {
+      "precision_at_10": {
+        "lower_95": 1.0,
+        "upper_95": 1.0
+      },
+      "yield_at_10": {
+        "lower_95": 10.0,
+        "upper_95": 10.0
+      },
+      "enrichment_at_10": {
+        "lower_95": 1.3908450704225352,
+        "upper_95": 1.3908450704225352
+      },
+      "precision_at_20": {
+        "lower_95": 1.0,
+        "upper_95": 1.0
+      },
+      "yield_at_20": {
+        "lower_95": 20.0,
+        "upper_95": 20.0
+      },
+      "enrichment_at_20": {
+        "lower_95": 1.3908450704225352,
+        "upper_95": 1.3908450704225352
+      },
+      "precision_at_50": {
+        "lower_95": 0.94,
+        "upper_95": 1.0
+      },
+      "yield_at_50": {
+        "lower_95": 47.0,
+        "upper_95": 50.0
+      },
+      "enrichment_at_50": {
+        "lower_95": 1.3073943661971832,
+        "upper_95": 1.3908450704225352
+      },
+      "precision_at_100": {
+        "lower_95": 0.96,
+        "upper_95": 1.0
+      },
+      "yield_at_100": {
+        "lower_95": 96.0,
+        "upper_95": 100.0
+      },
+      "enrichment_at_100": {
+        "lower_95": 1.3352112676056338,
+        "upper_95": 1.3908450704225352
+      }
+    },
+    "minimum_fusion": {
+      "precision_at_10": {
+        "lower_95": 1.0,
+        "upper_95": 1.0
+      },
+      "yield_at_10": {
+        "lower_95": 10.0,
+        "upper_95": 10.0
+      },
+      "enrichment_at_10": {
+        "lower_95": 1.3908450704225352,
+        "upper_95": 1.3908450704225352
+      },
+      "precision_at_20": {
+        "lower_95": 1.0,
+        "upper_95": 1.0
+      },
+      "yield_at_20": {
+        "lower_95": 20.0,
+        "upper_95": 20.0
+      },
+      "enrichment_at_20": {
+        "lower_95": 1.3908450704225352,
+        "upper_95": 1.3908450704225352
+      },
+      "precision_at_50": {
+        "lower_95": 0.94,
+        "upper_95": 1.0
+      },
+      "yield_at_50": {
+        "lower_95": 47.0,
+        "upper_95": 50.0
+      },
+      "enrichment_at_50": {
+        "lower_95": 1.3073943661971832,
+        "upper_95": 1.3908450704225352
+      },
+      "precision_at_100": {
+        "lower_95": 0.97,
+        "upper_95": 1.0
+      },
+      "yield_at_100": {
+        "lower_95": 97.0,
+        "upper_95": 100.0
+      },
+      "enrichment_at_100": {
+        "lower_95": 1.3491197183098593,
+        "upper_95": 1.3908450704225352
+      }
+    },
+    "risk_aware": {
+      "precision_at_10": {
+        "lower_95": 1.0,
+        "upper_95": 1.0
+      },
+      "yield_at_10": {
+        "lower_95": 10.0,
+        "upper_95": 10.0
+      },
+      "enrichment_at_10": {
+        "lower_95": 1.3908450704225352,
+        "upper_95": 1.3908450704225352
+      },
+      "precision_at_20": {
+        "lower_95": 1.0,
+        "upper_95": 1.0
+      },
+      "yield_at_20": {
+        "lower_95": 20.0,
+        "upper_95": 20.0
+      },
+      "enrichment_at_20": {
+        "lower_95": 1.3908450704225352,
+        "upper_95": 1.3908450704225352
+      },
+      "precision_at_50": {
+        "lower_95": 0.94,
+        "upper_95": 1.0
+      },
+      "yield_at_50": {
+        "lower_95": 47.0,
+        "upper_95": 50.0
+      },
+      "enrichment_at_50": {
+        "lower_95": 1.3073943661971832,
+        "upper_95": 1.3908450704225352
+      },
+      "precision_at_100": {
+        "lower_95": 0.97,
+        "upper_95": 1.0
+      },
+      "yield_at_100": {
+        "lower_95": 97.0,
+        "upper_95": 100.0
+      },
+      "enrichment_at_100": {
+        "lower_95": 1.3491197183098593,
+        "upper_95": 1.3908450704225352
+      }
+    }
+  }
+}

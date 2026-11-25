@@ -1,0 +1,9 @@
+name: H90_confirm_baseline_cac54bb407
+category: hparam_search/alignn_baseline/confirm
+seed: 2026
+status: completed
+best_epoch: 37
+batch_size: 16
+monitor_task: joint
+test_joint_pr_auc: 0.8922226921637498
+test_joint_mcc: 0.6561765182007356

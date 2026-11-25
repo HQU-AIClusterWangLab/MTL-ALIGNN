@@ -1,0 +1,8 @@
+name: A05_shuffle_auxiliary
+category: ablation
+seed: 2027
+status: completed
+best_epoch: 25
+batch_size: 16
+test_joint_pr_auc: 0.8595485659478123
+test_joint_mcc: 0.6006951308344691

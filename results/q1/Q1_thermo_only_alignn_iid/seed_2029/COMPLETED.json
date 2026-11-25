@@ -1,0 +1,11 @@
+{
+  "name": "Q1_thermo_only_alignn_iid",
+  "category": "q1",
+  "seed": 2029,
+  "status": "completed",
+  "best_epoch": 21,
+  "batch_size": 16,
+  "monitor_task": "thermo",
+  "test_thermo_pr_auc": 0.9833070368085421,
+  "test_thermo_mcc": 0.811565215402622
+}

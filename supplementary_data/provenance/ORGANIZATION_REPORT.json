@@ -1,0 +1,40 @@
+{
+  "organized_on": "2026-11-25",
+  "destination": "D:\\ck\\MTL-ALIGNN",
+  "sources": [
+    "D:\\ck\\two",
+    "D:\\ck\\two dft"
+  ],
+  "source_file_count": 25610,
+  "verified_source_file_count": 25610,
+  "verified_source_bytes": 10119498152,
+  "per_source_counts": {
+    "D:\\ck\\two": 24328,
+    "D:\\ck\\two dft": 1282
+  },
+  "source_read_errors": [
+    {
+      "path": "D:\\ck\\two\\.pytest_cache",
+      "error": "[WinError 5] Access denied.: 'D:\\\\ck\\\\two\\\\.pytest_cache'"
+    }
+  ],
+  "copy_failures": [],
+  "source_size_mtime_changes": [],
+  "weight_file_count": 387,
+  "compatibility_links": {
+    "hardlink_within_destination": 379
+  },
+  "syntax_files_checked": 73,
+  "syntax_errors": [],
+  "verification": "SHA-256 of every source stream matched an independent read of its copied file.",
+  "sources_modified": false,
+  "published": false,
+  "training_rerun": false,
+  "inference_rerun": false,
+  "excluded": [
+    "Unreadable D:\\ck\\two\\.pytest_cache directory"
+  ],
+  "elapsed_seconds": 103.0,
+  "report_scope": "Historical initial full-copy stage before pruning",
+  "current_package_report": "CLEANUP_REPORT.json"
+}

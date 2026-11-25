@@ -1,0 +1,10 @@
+data/c2db.db
+data/processed/graphs/
+data/processed/exports/
+results/
+__pycache__/
+*.pyc
+*.pt
+*.bin
+*.log
+.vscode/.ropeproject/

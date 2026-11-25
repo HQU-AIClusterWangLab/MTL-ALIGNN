@@ -1,0 +1,54 @@
+[
+  {
+    "name": "A03_no_logic",
+    "category": "ablation",
+    "seed": 2025,
+    "status": "completed",
+    "best_epoch": 41,
+    "batch_size": 16,
+    "test_joint_pr_auc": 0.8615584624179505,
+    "test_joint_mcc": 0.6190493352742187
+  },
+  {
+    "name": "A03_no_logic",
+    "category": "ablation",
+    "seed": 2026,
+    "status": "completed",
+    "best_epoch": 27,
+    "batch_size": 16,
+    "test_joint_pr_auc": 0.8807445105398767,
+    "test_joint_mcc": 0.6556474654688587
+  },
+  {
+    "name": "A03_no_logic",
+    "category": "ablation",
+    "seed": 2027,
+    "status": "completed",
+    "best_epoch": 24,
+    "batch_size": 16,
+    "test_joint_pr_auc": 0.8658480737648546,
+    "test_joint_mcc": 0.6133381930965377
+  },
+  {
+    "name": "A03_no_logic",
+    "category": "ablation",
+    "seed": 2028,
+    "status": "completed",
+    "best_epoch": 34,
+    "batch_size": 16,
+    "monitor_task": "joint",
+    "test_joint_pr_auc": 0.8770358000919264,
+    "test_joint_mcc": 0.645661650169654
+  },
+  {
+    "name": "A03_no_logic",
+    "category": "ablation",
+    "seed": 2029,
+    "status": "completed",
+    "best_epoch": 15,
+    "batch_size": 16,
+    "monitor_task": "joint",
+    "test_joint_pr_auc": 0.8864877965402191,
+    "test_joint_mcc": 0.6517622563905979
+  }
+]

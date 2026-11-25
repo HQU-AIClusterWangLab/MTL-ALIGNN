@@ -1,0 +1,9 @@
+name: R04_dynamic_ehull_alignn_composition
+category: review
+seed: 2028
+status: completed
+best_epoch: 13
+batch_size: 16
+monitor_task: dynamic
+test_dynamic_pr_auc: 0.8843735305025926
+test_dynamic_mcc: 0.5306360845025083

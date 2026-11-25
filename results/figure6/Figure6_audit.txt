@@ -1,0 +1,66 @@
+FIGURE 6 AND TABLE 1 DATA AUDIT
+============================================================================================================
+
+CANDIDATE RANKING
+------------------------------------------------------------------------------------------------------------
+Source: D:\ck\two\results\main\M10_unknown_screening\unknown_all_predictions.csv
+Rows: 8803
+Columns used: material_id, formula, probability_rank, p_joint_calibrated, p_joint_std, ehull
+Confirmed candidate total = 8803: YES
+Rank rule verified: p_joint_calibrated descending, uncertainty_normalized ascending, material_id ascending.
+p_J source: p_joint_calibrated (identical to pJ_calibrated).
+u_J source: p_joint_std; verified as ddof=1 SD of five member Joint probabilities.
+
+REPRESENTATIVE CANDIDATES
+------------------------------------------------------------------------------------------------------------
+BrI2Ir3Te3: material_id=1BrI2Ir3Te3-1; source_formula=Ir3BrI2Te3; rank=14; top_fraction=0.159036692037%; p_J=0.982321221453; u_J=3.198720899820e-07; E_hull=0.099292695308 eV atom^-1
+Cr2Sn2Se6: material_id=2CrSnSe3-1; source_formula=Cr2Sn2Se6; rank=43; top_fraction=0.488469839827%; p_J=0.968060798186; u_J=7.904124276885e-06; E_hull=0.104227537586 eV atom^-1
+Ni2Sb2O6: material_id=2NiSbO3-1; source_formula=Ni2O6Sb2; rank=987; top_fraction=11.212086788595%; p_J=0.824591422433; u_J=5.886406761336e-02; E_hull=0.148307178664 eV atom^-1
+
+PHONON SOURCES
+------------------------------------------------------------------------------------------------------------
+BrI2Ir3Te3:
+  self-calculated figure: C:\Users\WHQ\Desktop\\u8bba\u6587\u521d\u7a3f\\u56fe\\u7ed3\u679c\u56fe\\u4ee3\u7801\\u58f0\u5b50\u8c31\u56fe\ck Phon2.tif
+  CASTEP numeric result: D:\ck\two dft\two_Files\Documents\phonon\BrI2Ir3Te3_phonon_recheck\03_disp_001\PHON_PhonDisp.phonon
+  figure metadata: {'path': 'C:\\Users\\WHQ\\Desktop\\\u8bba\u6587\u521d\u7a3f\\\u56fe\\\u7ed3\u679c\u56fe\\\u4ee3\u7801\\\u58f0\u5b50\u8c31\u56fe\\ck Phon2.tif', 'format': 'TIFF', 'width_px': 4992, 'height_px': 3871, 'dpi': [600.0, 600.0], 'size_bytes': 418938, 'sha256': '8E41A01B818BD808A0E445AFB8E431723B43EF818F335DF2473FCD6028D8DB36'}
+  numeric unit: cm-1
+  q-points: 15; branches: 27
+  min frequency: -8.624904000 cm-1 (-0.258568117 THz)
+  max frequency: 192.271642000 cm-1 (5.764158816 THz)
+  high-symmetry path shown in ck Phon2.tif: Gamma-M-K-Gamma
+  imaginary modes: YES
+
+Cr2Sn2Se6:
+  phonon image: C:\Users\WHQ\Desktop\\u8bba\u6587\u521d\u7a3f\\u56fe\\u7ed3\u679c\u56fe\\u4ee3\u7801\\u58f0\u5b50\u8c31\u56fe\Cr2Sn2Se6\Cr2Sn2Se6_phonon.png
+  source record: C:\Users\WHQ\Desktop\\u8bba\u6587\u521d\u7a3f\\u56fe\\u7ed3\u679c\u56fe\\u4ee3\u7801\\u58f0\u5b50\u8c31\u56fe\Cr2Sn2Se6\Cr2Sn2Se6_source.txt
+  figure metadata: {'path': 'C:\\Users\\WHQ\\Desktop\\\u8bba\u6587\u521d\u7a3f\\\u56fe\\\u7ed3\u679c\u56fe\\\u4ee3\u7801\\\u58f0\u5b50\u8c31\u56fe\\Cr2Sn2Se6\\Cr2Sn2Se6_phonon.png', 'format': 'PNG', 'width_px': 2625, 'height_px': 3463, 'dpi': [899.9982, 899.9982], 'size_bytes': 2321355, 'sha256': 'DCD660DD38A021815AE69728C6FF01B04EB9AABB99D4ACCC0E679FF0DB2890A1'}
+  literature source: Supplementary Fig. 1(a), DOI 10.1038/s41699-020-00195-9
+  structure match to project candidate: LIKELY
+  imaginary modes reported by authors: NO
+
+Ni2Sb2O6:
+  phonon image: C:\Users\WHQ\Desktop\\u8bba\u6587\u521d\u7a3f\\u56fe\\u7ed3\u679c\u56fe\\u4ee3\u7801\\u58f0\u5b50\u8c31\u56fe\Ni2Sb2O6\Ni2Sb2O6_phonon.png
+  source record: C:\Users\WHQ\Desktop\\u8bba\u6587\u521d\u7a3f\\u56fe\\u7ed3\u679c\u56fe\\u4ee3\u7801\\u58f0\u5b50\u8c31\u56fe\Ni2Sb2O6\Ni2Sb2O6_source.txt
+  figure metadata: {'path': 'C:\\Users\\WHQ\\Desktop\\\u8bba\u6587\u521d\u7a3f\\\u56fe\\\u7ed3\u679c\u56fe\\\u4ee3\u7801\\\u58f0\u5b50\u8c31\u56fe\\Ni2Sb2O6\\Ni2Sb2O6_phonon.png', 'format': 'PNG', 'width_px': 2030, 'height_px': 1665, 'dpi': [599.9988, 599.9988], 'size_bytes': 292529, 'sha256': 'AB93C344E71751146C6C1E84865FAA6F8879F518F70BB4E26ADDC656E1490EE8'}
+  literature source: Fig. S1(b), DOI 10.60893/figshare.apl.28824896.v1
+  structure match to project candidate: LIKELY
+  imaginary modes reported by authors: NO
+
+TABLE 1 DATA
+------------------------------------------------------------------------------------------------------------
+Candidate,Rank,Top fraction (%),p_J,u_J,E_hull (eV atom^-1),Independent dynamical evidence
+
+BrI2Ir3Te3,14,0.159036692037,0.982321221453,3.19872089982e-07,0.099292695308,Imaginary modes observed (self-calculated CASTEP phonon dispersion)
+
+Cr2Sn2Se6,43,0.488469839827,0.968060798186,7.90412427688e-06,0.104227537586,No imaginary modes reported (literature; structure match likely)
+
+Ni2Sb2O6,987,11.2120867886,0.824591422433,0.0588640676134,0.148307178664,No imaginary modes reported (literature; structure match likely)
+
+OUTPUT STATUS
+------------------------------------------------------------------------------------------------------------
+Formal Figure 6 generated: YES
+Partial figure generated: NO
+All numerical ranking values come from the 8,803-row final screening table.
+No phonon curve was fabricated or digitized.
+The publisher's original (a)/(b) panel markers were removed in memory from white/empty regions; curves, axes, labels, and values were preserved.
+Panels (b)-(d) embed high-resolution source images; panel titles, labels, and conclusion tags are vector elements in PDF/SVG.

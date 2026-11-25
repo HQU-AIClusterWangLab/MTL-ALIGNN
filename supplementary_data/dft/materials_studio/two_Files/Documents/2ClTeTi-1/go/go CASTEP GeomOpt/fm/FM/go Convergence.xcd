@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="latin1"?>
+<!DOCTYPE XCD []>
+<XCD Version="23.1" NumCharts="1">
+	<CHART_2D>
+		<DATA_2D NumSeries="2">
+			<SERIES_2D UniqueID="0" Name="Energy Change (eV/atom)" NumPoints="37">
+				<POINT_2D XY="1,0.2443334566490465"/>
+				<POINT_2D XY="2,-2.645187771105689"/>
+				<POINT_2D XY="3,-1.823572941122234"/>
+				<POINT_2D XY="4,-2.215756630396256"/>
+				<POINT_2D XY="5,-3.020839880517528"/>
+				<POINT_2D XY="6,-3.405403139482321"/>
+				<POINT_2D XY="7,-1.047191448173279"/>
+				<POINT_2D XY="8,-1.272845507983667"/>
+				<POINT_2D XY="9,-1.804615117238755"/>
+				<POINT_2D XY="10,-1.094610687047449"/>
+				<POINT_2D XY="11,-1.768302739909307"/>
+				<POINT_2D XY="12,-1.730881880462346"/>
+				<POINT_2D XY="13,-2.136500788472865"/>
+				<POINT_2D XY="14,-1.649014433700899"/>
+				<POINT_2D XY="15,-1.437725423890741"/>
+				<POINT_2D XY="16,-1.506632336276814"/>
+				<POINT_2D XY="17,-2.193815625413853"/>
+				<POINT_2D XY="18,-3.625802760379832"/>
+				<POINT_2D XY="19,-3.774240358414232"/>
+				<POINT_2D XY="20,-3.372086858410817"/>
+				<POINT_2D XY="21,-3.992421220173505"/>
+				<POINT_2D XY="22,-4.831772366703265"/>
+				<POINT_2D XY="23,-4.53836596266789"/>
+				<POINT_2D XY="24,-3.873445077962481"/>
+				<POINT_2D XY="25,-4.065368540181603"/>
+				<POINT_2D XY="26,-4.086297037153165"/>
+				<POINT_2D XY="27,-4.712442506254361"/>
+				<POINT_2D XY="28,-4.641506004663756"/>
+				<POINT_2D XY="29,-4.410266056533384"/>
+				<POINT_2D XY="30,-4.343832037489287"/>
+				<POINT_2D XY="31,-4.606425844302608"/>
+				<POINT_2D XY="32,-4.969613705458944"/>
+				<POINT_2D XY="33,-5.630379614990697"/>
+				<POINT_2D XY="34,-6.02539406775629"/>
+				<POINT_2D XY="35,-5.895820356446364"/>
+				<POINT_2D XY="36,-6.499988932258025"/>
+				<POINT_2D XY="37,-7.097113602057653"/>
+			</SERIES_2D>
+			<SERIES_2D UniqueID="1" Name="" NumPoints="2">
+				<POINT_2D XY="1,-6.301029995663981"/>
+				<POINT_2D XY="37,-6.301029995663981"/>
+			</SERIES_2D>
+		</DATA_2D>
+		<MARKERS_2D NumMarkers="0" Visible="true" Width="1" Style="Solid" Color="255,0,0"/>
+		<CARTESIAN_2D_PLOT PlotType="Line" Visible="1" BackgroundColor="255,255,255" ForegroundColor="0,0,0" Box="1">
+			<TITLE Visible="1" Text="CASTEP SCF Convergence">
+				<FONT/>
+			</TITLE>
+			<LEGEND Visible="1" Heading=""/>
+			<CARTESIAN_AXES_2D XOriginPos="Min" YOriginPos="Min" XTickPos="Auto" YTickPos="Auto">
+				<AXIS_X Visible="true" Reversed="false" Title="Iteration">
+					<FONT/>
+					<AXIS_LINE Visible="true" Width="1" Style="Solid" Color="185,185,185"/>
+					<MAJOR_TICKMARKS Length="6" Visible="true" Width="1" Style="Solid" Color="185,185,185"/>
+					<MINOR_TICKMARKS Length="2" Visible="true" Width="1" Style="Solid" Color="185,185,185"/>
+				</AXIS_X>
+				<AXIS_Y Visible="true" Reversed="false" Title="Convergence (log10)">
+					<FONT/>
+					<AXIS_LINE Visible="true" Width="1" Style="Solid" Color="185,185,185"/>
+					<MAJOR_TICKMARKS Length="6" Visible="true" Width="1" Style="Solid" Color="185,185,185"/>
+					<MINOR_TICKMARKS Length="2" Visible="true" Width="1" Style="Solid" Color="185,185,185"/>
+				</AXIS_Y>
+			</CARTESIAN_AXES_2D>
+			<CARTESIAN_GRID_2D>
+				<GRID_X Visible="true" DefaultSpaced="true" Spacing="0">
+					<MAJOR_LINES Visible="false" Width="1" Style="Solid" Color="236,236,236"/>
+					<MINOR_LINES Visible="false" Width="1" Style="Solid" Color="236,236,236"/>
+				</GRID_X>
+				<GRID_Y Visible="true" DefaultSpaced="true" Spacing="0">
+					<MAJOR_LINES Visible="true" Width="1" Style="Solid" Color="236,236,236"/>
+					<MINOR_LINES Visible="false" Width="1" Style="Solid" Color="236,236,236"/>
+				</GRID_Y>
+			</CARTESIAN_GRID_2D>
+			<CARTESIAN_GRAPH_2D_STYLE LineVisible="true" LineWidth="1" LineStyle="Solid" LineColor="255,0,0" SymbolSize="6" SymbolShape="Dot" SymbolColor="255,0,0" BarOrientation="Horizontal" BarWidth="0.5" BarColor="0,0,255" DendrogramCursorColor="0,0,255" DendrogramCursorWidth="1" DendrogramCursorPosition="0.5"/>
+			<CARTESIAN_GRAPH_2D_STYLE LineVisible="true" LineWidth="1" LineStyle="Dash" LineColor="255,0,0" SymbolSize="6" SymbolShape="None" SymbolColor="255,0,0" BarOrientation="Horizontal" BarWidth="0.5" BarColor="255,0,0" DendrogramCursorColor="255,0,0" DendrogramCursorWidth="1" DendrogramCursorPosition="0.5"/>
+		</CARTESIAN_2D_PLOT>
+	</CHART_2D>
+</XCD>

@@ -1,0 +1,10 @@
+{
+  "name": "M03_cgcnn",
+  "category": "main",
+  "seed": 2027,
+  "status": "completed",
+  "best_epoch": 84,
+  "batch_size": 16,
+  "test_joint_pr_auc": 0.8498927859779457,
+  "test_joint_mcc": 0.6020085620320336
+}

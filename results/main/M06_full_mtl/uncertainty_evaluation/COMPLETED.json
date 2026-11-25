@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "method": "deep_ensemble",
+  "score": "predictive_std",
+  "column": "p_joint_std",
+  "selection_set": "validation",
+  "selection_rule": "minimum validation AURC; error AUPRC tie-break"
+}

@@ -1,0 +1,40 @@
+Figure 2(a-b) revision report
+
+Verified AP values
+- Single-task ALIGNN, seed=2025, M=1: AP=0.883761795628
+- Single-task ALIGNN, seed=2026, M=1: AP=0.892222692164
+- Single-task ALIGNN, seed=2027, M=1: AP=0.856837293879
+- Full MTL single, seed=2025, M=1: AP=0.886486028527
+- Full MTL single, seed=2026, M=1: AP=0.876602445296
+- Full MTL single, seed=2027, M=1: AP=0.886596842586
+- Full MTL ensemble, seed=ensemble, M=5 probability mean: AP=0.906354899978
+- ALIGNN common-seed mean +/- sample SD: 0.877607260557 +/- 0.018478104053
+- Full MTL common-seed mean +/- sample SD: 0.883228438803 +/- 0.005738546193
+- Full MTL five-member ensemble: 0.906354899978
+- Supplied ALIGNN 0.874 +/- 0.014 is the five-seed single-model summary, not the three-common-seed summary; it was not used in panels a-b.
+
+Raw prediction files used directly for panels a-b
+- D:\ck\two\results\main\M04_single_alignn\seed_2025\test_predictions.csv
+- D:\ck\two\results\main\M04_single_alignn\seed_2026\test_predictions.csv
+- D:\ck\two\results\main\M04_single_alignn\seed_2027\test_predictions.csv
+- D:\ck\two\results\main\M06_full_mtl\seed_2025\test_predictions.csv
+- D:\ck\two\results\main\M06_full_mtl\seed_2026\test_predictions.csv
+- D:\ck\two\results\main\M06_full_mtl\seed_2027\test_predictions.csv
+- D:\ck\two\results\main\M06_full_mtl\seed_2028\test_predictions.csv
+- D:\ck\two\results\main\M06_full_mtl\seed_2029\test_predictions.csv
+
+Code changes and reasons
+- load_joint_predictions: loads, validates, and aligns saved raw Joint predictions; no training is invoked.
+- panel_a_data: limits single-model summaries to common seeds 2025-2027 and constructs the final Full MTL ensemble from five raw members.
+- panel_b_data: replaces task-wise M=5 delta-AP comparisons with the three-stage Joint AP progression.
+- draw_panel_a: plots three real mean PR curves without curve-level SD bands; AP sample SD remains in the legend.
+- draw_panel_b: plots the matching three-stage Joint AP progression; the ensemble has no fabricated error bar.
+- save_standalone_panels: exports panels a and b separately in PNG/PDF/SVG.
+- supplementary_m5_data and draw_supplementary_m5: retain the matched five-member ALIGNN/Equal MTL/Full MTL comparison outside the main figure.
+- draw_figure: panel c uses a horizontal bar chart; panels d-e use categorical seed points with mean +/- SD and a shared four-model legend; all panels share one role-based typography scale.
+- main/caption/manifest/checks: record the revised comparison levels and full data provenance.
+
+Scientific interpretation
+- Before: panels a-b asked how three methods compare when methods/tasks were mixed across single-run summaries and matched M=5 differences.
+- After: panels a-b ask how Joint prediction evolves from the original ALIGNN baseline, through the Full MTL single model, to the final Full MTL five-member ensemble.
+- Correspondence to Section 3.1: yes, provided the first paragraph distinguishes the modest MTL single-model gain from the additional ensemble gain and uses the verified values above.

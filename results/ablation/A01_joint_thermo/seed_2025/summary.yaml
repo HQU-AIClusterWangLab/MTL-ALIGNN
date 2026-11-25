@@ -1,0 +1,8 @@
+name: A01_joint_thermo
+category: ablation
+seed: 2025
+status: completed
+best_epoch: 81
+batch_size: 16
+test_joint_pr_auc: 0.8731308322906057
+test_joint_mcc: 0.6599330347253882

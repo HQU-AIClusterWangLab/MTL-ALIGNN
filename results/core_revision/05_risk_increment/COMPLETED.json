@@ -1,0 +1,17 @@
+{
+  "signature": "2218eecda09815ff4ae5f9009fd313671bea6d661fd8cf667ecad1bb184efb98",
+  "timestamp": "2026-09-17T04:00:21.589722+00:00",
+  "files_sha256": {
+    "error_detection_comparison.csv": "c55be0fe4fa054f750105913ac6d7d5adac24bfb7534b938e203bd298c3a962a",
+    "frozen_risk_models.json": "313b452040d90785c9dbf9a688ddb1b10e68f11de16a052e94191c80a3bf26c8",
+    "manifest.json": "8b5b45c1166bd35e1ca32779ae0461bc5ff3459fe56b1edc65ad76d6b0a5b2e6",
+    "risk_coverage.pdf": "c7c58ce3881c852ff3a66eea215d7d01ace4740011c31e8d30be59c87b6e3704",
+    "risk_coverage.png": "d27a5c0868ec45280bfa9c283c5ed5f282424bb888c94db06158e4873d0df4c6",
+    "risk_coverage_comparison.csv": "6864d844d827c486c68133a6e63952277bcec42ccf0e26e95f543d937b362d89",
+    "risk_detection_roc_pr.pdf": "2cab788627a0b4a3af54b68cf8dd6013ea285c0007a681086f9e97a0260c1d7e",
+    "risk_detection_roc_pr.png": "2d2e024c936d5b8a74b354ab595504f78be8e2dd3aafdac0638da39c0750de89",
+    "risk_roc_pr_curves.csv": "dcaaf3cb9cf177e3adc370e0c03a6c2bbd5a4387fc7e03578b8dda55a58d70cf",
+    "test_risk_predictions.csv": "cc3369edf4784af4d809797e5b559840c6d765c7f40a1083a07c7e0db3c44a47",
+    "validation_risk_model_coefficients.csv": "9fc9b341ddae3f87015171d553b8a87b709cdd78c29b7fc0681d0120061fe853"
+  }
+}

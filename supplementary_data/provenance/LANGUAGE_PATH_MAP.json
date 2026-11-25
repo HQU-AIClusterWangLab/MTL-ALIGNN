@@ -1,0 +1,35 @@
+{
+  "renamed_entries": [
+    {
+      "old": "results/figure6/Figure6_\u8fd0\u884c\u65e5\u5fd7.txt",
+      "new": "results/figure6/Figure6_run_log.txt",
+      "directory": false
+    },
+    {
+      "old": "supplementary_data/paper/2. Single  Equal  Full \u4e3b\u6a21\u578b",
+      "new": "supplementary_data/paper/2. Single Equal Full Main Models",
+      "directory": true
+    },
+    {
+      "old": "supplementary_data/paper/3. \u6d88\u878d\u5b9e\u9a8c",
+      "new": "supplementary_data/paper/3. Ablation Experiments",
+      "directory": true
+    },
+    {
+      "old": "supplementary_data/project_metadata/\u8bba\u6587\u5f85\u8865\u5145\u5b9e\u9a8c\u6e05\u5355.md",
+      "new": "supplementary_data/project_metadata/additional_experiments_checklist.md",
+      "directory": false
+    }
+  ],
+  "path_component_translations": {
+    "1.\u6807\u7b7e\u4e0e\u56db\u8c61\u9650": "1. Labels and Quadrants",
+    "2. Single  Equal  Full \u4e3b\u6a21\u578b": "2. Single Equal Full Main Models",
+    "3. \u6d88\u878d\u5b9e\u9a8c": "3. Ablation Experiments",
+    "4. \u68af\u5ea6\u51b2\u7a81": "4. Gradient Conflicts",
+    "5. Deep Ensemble  \u6821\u51c6": "5. Deep Ensemble Calibration",
+    "6. \u4e0d\u786e\u5b9a\u6027": "6. Uncertainty",
+    "Figure6_\u8fd0\u884c\u65e5\u5fd7.txt": "Figure6_run_log.txt",
+    "\u8bba\u6587\u5f85\u8865\u5145\u5b9e\u9a8c\u6e05\u5355.md": "additional_experiments_checklist.md"
+  },
+  "external_source_paths": "Original identifiers are preserved losslessly using Unicode escapes. External files were not renamed."
+}

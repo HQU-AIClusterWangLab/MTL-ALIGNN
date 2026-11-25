@@ -1,0 +1,57 @@
+[
+  {
+    "name": "R06_dynamic_ehull_alignn_chemical",
+    "category": "review",
+    "seed": 2025,
+    "status": "completed",
+    "best_epoch": 24,
+    "batch_size": 16,
+    "monitor_task": "dynamic",
+    "test_dynamic_pr_auc": 0.9077220338916893,
+    "test_dynamic_mcc": 0.6227528899889726
+  },
+  {
+    "name": "R06_dynamic_ehull_alignn_chemical",
+    "category": "review",
+    "seed": 2026,
+    "status": "completed",
+    "best_epoch": 17,
+    "batch_size": 16,
+    "monitor_task": "dynamic",
+    "test_dynamic_pr_auc": 0.9080697826204625,
+    "test_dynamic_mcc": 0.6088947230060177
+  },
+  {
+    "name": "R06_dynamic_ehull_alignn_chemical",
+    "category": "review",
+    "seed": 2027,
+    "status": "completed",
+    "best_epoch": 80,
+    "batch_size": 16,
+    "monitor_task": "dynamic",
+    "test_dynamic_pr_auc": 0.8903478477339695,
+    "test_dynamic_mcc": 0.6167126439567244
+  },
+  {
+    "name": "R06_dynamic_ehull_alignn_chemical",
+    "category": "review",
+    "seed": 2028,
+    "status": "completed",
+    "best_epoch": 34,
+    "batch_size": 16,
+    "monitor_task": "dynamic",
+    "test_dynamic_pr_auc": 0.9023190637843443,
+    "test_dynamic_mcc": 0.572343516464878
+  },
+  {
+    "name": "R06_dynamic_ehull_alignn_chemical",
+    "category": "review",
+    "seed": 2029,
+    "status": "completed",
+    "best_epoch": 50,
+    "batch_size": 16,
+    "monitor_task": "dynamic",
+    "test_dynamic_pr_auc": 0.9010151148998276,
+    "test_dynamic_mcc": 0.6353027072227363
+  }
+]

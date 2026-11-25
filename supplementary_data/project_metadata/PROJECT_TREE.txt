@@ -1,0 +1,104 @@
+two/
+├── .vscode/
+│   ├── extensions.json
+│   ├── launch.json
+│   ├── settings.json
+│   └── tasks.json
+├── data/
+│   ├── processed/
+│   │   └── README.md
+│   ├── __init__.py
+│   ├── analyze_data.py
+│   ├── build_graphs.py
+│   ├── check_environment.py
+│   ├── inspect_db.py
+│   ├── make_ood_splits.py
+│   ├── make_splits.py
+│   ├── prepare_data.py
+│   └── utils.py
+├── docs/
+│   ├── 01_experiment_map.md
+│   ├── 02_methodological_guards.md
+│   ├── 03_run_order.md
+│   ├── 04_output_files.md
+│   └── diagnostic_summary.md
+├── models/
+│   ├── __init__.py
+│   ├── alignn_encoder.py
+│   ├── cgcnn.py
+│   ├── losses.py
+│   ├── multitask.py
+│   ├── pretrained.py
+│   └── uncertainty.py
+├── pretrained/
+│   └── README.md
+├── results/
+│   ├── ablation/
+│   ├── main/
+│   ├── paper/
+│   └── README.md
+├── scripts/
+│   ├── common.ps1
+│   ├── run_ablations.ps1
+│   ├── run_all.ps1
+│   ├── run_data.ps1
+│   ├── run_experiment.ps1
+│   ├── run_main.ps1
+│   ├── run_ood_optional.ps1
+│   ├── run_smoke.ps1
+│   ├── run_tests.ps1
+│   └── run_unknown.ps1
+├── tests/
+│   ├── test_losses.py
+│   ├── test_metrics.py
+│   └── test_uncertainty.py
+├── train/
+│   ├── experiments/
+│   │   ├── ablation/
+│   │   │   ├── A01_joint_thermo.yaml
+│   │   │   ├── A02_joint_dynamic.yaml
+│   │   │   ├── A03_no_logic.yaml
+│   │   │   ├── A04_fixed_weight.yaml
+│   │   │   ├── A05_shuffle_auxiliary.yaml
+│   │   │   └── A06_adaptive_all.yaml
+│   │   ├── main/
+│   │   │   ├── M01_random_forest.yaml
+│   │   │   ├── M02_xgboost.yaml
+│   │   │   ├── M03_cgcnn.yaml
+│   │   │   ├── M04_single_alignn.yaml
+│   │   │   ├── M05_equal_mtl.yaml
+│   │   │   └── M06_full_mtl.yaml
+│   │   └── optional/
+│   │       ├── O01_chemical_system_ood.yaml
+│   │       ├── O02_structure_family_ood.yaml
+│   │       └── O03_pretrained_alignn.yaml
+│   ├── __init__.py
+│   ├── aggregate_ensemble.py
+│   ├── analyze_task_gradients.py
+│   ├── common.py
+│   ├── dataset.py
+│   ├── evaluate_joint_fusion.py
+│   ├── evaluate_ood.py
+│   ├── evaluate_ranking.py
+│   ├── evaluate_uncertainty.py
+│   ├── export_paper_artifacts.py
+│   ├── mc_dropout_predict.py
+│   ├── metrics.py
+│   ├── screen_unknown.py
+│   ├── smoke_test.py
+│   ├── summarize_experiment.py
+│   ├── train_gnn.py
+│   └── train_tabular.py
+├── .gitignore
+├── CHANGELOG.md
+├── config.yaml
+├── environment_expected.txt
+├── PROJECT_TREE.txt
+├── README.md
+├── RUN_ABLATIONS.ps1
+├── RUN_ALL.ps1
+├── RUN_DATA.ps1
+├── RUN_MAIN.ps1
+├── RUN_OOD_OPTIONAL.ps1
+├── RUN_SMOKE.ps1
+└── RUN_UNKNOWN.ps1
