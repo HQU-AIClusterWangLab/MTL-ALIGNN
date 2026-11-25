@@ -1,7 +1,0 @@
- Job Name                         :  PHON_PhonDisp
- type of calculation              :  phonon calculation
- plane wave basis set cut-off     :  800.0000   eV
- phonon calculation method        :  finite displacement
- fine phonon calculation method   :  supercell
- using functional                 :  Perdew Burke Ernzerhof
-

@@ -1,8 +1,0 @@
-name: A04_fixed_weight
-category: ablation
-seed: 2026
-status: completed
-best_epoch: 21
-batch_size: 16
-test_joint_pr_auc: 0.8822133510736339
-test_joint_mcc: 0.6513952142309418

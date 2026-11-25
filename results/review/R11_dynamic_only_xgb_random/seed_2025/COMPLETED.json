@@ -1,9 +1,0 @@
-{
-  "name": "R11_dynamic_only_xgb_random",
-  "category": "review",
-  "seed": 2025,
-  "status": "completed",
-  "monitor_task": "dynamic",
-  "test_dynamic_pr_auc": 0.851957237851982,
-  "test_dynamic_mcc": 0.48629650380018424
-}

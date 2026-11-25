@@ -1,9 +1,0 @@
-name: R01_dynamic_only_alignn_random
-category: review
-seed: 2027
-status: completed
-best_epoch: 43
-batch_size: 16
-monitor_task: dynamic
-test_dynamic_pr_auc: 0.8737600099987528
-test_dynamic_mcc: 0.5777506974830002

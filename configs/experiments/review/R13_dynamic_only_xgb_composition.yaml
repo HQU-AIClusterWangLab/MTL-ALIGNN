@@ -1,8 +1,0 @@
-name: R13_dynamic_only_xgb_composition
-category: review
-model_type: xgboost
-heads: [dynamic]
-monitor_task: dynamic
-seeds: [2025, 2026, 2027, 2028, 2029]
-split_file: review_splits/composition_disjoint.csv
-

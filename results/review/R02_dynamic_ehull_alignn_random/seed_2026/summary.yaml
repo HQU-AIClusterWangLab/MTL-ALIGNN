@@ -1,9 +1,0 @@
-name: R02_dynamic_ehull_alignn_random
-category: review
-seed: 2026
-status: completed
-best_epoch: 21
-batch_size: 16
-monitor_task: dynamic
-test_dynamic_pr_auc: 0.8864068735133946
-test_dynamic_mcc: 0.5676170541818051

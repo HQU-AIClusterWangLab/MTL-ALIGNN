@@ -1,9 +1,0 @@
-name: H03_alignn_layers_6_65c6b1d674
-category: hparam_search/alignn_baseline/screen
-seed: 2025
-status: completed
-best_epoch: 40
-batch_size: 16
-monitor_task: joint
-test_joint_pr_auc: 0.882635338515187
-test_joint_mcc: 0.6164008866133264

@@ -1,8 +1,0 @@
-name: R15_dynamic_only_xgb_chemical
-category: review
-model_type: xgboost
-heads: [dynamic]
-monitor_task: dynamic
-seeds: [2025, 2026, 2027, 2028, 2029]
-split_file: review_splits/chemical_system_disjoint.csv
-

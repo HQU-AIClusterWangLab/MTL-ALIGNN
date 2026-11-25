@@ -1,9 +1,0 @@
-name: R32_full_no_logic_alignn_chemical
-category: review
-seed: 2028
-status: completed
-best_epoch: 38
-batch_size: 16
-monitor_task: joint
-test_joint_pr_auc: 0.8668508104697078
-test_joint_mcc: 0.6411324369277501

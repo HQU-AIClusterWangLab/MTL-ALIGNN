@@ -1,9 +1,0 @@
-name: R05_dynamic_only_alignn_chemical
-category: review
-seed: 2027
-status: completed
-best_epoch: 33
-batch_size: 16
-monitor_task: dynamic
-test_dynamic_pr_auc: 0.8953900193290856
-test_dynamic_mcc: 0.6164832232736123

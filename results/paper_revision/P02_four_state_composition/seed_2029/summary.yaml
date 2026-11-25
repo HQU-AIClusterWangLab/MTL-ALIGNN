@@ -1,9 +1,0 @@
-name: P02_four_state_composition
-category: paper_revision
-seed: 2029
-status: completed
-best_epoch: 14
-batch_size: 16
-monitor_task: joint
-test_joint_pr_auc: 0.8756448850734124
-test_joint_mcc: 0.6309302653455187

@@ -1,9 +1,0 @@
-{
-  "name": "R13_dynamic_only_xgb_composition",
-  "category": "review",
-  "seed": 2025,
-  "status": "completed",
-  "monitor_task": "dynamic",
-  "test_dynamic_pr_auc": 0.8442645558070956,
-  "test_dynamic_mcc": 0.48564283198824965
-}

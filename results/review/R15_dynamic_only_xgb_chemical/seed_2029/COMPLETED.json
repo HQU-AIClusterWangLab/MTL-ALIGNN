@@ -1,9 +1,0 @@
-{
-  "name": "R15_dynamic_only_xgb_chemical",
-  "category": "review",
-  "seed": 2029,
-  "status": "completed",
-  "monitor_task": "dynamic",
-  "test_dynamic_pr_auc": 0.8549706680015503,
-  "test_dynamic_mcc": 0.49050243731691645
-}

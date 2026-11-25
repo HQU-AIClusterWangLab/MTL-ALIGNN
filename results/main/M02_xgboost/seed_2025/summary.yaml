@@ -1,6 +1,0 @@
-name: M02_xgboost
-category: main
-seed: 2025
-status: completed
-test_joint_pr_auc: 0.8473709312480214
-test_joint_mcc: 0.6175409664731352

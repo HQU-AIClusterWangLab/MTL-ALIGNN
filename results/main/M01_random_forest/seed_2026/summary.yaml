@@ -1,6 +1,0 @@
-name: M01_random_forest
-category: main
-seed: 2026
-status: completed
-test_joint_pr_auc: 0.849421400464268
-test_joint_mcc: 0.5929029134352723

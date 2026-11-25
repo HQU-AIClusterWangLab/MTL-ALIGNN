@@ -1,8 +1,0 @@
- Job Name                         :  900
- type of calculation              :  single point energy
- plane wave basis set cut-off     :  900.0000   eV
- using functional                 :  Perdew Burke Ernzerhof
-
- Number of iterations             :  20
- Energy                           :  -1.39542848E+004  eV
- Convergence                      :  1.37316125E-007  eV/atom

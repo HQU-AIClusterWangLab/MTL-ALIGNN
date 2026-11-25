@@ -1,9 +1,0 @@
-name: H90_confirm_selected_04b100455e
-category: hparam_search/alignn_baseline/confirm
-seed: 2027
-status: completed
-best_epoch: 38
-batch_size: 16
-monitor_task: joint
-test_joint_pr_auc: 0.8832904189729516
-test_joint_mcc: 0.6575883642961148

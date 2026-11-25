@@ -1,9 +1,0 @@
-name: A03_no_logic
-category: retuned_2026_11_22
-seed: 2029
-status: completed
-best_epoch: 15
-batch_size: 16
-monitor_task: joint
-test_joint_pr_auc: 0.8805682614976519
-test_joint_mcc: 0.6410279304444058

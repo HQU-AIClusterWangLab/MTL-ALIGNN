@@ -1,8 +1,0 @@
-name: A02_joint_dynamic
-category: ablation
-seed: 2027
-status: completed
-best_epoch: 23
-batch_size: 16
-test_joint_pr_auc: 0.8764204809340929
-test_joint_mcc: 0.6511555227599787

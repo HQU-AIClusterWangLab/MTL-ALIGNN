@@ -1,6 +1,0 @@
-$ErrorActionPreference = "Stop"
-& "$PSScriptRoot\run_data.ps1"
-& "$PSScriptRoot\run_main.ps1"
-& "$PSScriptRoot\run_ablations.ps1"
-& "$PSScriptRoot\run_unknown.ps1"
-Write-Host "All default experiments completed. OOD experiments were intentionally not run."

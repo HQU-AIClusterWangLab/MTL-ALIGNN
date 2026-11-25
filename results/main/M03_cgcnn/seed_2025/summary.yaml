@@ -1,8 +1,0 @@
-name: M03_cgcnn
-category: main
-seed: 2025
-status: completed
-best_epoch: 77
-batch_size: 16
-test_joint_pr_auc: 0.8386559785654598
-test_joint_mcc: 0.6026698542423418

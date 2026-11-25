@@ -1,9 +1,0 @@
-name: P04_equal_lc_structure
-category: paper_revision
-seed: 2028
-status: completed
-best_epoch: 10
-batch_size: 16
-monitor_task: joint
-test_joint_pr_auc: 0.6622613188224651
-test_joint_mcc: 0.37892580985133656

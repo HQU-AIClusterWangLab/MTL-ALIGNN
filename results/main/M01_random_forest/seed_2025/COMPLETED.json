@@ -1,8 +1,0 @@
-{
-  "name": "M01_random_forest",
-  "category": "main",
-  "seed": 2025,
-  "status": "completed",
-  "test_joint_pr_auc": 0.8510829612979343,
-  "test_joint_mcc": 0.5635989373051392
-}

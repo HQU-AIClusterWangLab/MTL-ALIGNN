@@ -1,4 +1,0 @@
-task,model,members,aggregation,AP
-Joint,Single-task ALIGNN,5,material-aligned arithmetic mean of member probabilities,0.8969404345882825
-Joint,Equal MTL,5,material-aligned arithmetic mean of member probabilities,0.8915058842779107
-Joint,Full MTL,5,material-aligned arithmetic mean of member probabilities,0.9063548999784637

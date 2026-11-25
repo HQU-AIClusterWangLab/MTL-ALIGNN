@@ -1,7 +1,0 @@
-name: R13_dynamic_only_xgb_composition
-category: review
-seed: 2029
-status: completed
-monitor_task: dynamic
-test_dynamic_pr_auc: 0.8443804483341871
-test_dynamic_mcc: 0.47845136714000985

@@ -1,9 +1,0 @@
-scope,K,difference,mean_difference,lower_95,upper_95,probability_difference_gt_zero
-all_test,10,risk_aware_minus_joint_probability,0.0,0.0,0.0,0.0
-all_test,20,risk_aware_minus_joint_probability,0.0,0.0,0.0,0.0
-all_test,50,risk_aware_minus_joint_probability,0.0,0.0,0.0,0.0
-all_test,100,risk_aware_minus_joint_probability,0.0,0.0,0.0,0.0
-thermo_positive_test,10,risk_aware_minus_joint_probability,0.0,0.0,0.0,0.0
-thermo_positive_test,20,risk_aware_minus_joint_probability,0.0,0.0,0.0,0.0
-thermo_positive_test,50,risk_aware_minus_joint_probability,0.0,0.0,0.0,0.0
-thermo_positive_test,100,risk_aware_minus_joint_probability,0.0,0.0,0.0,0.0

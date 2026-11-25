@@ -1,9 +1,0 @@
-name: R08_dynamic_ehull_alignn_structure
-category: review
-seed: 2028
-status: completed
-best_epoch: 23
-batch_size: 16
-monitor_task: dynamic
-test_dynamic_pr_auc: 0.8089514030309449
-test_dynamic_mcc: 0.4466549425743951

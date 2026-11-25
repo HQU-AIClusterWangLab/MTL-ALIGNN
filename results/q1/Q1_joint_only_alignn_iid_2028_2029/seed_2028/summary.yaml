@@ -1,9 +1,0 @@
-name: Q1_joint_only_alignn_iid_2028_2029
-category: q1
-seed: 2028
-status: completed
-best_epoch: 31
-batch_size: 16
-monitor_task: joint
-test_joint_pr_auc: 0.8706830851960847
-test_joint_mcc: 0.638181791340788
